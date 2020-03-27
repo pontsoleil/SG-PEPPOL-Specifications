@@ -566,7 +566,7 @@ padding-top:1vw;
 									</th>
 									<th align="left" valign="top" width="10%">
 										<b>
-											<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-151'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+											<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-151-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 										</b>
 									</th>
 									<th align="left" valign="top" width="10%">
@@ -630,7 +630,7 @@ padding-top:1vw;
 										</th>
 										<th align="left" valign="top" width="20%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-102'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-102-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 										<th align="right" valign="top" width="20%">
@@ -695,7 +695,7 @@ padding-top:1vw;
 										</th>
 										<th align="left" valign="top" width="20%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-95'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-95-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 										<th align="right" valign="top" width="20%">
@@ -743,7 +743,7 @@ padding-top:1vw;
 					<div class="row" id="tablerow">
 						<div class="col-12">
 							<h3>
-								<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BG-23'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+								<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BG-23-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 							</h3>
 							<p>
 								<xsl:if test="cbc:TaxPointDate !=''">
@@ -772,17 +772,17 @@ padding-top:1vw;
 									<tr class="TAXInformationHeader">
 										<th align="left" valign="top" colspan="2" width="25%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-118'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-118-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 										<th align="left" valign="top" colspan="2" width="25%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-120'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-120-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 										<th align="left" valign="top" colspan="2" width="25%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-116'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-116-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 										<!--th valign="top" align="right">
@@ -792,7 +792,7 @@ padding-top:1vw;
 									</th-->
 										<th valign="top" align="right" width="25%">
 											<b>
-												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-117'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
+												<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-117-GST'"/><xsl:with-param name="Colon-Suffix" select="'false'"/></xsl:call-template>
 											</b>
 										</th>
 									</tr>
@@ -808,7 +808,7 @@ padding-top:1vw;
 							<div class="col-12">
 								<p>
 									<b>
-										<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-6'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
+										<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-6-GST'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
 									</b>
 									<xsl:value-of select="cbc:TaxCurrencyCode"/>
 								</p>
@@ -821,7 +821,7 @@ padding-top:1vw;
 								<div class="col-6">
 									<p>
 										<b>
-											<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-110'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
+											<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-110-GST'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
 										</b>
 									</p>
 								</div>
@@ -846,7 +846,7 @@ padding-top:1vw;
 						<div class="col-6">
 							<p align="left">
 								<b>
-									<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-109'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
+									<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-109-GST'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
 								</b>
 							</p>
 						</div>
@@ -862,7 +862,7 @@ padding-top:1vw;
 						<div class="col-6">
 							<p align="left">
 								<b>
-									<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-112'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
+									<xsl:call-template name="LabelName"><xsl:with-param name="BT-ID" select="'BT-112-GST'"/><xsl:with-param name="Colon-Suffix" select="'true'"/></xsl:call-template>
 								</b>
 							</p>
 						</div>
@@ -1159,8 +1159,8 @@ padding-top:1vw;
 										[<xsl:value-of select="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID/@schemeID"/>]
 										</xsl:if>
 									
-					<br/>This invoice visualization is generated from SFTI BIS Billing 3 XSL Stylesheet Version 1.0.5<br/>
-					This stylesheet uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this stylesheet and gives no warranties expressed or implied for any purpose.<br/>
+					<br/>This invoice visualization is generated from IMDA SG-BIS Billing 3 XSL Stylesheet Version 1.0.0<br/>
+					This stylesheet uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this stylesheet and gives no warranties expressed or implied for any purpose<br/>
 					
 					
 								
