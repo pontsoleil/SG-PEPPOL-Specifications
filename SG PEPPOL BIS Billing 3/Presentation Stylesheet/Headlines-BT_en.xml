@@ -18,27 +18,27 @@ Other entries of UNTDID 1001 [6] with specific invoices or credit notes may be u
 	</BusinessTerm>
 	<BusinessTerm id="BT-5">
 		<TermName>Invoice currency code</TermName>
-		<Definition>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency.</Definition>
-		<Description>Only one currency shall be used in the Invoice, except for the Invoice total VAT amount in accounting currency (BT-111) in accordance with article 230 of Directive 2006/112/EC on VAT [2]. 
+		<Definition>The currency in which all Invoice amounts are given, except for the Total GST amount in accounting currency.</Definition>
+		<Description>Only one currency shall be used in the Invoice, except for the Invoice total GST amount in accounting currency (BT-111) in accordance with article 230 of Directive 2006/112/EC on GST [2]. 
 The lists of valid currencies are registered with the ISO 4217 Maintenance Agency “Codes for the representation of currencies and funds”.</Description>
 		<DisplayName>Invoice curreny</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-6">
-		<TermName>VAT accounting currency code</TermName>
-		<Definition>The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller.</Definition>
-		<Description>Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111) when the VAT accounting currency code differs from the Invoice currency code. 
+		<TermName>GST accounting currency code</TermName>
+		<Definition>The currency used for GST accounting and reporting purposes as accepted or required in the country of the Seller.</Definition>
+		<Description>Shall be used in combination with the Invoice total GST amount in accounting currency (BT-111) when the GST accounting currency code differs from the Invoice currency code. 
 The lists of valid currencies are registered with the ISO 4217 Maintenance Agency “Codes for the representation of currencies and funds”. Please refer to Article 230 of the Council Directive 2006/112/EC [2] for more information.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-7">
 		<TermName>Value added tax point date</TermName>
-		<Definition>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.</Definition>
+		<Definition>The date when the GST becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the GST directive.</Definition>
 		<Description>The tax point is usually the date goods were supplied or services completed (the 'basic tax point'). There are some variations. Please refer to Article 226 (7) of the Council Directive 2006/112/EC [2] for more information. 
 This element is required if the Value added tax point date is different from the Invoice issue date. 
 Both Buyer and Seller should use the Tax Point Date when provided by the Seller. The use of BT-7 and BT-8 is mutually exclusive.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-8">
 		<TermName>Value added tax point date code</TermName>
-		<Definition>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Definition>
+		<Definition>The code of the date when the GST becomes accountable for the Seller and for the Buyer.</Definition>
 		<Description>The code shall distinguish between the following entries of UNTDID 2005 [6]:
 - Invoice document issue date
 - Delivery date, actual
@@ -188,10 +188,10 @@ The Value added tax point date code is used if the Value added tax point date is
 		<Description>If used, the identification scheme shall be chosen from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-31">
-		<TermName>Seller VAT identifier</TermName>
-		<Definition>The Seller's VAT identifier (also known as Seller VAT identification number).</Definition>
-		<Description>VAT number prefixed by a country code. A VAT registered Supplier shall include his VAT ID, except when he uses a tax representative.</Description>
-		<DisplayName>VAT identifier</DisplayName>
+		<TermName>Seller GST identifier</TermName>
+		<Definition>The Seller's GST identifier (also known as Seller GST identification number).</Definition>
+		<Description>GST number prefixed by a country code. A GST registered Supplier shall include his GST ID, except when he uses a tax representative.</Description>
+		<DisplayName>GST identifier</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-32">
 		<TermName>Seller tax registration identifier</TermName>
@@ -253,7 +253,7 @@ The Value added tax point date code is used if the Value added tax point date is
 	<BusinessTerm id="BT-40">
 		<TermName>Seller country code</TermName>
 		<Definition>A code that identifies the country.</Definition>
-		<Description>If no tax representative is specified, this is the country where VAT is liable. The lists of valid countries are registered with the EN ISO 3166-1 Maintenance agency, “Codes for the representation of names of countries and their subdivisions”.</Description>
+		<Description>If no tax representative is specified, this is the country where GST is liable. The lists of valid countries are registered with the EN ISO 3166-1 Maintenance agency, “Codes for the representation of names of countries and their subdivisions”.</Description>
 		<DisplayName/>
 	</BusinessTerm>
 	<BusinessTerm id="BG-6">
@@ -314,10 +314,10 @@ The Value added tax point date code is used if the Value added tax point date is
 		<Description>If used, the identification scheme shall be chosen from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-48">
-		<TermName>Buyer VAT identifier</TermName>
-		<Definition>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Definition>
-		<Description>VAT number prefixed by a country code based on EN ISO 3166-1 "Codes for the representation of names of countries and their subdivisions"</Description>
-		<DisplayName>VAT ID</DisplayName>
+		<TermName>Buyer GST identifier</TermName>
+		<Definition>The Buyer's GST identifier (also known as Buyer GST identification number).</Definition>
+		<Description>GST number prefixed by a country code based on EN ISO 3166-1 "Codes for the representation of names of countries and their subdivisions"</Description>
+		<DisplayName>GST ID</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-49">
 		<TermName>Buyer electronic address</TermName>
@@ -435,15 +435,15 @@ The Value added tax point date code is used if the Value added tax point date is
 		<Definition>The full name of the Seller's tax representative party. </Definition>
 	</BusinessTerm>
 	<BusinessTerm id="BT-63">
-		<TermName>Seller tax representative VAT identifier</TermName>
-		<Definition>The VAT identifier of the Seller's tax representative party.</Definition>
-		<Description>VAT number prefixed by a country code based on EN ISO 3166-1 "Codes for the representation of names of countries and their subdivisions".</Description>
-		<DisplayName>VAT identifier</DisplayName>
+		<TermName>Seller tax representative GST identifier</TermName>
+		<Definition>The GST identifier of the Seller's tax representative party.</Definition>
+		<Description>GST number prefixed by a country code based on EN ISO 3166-1 "Codes for the representation of names of countries and their subdivisions".</Description>
+		<DisplayName>GST identifier</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BG-12">
 		<TermName>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</TermName>
 		<Definition>A group of business terms providing information about the postal address for the tax representative party.</Definition>
-		<Description>The Seller tax representative name/postal address shall be provided in the invoice, if the Seller has a tax representative who is liable to pay the VAT due. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
+		<Description>The Seller tax representative name/postal address shall be provided in the invoice, if the Seller has a tax representative who is liable to pay the GST due. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-64">
 		<TermName>Tax representative address line 1</TermName>
@@ -475,7 +475,7 @@ The Value added tax point date code is used if the Value added tax point date is
 	<BusinessTerm id="BT-69">
 		<TermName>Tax representative country code</TermName>
 		<Definition>A code that identifies the country.</Definition>
-		<Description>Country where VAT is liable. The lists of valid countries are registered with the EN ISO 3166-1 Maintenance agency, “Codes for the representation of names of countries and their subdivisions”.</Description>
+		<Description>Country where GST is liable. The lists of valid countries are registered with the EN ISO 3166-1 Maintenance agency, “Codes for the representation of names of countries and their subdivisions”.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BG-13">
 		<TermName>DELIVERY INFORMATION</TermName>
@@ -651,7 +651,7 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BT-92">
 		<TermName>Document level allowance amount</TermName>
-		<Definition>The amount of an allowance, without VAT.</Definition>
+		<Definition>The amount of an allowance, without GST.</Definition>
 		<DisplayName>Amount</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-93">
@@ -665,24 +665,24 @@ If remittance information is to be mapped to the End To End Identification field
 		<DisplayName>Percentage</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-95">
-		<TermName>Document level allowance VAT category code</TermName>
-		<Definition>A coded identification of what VAT category applies to the document level allowance.</Definition>
+		<TermName>Document level allowance GST category code</TermName>
+		<Definition>A coded identification of what GST category applies to the document level allowance.</Definition>
 		<Description>The following entries of UNTDID 5305 [6] are used (further clarification between brackets):
-- Standard rate (Liable for VAT in a standard way)
-- Zero rated goods (Liable for VAT with a percentage rate of zero)
-- Exempt from tax (VAT/IGIC/IPSI)
-- VAT Reverse Charge (Reverse charge VAT/IGIC/IPSI rules apply)
-- VAT exempt for intra community supply of goods (VAT/IGIC/IPSI not levied due to Intra-community supply rules)
-- Free export item, tax not charged (VAT/IGIC/IPSI not levied due to export outside of the EU)
-- Services outside scope of tax (Sale is not subject to VAT/IGIC/IPSI)
+- Standard rate (Liable for GST in a standard way)
+- Zero rated goods (Liable for GST with a percentage rate of zero)
+- Exempt from tax (GST/IGIC/IPSI)
+- GST Reverse Charge (Reverse charge GST/IGIC/IPSI rules apply)
+- GST exempt for intra community supply of goods (GST/IGIC/IPSI not levied due to Intra-community supply rules)
+- Free export item, tax not charged (GST/IGIC/IPSI not levied due to export outside of the EU)
+- Services outside scope of tax (Sale is not subject to GST/IGIC/IPSI)
 - Canary Islands General Indirect Tax (Liable for IGIC tax)
 - Liable for IPSI (Ceuta/Melilla tax)</Description>
-		<DisplayName>VAT category code</DisplayName>
+		<DisplayName>GST category code</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-96">
-		<TermName>Document level allowance VAT rate</TermName>
-		<Definition>The VAT rate, represented as percentage that applies to the document level allowance.</Definition>
-		<DisplayName>VAT rate</DisplayName>
+		<TermName>Document level allowance GST rate</TermName>
+		<Definition>The GST rate, represented as percentage that applies to the document level allowance.</Definition>
+		<DisplayName>GST rate</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-97">
 		<TermName>Document level allowance reason</TermName>
@@ -697,12 +697,12 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BG-21">
 		<TermName>DOCUMENT LEVEL CHARGES</TermName>
-		<Definition>A group of business terms providing information about charges and taxes other than VAT, applicable to the Invoice as a whole.</Definition>
+		<Definition>A group of business terms providing information about charges and taxes other than GST, applicable to the Invoice as a whole.</Definition>
 		<DisplayName>CHARGES</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-99">
 		<TermName>Document level charge amount</TermName>
-		<Definition>The amount of a charge, without VAT.</Definition>
+		<Definition>The amount of a charge, without GST.</Definition>
 		<DisplayName>Amount</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-100">
@@ -716,24 +716,24 @@ If remittance information is to be mapped to the End To End Identification field
 		<DisplayName>Percent</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-102">
-		<TermName>Document level charge VAT category code</TermName>
-		<Definition>A coded identification of what VAT category applies to the document level charge.</Definition>
+		<TermName>Document level charge GST category code</TermName>
+		<Definition>A coded identification of what GST category applies to the document level charge.</Definition>
 		<Description>The following entries of UNTDID 5305 [6] are used (further clarification between brackets):
-- Standard rate (Liable for VAT in a standard way)
-- Zero rated goods (Liable for VAT with a percentage rate of zero)
-- Exempt from tax (VAT/IGIC/IPSI)
-- VAT Reverse Charge (Reverse charge VAT/IGIC/IPSI rules apply)
-- VAT exempt for intra community supply of goods (VAT/IGIC/IPSI not levied due to Intra-community supply rules)
-- Free export item, tax not charged (VAT/IGIC/IPSI not levied due to export outside of the EU)
-- Services outside scope of tax (Sale is not subject to VAT/IGIC/IPSI)
+- Standard rate (Liable for GST in a standard way)
+- Zero rated goods (Liable for GST with a percentage rate of zero)
+- Exempt from tax (GST/IGIC/IPSI)
+- GST Reverse Charge (Reverse charge GST/IGIC/IPSI rules apply)
+- GST exempt for intra community supply of goods (GST/IGIC/IPSI not levied due to Intra-community supply rules)
+- Free export item, tax not charged (GST/IGIC/IPSI not levied due to export outside of the EU)
+- Services outside scope of tax (Sale is not subject to GST/IGIC/IPSI)
 - Canary Islands General Indirect Tax (Liable for IGIC tax)
 - Liable for IPSI (Ceuta/Melilla tax)</Description>
-		<DisplayName>VAT category code</DisplayName>
+		<DisplayName>GST category code</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-103">
-		<TermName>Document level charge VAT rate</TermName>
-		<Definition>The VAT rate, represented as percentage that applies to the document level charge.</Definition>
-		<DisplayName>VAT rate</DisplayName>
+		<TermName>Document level charge GST rate</TermName>
+		<Definition>The GST rate, represented as percentage that applies to the document level charge.</Definition>
+		<DisplayName>GST rate</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-104">
 		<TermName>Document level charge reason</TermName>
@@ -765,29 +765,29 @@ If remittance information is to be mapped to the End To End Identification field
 		<Description>Charges on line level are included in the Invoice line net amount which is summed up into the Sum of Invoice line net amount.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-109">
-		<TermName>Invoice total amount without VAT</TermName>
-		<Definition>The total amount of the Invoice without VAT.</Definition>
-		<Description>The Invoice total amount without VAT is the Sum of Invoice line net amount minus Sum of allowances on document level plus Sum of charges on document level.</Description>
+		<TermName>Invoice total amount without GST</TermName>
+		<Definition>The total amount of the Invoice without GST.</Definition>
+		<Description>The Invoice total amount without GST is the Sum of Invoice line net amount minus Sum of allowances on document level plus Sum of charges on document level.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-110">
-		<TermName>Invoice total VAT amount</TermName>
-		<Definition>The total VAT amount for the Invoice.</Definition>
-		<Description>The Invoice total VAT amount is the sum of all VAT category tax amounts.</Description>
+		<TermName>Invoice total GST amount</TermName>
+		<Definition>The total GST amount for the Invoice.</Definition>
+		<Description>The Invoice total GST amount is the sum of all GST category tax amounts.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-111">
-		<TermName>Invoice total VAT amount in accounting currency</TermName>
-		<Definition>The VAT total amount expressed in the accounting currency accepted or required in the country of the Seller.</Definition>
-		<Description>To be used when the VAT accounting currency (BT-6) differs from the Invoice currency code (BT-5) in accordance with article 230 of Directive 2006/112 / EC on VAT. The VAT amount in accounting currency is not used in the calculation of the Invoice totals.</Description>
+		<TermName>Invoice total GST amount in accounting currency</TermName>
+		<Definition>The GST total amount expressed in the accounting currency accepted or required in the country of the Seller.</Definition>
+		<Description>To be used when the GST accounting currency (BT-6) differs from the Invoice currency code (BT-5) in accordance with article 230 of Directive 2006/112 / EC on GST. The GST amount in accounting currency is not used in the calculation of the Invoice totals.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-112">
-		<TermName>Invoice total amount with VAT</TermName>
-		<Definition>The total amount of the Invoice with VAT.</Definition>
-		<Description>The Invoice total amount with VAT is the Invoice total amount without VAT plus the Invoice total VAT amount.</Description>
+		<TermName>Invoice total amount with GST</TermName>
+		<Definition>The total amount of the Invoice with GST.</Definition>
+		<Description>The Invoice total amount with GST is the Invoice total amount without GST plus the Invoice total GST amount.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-113">
 		<TermName>Paid amount</TermName>
 		<Definition>The sum of amounts which have been paid in advance.</Definition>
-		<Description>This amount is subtracted from the invoice total amount with VAT to calculate the amount due for payment.</Description>
+		<Description>This amount is subtracted from the invoice total amount with GST to calculate the amount due for payment.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-114">
 		<TermName>Rounding amount</TermName>
@@ -796,49 +796,49 @@ If remittance information is to be mapped to the End To End Identification field
 	<BusinessTerm id="BT-115">
 		<TermName>Amount due for payment</TermName>
 		<Definition>The outstanding amount that is requested to be paid.</Definition>
-		<Description>This amount is the Invoice total amount with VAT minus the paid amount that has been paid in advance. The amount is zero in case of a fully paid Invoice. The amount may be negative; in that case the Seller owes the amount to the Buyer.</Description>
+		<Description>This amount is the Invoice total amount with GST minus the paid amount that has been paid in advance. The amount is zero in case of a fully paid Invoice. The amount may be negative; in that case the Seller owes the amount to the Buyer.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BG-23">
-		<TermName>VAT BREAKDOWN</TermName>
-		<Definition>A group of business terms providing information about VAT breakdown by different categories, rates and exemption reasons</Definition>
+		<TermName>GST BREAKDOWN</TermName>
+		<Definition>A group of business terms providing information about GST breakdown by different categories, rates and exemption reasons</Definition>
 	</BusinessTerm>
 	<BusinessTerm id="BT-116">
-		<TermName>VAT category taxable amount</TermName>
-		<Definition>Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable).</Definition>
-		<Description>The sum of Invoice line net amount minus allowances plus charges on document level which are subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable).</Description>
+		<TermName>GST category taxable amount</TermName>
+		<Definition>Sum of all taxable amounts subject to a specific GST category code and GST category rate (if the GST category rate is applicable).</Definition>
+		<Description>The sum of Invoice line net amount minus allowances plus charges on document level which are subject to a specific GST category code and GST category rate (if the GST category rate is applicable).</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-117">
-		<TermName>VAT category tax amount</TermName>
-		<Definition>The total VAT amount for a given VAT category.</Definition>
-		<Description>Calculated by multiplying the VAT category taxable amount with the VAT category rate for the relevant VAT category.</Description>
+		<TermName>GST category tax amount</TermName>
+		<Definition>The total GST amount for a given GST category.</Definition>
+		<Description>Calculated by multiplying the GST category taxable amount with the GST category rate for the relevant GST category.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-118">
-		<TermName>VAT category code</TermName>
-		<Definition>Coded identification of a VAT category.</Definition>
+		<TermName>GST category code</TermName>
+		<Definition>Coded identification of a GST category.</Definition>
 		<Description>The following entries of UNTDID 5305 [6] are used (further clarification between brackets):
-- Standard rate (Liable for VAT in a standard way)
-- Zero rated goods (Liable for VAT with a percentage rate of zero)
-- Exempt from tax (VAT/IGIC/IPSI)
-- VAT Reverse Charge (Reverse charge VAT/IGIC/IPSI rules apply)
-- VAT exempt for intra community supply of goods (VAT/IGIC/IPSI not levied due to Intra-community supply rules)
-- Free export item, tax not charged (VAT/IGIC/IPSI not levied due to export outside of the EU)
-- Services outside scope of tax (Sale is not subject to VAT/IGIC/IPSI)
+- Standard rate (Liable for GST in a standard way)
+- Zero rated goods (Liable for GST with a percentage rate of zero)
+- Exempt from tax (GST/IGIC/IPSI)
+- GST Reverse Charge (Reverse charge GST/IGIC/IPSI rules apply)
+- GST exempt for intra community supply of goods (GST/IGIC/IPSI not levied due to Intra-community supply rules)
+- Free export item, tax not charged (GST/IGIC/IPSI not levied due to export outside of the EU)
+- Services outside scope of tax (Sale is not subject to GST/IGIC/IPSI)
 - Canary Islands General Indirect Tax (Liable for IGIC tax)
 - Liable for IPSI (Ceuta/Melilla tax)</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-119">
-		<TermName>VAT category rate</TermName>
-		<Definition>The VAT rate, represented as percentage that applies for the relevant VAT category.</Definition>
-		<Description>The VAT category code and the VAT category rate shall be consistent.</Description>
+		<TermName>GST category rate</TermName>
+		<Definition>The GST rate, represented as percentage that applies for the relevant GST category.</Definition>
+		<Description>The GST category code and the GST category rate shall be consistent.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-120">
-		<TermName>VAT exemption reason text</TermName>
-		<Definition>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being charged</Definition>
+		<TermName>GST exemption reason text</TermName>
+		<Definition>A textual statement of the reason why the amount is exempted from GST or why no GST is being charged</Definition>
 		<Description>Articles 226 items 11 to 15 Directive 2006/112/EC [2].</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BT-121">
-		<TermName>VAT exemption reason code</TermName>
-		<Definition>A coded statement of the reason for why the amount is exempted from VAT.</Definition>
+		<TermName>GST exemption reason code</TermName>
+		<Definition>A coded statement of the reason for why the amount is exempted from GST.</Definition>
 		<Description>Code list issued and maintained by the Connecting Europe Facility.</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BG-24">
@@ -925,7 +925,7 @@ If remittance information is to be mapped to the End To End Identification field
 	<BusinessTerm id="BT-131">
 		<TermName>Invoice line net amount</TermName>
 		<Definition>The total amount of the Invoice line.</Definition>
-		<Description>The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.</Description>
+		<Description>The amount is “net” without GST, i.e. inclusive of line level allowances and charges as well as other relevant taxes.</Description>
 		<DisplayName>Net amount</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-132">
@@ -961,7 +961,7 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BT-136">
 		<TermName>Invoice line allowance amount</TermName>
-		<Definition>The amount of an allowance, without VAT.</Definition>
+		<Definition>The amount of an allowance, without GST.</Definition>
 		<DisplayName>Allowance amount</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-137">
@@ -983,13 +983,13 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BG-28">
 		<TermName>INVOICE LINE CHARGES</TermName>
-		<Definition>A group of business terms providing information about charges and taxes other than VAT applicable to the individual Invoice line.</Definition>
-		<Description>All charges and taxes are assumed to be liable to the same VAT rate as the Invoice line.</Description>
+		<Definition>A group of business terms providing information about charges and taxes other than GST applicable to the individual Invoice line.</Definition>
+		<Description>All charges and taxes are assumed to be liable to the same GST rate as the Invoice line.</Description>
 		<DisplayName>Charge</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-141">
 		<TermName>Invoice line charge amount</TermName>
-		<Definition>The amount of a charge, without VAT. </Definition>
+		<Definition>The amount of a charge, without GST. </Definition>
 		<DisplayName>Charge amount</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-142">
@@ -1015,7 +1015,7 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BT-146">
 		<TermName>Item net price</TermName>
-		<Definition>The price of an item, exclusive of VAT, after subtracting item price discount.</Definition>
+		<Definition>The price of an item, exclusive of GST, after subtracting item price discount.</Definition>
 		<Description>The Item net price has to be equal with the Item gross price less the Item price discount.</Description>
 		<DisplayName>Net price</DisplayName>
 	</BusinessTerm>
@@ -1026,7 +1026,7 @@ If remittance information is to be mapped to the End To End Identification field
 	</BusinessTerm>
 	<BusinessTerm id="BT-148">
 		<TermName>Item gross price</TermName>
-		<Definition>The unit price, exclusive of VAT, before subtracting Item price discount.</Definition>
+		<Definition>The unit price, exclusive of GST, before subtracting Item price discount.</Definition>
 	</BusinessTerm>
 	<BusinessTerm id="BT-149">
 		<TermName>Item price base quantity</TermName>
@@ -1039,27 +1039,27 @@ If remittance information is to be mapped to the End To End Identification field
 		<Description>The Item price base quantity unit of measure shall be the same as the Invoiced quantity unit of measure (BT-130).</Description>
 	</BusinessTerm>
 	<BusinessTerm id="BG-30">
-		<TermName>LINE VAT INFORMATION</TermName>
-		<Definition>A group of business terms providing information about the VAT applicable for the goods and services invoiced on the Invoice line.</Definition>
+		<TermName>LINE GST INFORMATION</TermName>
+		<Definition>A group of business terms providing information about the GST applicable for the goods and services invoiced on the Invoice line.</Definition>
 	</BusinessTerm>
 	<BusinessTerm id="BT-151">
-		<TermName>Invoiced item VAT category code</TermName>
-		<Definition>The VAT category code for the invoiced item.</Definition>
+		<TermName>Invoiced item GST category code</TermName>
+		<Definition>The GST category code for the invoiced item.</Definition>
 		<Description>The following entries of UNTDID 5305 [6] are used (further clarification between brackets):
-- Standard rate (Liable for VAT in a standard way)
-- Zero rated goods (Liable for VAT with a percentage rate of zero)
-- Exempt from tax (VAT/IGIC/IPSI)
-- VAT Reverse Charge (Reverse charge VAT/IGIC/IPSI rules apply)
-- VAT exempt for intra community supply of goods (VAT/IGIC/IPSI not levied due to Intra-community supply rules)
-- Free export item, tax not charged (VAT/IGIC/IPSI not levied due to export outside of the EU)
-- Services outside scope of tax (Sale is not subject to VAT/IGIC/IPSI)
+- Standard rate (Liable for GST in a standard way)
+- Zero rated goods (Liable for GST with a percentage rate of zero)
+- Exempt from tax (GST/IGIC/IPSI)
+- GST Reverse Charge (Reverse charge GST/IGIC/IPSI rules apply)
+- GST exempt for intra community supply of goods (GST/IGIC/IPSI not levied due to Intra-community supply rules)
+- Free export item, tax not charged (GST/IGIC/IPSI not levied due to export outside of the EU)
+- Services outside scope of tax (Sale is not subject to GST/IGIC/IPSI)
 - Canary Islands General Indirect Tax (Liable for IGIC tax)
 - Liable for IPSI (Ceuta/Melilla tax)</Description>
-		<DisplayName>VAT rate</DisplayName>
+		<DisplayName>GST rate</DisplayName>
 	</BusinessTerm>
 	<BusinessTerm id="BT-152">
-		<TermName>Invoiced item VAT rate</TermName>
-		<Definition>The VAT rate, represented as percentage that applies to the invoiced item.</Definition>
+		<TermName>Invoiced item GST rate</TermName>
+		<Definition>The GST rate, represented as percentage that applies to the invoiced item.</Definition>
 	</BusinessTerm>
 	<BusinessTerm id="BG-31">
 		<TermName>ITEM INFORMATION</TermName>

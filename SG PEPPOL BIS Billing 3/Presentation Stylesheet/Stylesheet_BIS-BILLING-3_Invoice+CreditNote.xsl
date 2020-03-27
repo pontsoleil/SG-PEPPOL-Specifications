@@ -2,14 +2,14 @@
 <!--
 ******************************************************************************************************************
 
-		PEPPOLInstance Documentation - reference stylesheet 	Version of this reference stylesheet: 1.0 [also c.f. Headlines.xml, TechFooter3]
+		PEPPOLInstance Documentation - reference stylesheet 	Version of this reference stylesheet: 1.0 
 
-		title= PEPPOL_BIS_HTML Stylesheet_2014.xsl	
-		publisher= "SFTI tekniska kansli"
-		Creator= SFTI/SL
-		created= 2018-XX-XX
+		title= SG-PEPPOL_BIS_HTML Stylesheet
+		publisher= IMDA
+		Creator= Midran
+		created= 2020-03-30
 		conformsTo= UBL-Invoice-2.1.xsd and UBL-CreditNote-2.1.xsd
-		description= "Stylesheet for PEPPOL BIS BILLING 3, covering Invoice and Credit Note.
+		description= "Stylesheet for SG PEPPOL BIS BILLING 3, covering Invoice and Credit Note.
 		This stylesheet was drawn up to serve developers and end-users as a neutral reference tool when
 		assessing transaction content. The purpose of the reference stylesheet is
 		- To visualise all data structures, including all their occurrences, in transaction instances 
@@ -24,9 +24,7 @@
 		likely to be used also in test environments, some basic validation features have been included, 
 		and any consequential errors are displayed as needed."
 		
-		all terms derived from http://dublincore.org/documents/dcmi-terms/
-
-		Derived from work by OIOUBL, Denmark. For more information, see www.sfti.se or email tekniskt.kansli@skl.se
+		Derived from work by SFTI tekniska kansli, Sweden
 		
 ******************************************************************************************************************
 -->
