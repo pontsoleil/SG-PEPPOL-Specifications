@@ -1,0 +1,11 @@
+*.iml
+*.jar
+target
+*.html
+*.pdf
+*.epub
+tmp*
+*.db
+.idea
+/.settings/
+/.project
