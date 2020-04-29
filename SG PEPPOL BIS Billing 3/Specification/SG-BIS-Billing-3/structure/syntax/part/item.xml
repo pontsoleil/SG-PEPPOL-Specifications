@@ -140,10 +140,10 @@
             
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Invoiced item VAT category code</Name>
-                <Description>The VAT category code for the invoiced item.</Description>
+                <Name>Invoiced item GST category code</Name>
+                <Description>The GST category code for the invoiced item.</Description>
                 <DataType>Code</DataType>
-                <Reference type="BUSINESS_TERM">BT-151</Reference>
+                <Reference type="BUSINESS_TERM">BT-151-GST</Reference>
                 <Reference type="RULE">BR-CO-04</Reference>
                 <Reference type="RULE">BR-O-12</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
@@ -152,10 +152,10 @@
             
             <Element cardinality="0..1">
                 <Term>cbc:Percent</Term>
-                <Name>Invoiced item VAT rate</Name>
-                <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
+                <Name>Invoiced item GST rate</Name>
+                <Description>The GST rate, represented as percentage that applies to the invoiced item.</Description>
                 <DataType>Percentage</DataType>
-                <Reference type="BUSINESS_TERM">BT-152</Reference>
+                <Reference type="BUSINESS_TERM">BT-152-GST</Reference>
                 <Reference type="RULE">BR-S-05</Reference>
                 <Reference type="RULE">BR-Z-05</Reference>
                 <Reference type="RULE">BR-E-05</Reference>

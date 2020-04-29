@@ -166,10 +166,10 @@
                 
                 <Element>
                     <Term>cbc:CompanyID</Term>
-                    <Name>Buyer VAT identifier</Name>
-                    <Description>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Description>
+                    <Name>Buyer GST identifier</Name>
+                    <Description>The Buyer's GST identifier (also known as Buyer GST identification number).</Description>
                     <DataType>Identifier</DataType>
-                    <Reference type="BUSINESS_TERM">BT-48</Reference>
+                    <Reference type="BUSINESS_TERM">BT-48-GST</Reference>
                     <Reference type="RULE">BR-CO-09</Reference>
                     <Reference type="RULE">BR-AE-02</Reference>
                     <Reference type="RULE">BR-AE-03</Reference>

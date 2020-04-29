@@ -33,10 +33,10 @@
         
         <Element>
             <Term>cbc:TaxExclusiveAmount</Term>
-            <Name>Invoice total amount without VAT</Name>
-            <Description>The total amount of the Invoice without VAT. Must be rounded to maximum 2 decimals.</Description>
+            <Name>Invoice total amount without GST</Name>
+            <Description>The total amount of the Invoice without GST. Must be rounded to maximum 2 decimals.</Description>
             <DataType>Amount</DataType>
-            <Reference type="BUSINESS_TERM">BT-109</Reference>
+            <Reference type="BUSINESS_TERM">BT-109-GST</Reference>
             <Reference type="RULE">BR-13</Reference>
             <Reference type="RULE">BR-CO-13</Reference>
             <Reference type="RULE">BR-DEC-12</Reference>
@@ -54,10 +54,10 @@
         
         <Element>
             <Term>cbc:TaxInclusiveAmount</Term>
-            <Name>Invoice total amount with VAT</Name>
-            <Description>The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.</Description>
+            <Name>Invoice total amount with GST</Name>
+            <Description>The total amount of the Invoice with GST. Must be rounded to maximum 2 decimals.</Description>
             <DataType>Amount</DataType>
-            <Reference type="BUSINESS_TERM">BT-112</Reference>
+            <Reference type="BUSINESS_TERM">BT-112-GST</Reference>
             <Reference type="RULE">BR-14</Reference>
             <Reference type="RULE">BR-CO-15</Reference>
             <Reference type="RULE">BR-DEC-14</Reference>

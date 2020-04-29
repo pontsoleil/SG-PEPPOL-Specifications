@@ -122,10 +122,10 @@
             
             <Element>
                 <Term>cbc:CompanyID</Term>
-                <Name>Seller tax representative VAT identifier</Name>
-                <Description>The VAT identifier of the Seller's tax representative party.</Description>
+                <Name>Seller tax representative GST identifier</Name>
+                <Description>The GST identifier of the Seller's tax representative party.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="BUSINESS_TERM">BT-63</Reference>
+                <Reference type="BUSINESS_TERM">BT-63-GST</Reference>
                 <Reference type="RULE">BR-56</Reference>
                 <Reference type="RULE">BR-CO-09</Reference>
                 <Reference type="RULE">BR-S-02</Reference>

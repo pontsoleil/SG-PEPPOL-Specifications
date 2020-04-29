@@ -126,10 +126,10 @@
         
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Document level allowance or charge VAT category code</Name>
-            <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+            <Name>Document level allowance or charge GST category code</Name>
+            <Description>A coded identification of what GST category applies to the document level allowance or charge.</Description>
             <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
+            <Reference type="BUSINESS_TERM">BT-95-GST,BT-102-GST</Reference>
             <Reference type="RULE">BR-32</Reference>
             <Reference type="RULE">BR-37</Reference>
             <Reference type="RULE">BR-O-13</Reference>
@@ -142,10 +142,10 @@
         
         <Element cardinality="0..1">
             <Term>cbc:Percent</Term>
-            <Name>Document level allowance or charge VAT rate</Name>
-            <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+            <Name>Document level allowance or charge GST rate</Name>
+            <Description>The GST rate, represented as percentage that applies to the document level allowance or charge.</Description>
             <DataType>Percentage</DataType>
-            <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
+            <Reference type="BUSINESS_TERM">BT-96-GST,BT-103-GST</Reference>
             <Reference type="RULE">BR-S-06</Reference>
             <Reference type="RULE">BR-S-07</Reference>
             <Reference type="RULE">BR-Z-06</Reference>
