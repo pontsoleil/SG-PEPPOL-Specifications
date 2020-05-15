@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExcludedRules xmlns="http://validex.net/schematron/exclusion-filter">
+  <RuleID>BR-31</RuleID>
+  <RuleID>BR-32</RuleID>
+  <RuleID>BR-33</RuleID>
+  <RuleID>BR-50</RuleID>
+  <RuleID>BR-01</RuleID>
+</ExcludedRules>
