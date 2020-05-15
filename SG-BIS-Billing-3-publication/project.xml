@@ -23,13 +23,13 @@
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>EN16931  model bound to UBL</Title>
     </Resource>
     <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
     </Resource>
     
@@ -112,17 +112,17 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>Schematron for PEPPOL rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
+        <Property key="download">PEPPOL-EN16931-UBL-SG-Conformant.sch</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>Schematron for TC434 rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">CEN-EN16931-UBL.sch</Property>
+        <Property key="download">CEN-EN16931-UBL-SG-Conformant.sch</Property>
     </Resource>
     
     <Resource>
