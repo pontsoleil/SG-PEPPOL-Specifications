@@ -101,7 +101,7 @@
       <assert id="PEPPOL-EN16931-R005"
         test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
         flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
-        provided.TEST</assert>
+        provided.</assert>
       
     
     </rule>
