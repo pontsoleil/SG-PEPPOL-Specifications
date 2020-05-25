@@ -3,7 +3,7 @@
 <xsl:output method="xml"/>
   <xsl:mode on-no-match="shallow-copy"/>
   
-  <xsl:template match="/sh:schema/sh:pattern/sh:rule/sh:assert[document('ExcludedRulesList.xml')/ex:ExcludedRules/ex:RuleID = @id]">
+  <xsl:template match="/sh:schema/sh:pattern/sh:rule/sh:assert[document('ExcludedRulesList_PEPPOL.xml')/ex:ExcludedRules/ex:RuleID = @id]">
       <xsl:comment>Rule excluded:<xsl:value-of select="./@id" /> </xsl:comment>
   </xsl:template>
   
