@@ -1,11 +1,11 @@
 :lang: en
 
-:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] PEPPOL BIS Billing
-:version: 3.0.5
+:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Singapore BIS Billing
+:version: 3.0.5 -Under construction
 :shared-dir: ../../shared
 :snippet-dir: ../../rules/snippets
 
-:name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
+:name-op-en: "OpenPEPPOL AISBL, Post-Award Coordinating Community"? - Singapore POAC or something?
 
 
 include::../shared/settings.adoc[]
