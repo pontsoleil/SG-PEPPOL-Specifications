@@ -23,14 +23,14 @@
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>EN16931  model bound to UBL</Title>
+        <Path>rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Path>
+        <Title>EN16931 International Rules</Title>
     </Resource>
     <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
+        <Path>rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Path>
+        <Title>Rules for Singapore</Title>
     </Resource>
     
     <!-- Code lists -->
@@ -112,17 +112,17 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
+        <Path>rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Path>
         <Title>Schematron for PEPPOL rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PEPPOL-EN16931-UBL-SG-Conformant.sch</Property>
+        <Description>Schematron file containing International rules used by Singapore according to ISO Schematron.</Description>
+        <Property key="download">SG-Peppol-BIS-Billing_3-International-Rules.sch</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>Schematron for TC434 rules (UBL)</Title>
+        <Path>rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Path>
+        <Title>Schematron for Singapore specific rules</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">CEN-EN16931-UBL-SG-Conformant.sch</Property>
+        <Property key="download">SG-Peppol-BIS-Billing_3-SG-Rules.sch</Property>
     </Resource>
     
     <Resource>

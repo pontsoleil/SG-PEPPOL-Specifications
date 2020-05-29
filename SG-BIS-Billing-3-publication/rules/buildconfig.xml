@@ -12,14 +12,14 @@
 
   <configuration>
     <identifier>peppolbis-en16931-cen-ubl</identifier>
-    <title>CEN TC434 UBL</title>
-    <file path="sch/CEN-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <title>International Rules</title>
+    <file path="sch/SG-Peppol-BIS-Billing_3-International-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-ubl</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Base)</title>
-    <file path="sch/PEPPOL-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <title>SG Specific Rules</title>
+    <file path="sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
 <!--  <configuration>

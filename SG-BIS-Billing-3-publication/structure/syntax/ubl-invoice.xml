@@ -8,8 +8,8 @@
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
-    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Rules>
-    <Rules type="schematron">../../rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Rules>
+    <Rules type="schematron">../../rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Rules>
+    <Rules type="schematron">../../rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Rules>
 
     <Document>
         <Term>ubl:Invoice</Term>

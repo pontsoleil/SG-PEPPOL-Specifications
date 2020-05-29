@@ -11,5 +11,7 @@ These rules apply in *all* implementations that follow this {peppol} BIS.
 |Rule
 |Message/Context/Test
 
-include::{rules-dir}/PEPPOL-EN16931-UBL-SG-Conformant.sch.adoc[]
+include::{rules-dir}/SG-Peppol-BIS-Billing_3-International-Rules.sch.adoc[]
+include::{rules-dir}/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc[]
+
 |====
