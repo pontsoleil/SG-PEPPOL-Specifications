@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!--
 
     Licensed under European Union Public Licence (EUPL) version 1.2.
-
+-->
   <phase id="EN16931model_phase">
     <active pattern="UBL-model"/>
   </phase>
