@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -12,7 +12,7 @@
   <title>International rules for Singapore BIS Billing</title>
 
 
-  <include href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
-  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
+  <xi:include href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
+  <xi:include href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
 
  </schema>

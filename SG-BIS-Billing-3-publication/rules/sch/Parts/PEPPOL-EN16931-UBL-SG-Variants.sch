@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso"
+  queryBinding="xslt2">
 
   <title>Rules for SG PEPPOL BIS Billing 3.0</title>
 
-
+  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>
+  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" prefix="cac"/>
+  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" prefix="ubl-creditnote"/>
+  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" prefix="ubl-invoice"/>
+  <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+  <ns uri="utils" prefix="u"/>
   <!-- Parameters -->
 
   <let name="profile"
@@ -94,3 +101,4 @@
 
   </pattern>
 
+</schema>
