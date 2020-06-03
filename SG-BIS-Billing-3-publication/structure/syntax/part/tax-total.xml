@@ -13,7 +13,7 @@
                 the Seller. Must be rounded to maximum 2 decimals</Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-110-GST, BT-111-GST</Reference>
-            <Reference type="RULE">BR-53</Reference>
+            <Reference type="RULE">BR-53-GST-SG</Reference>
             <Reference type="RULE">BR-CO-14</Reference>
             <Reference type="RULE">BR-DEC-13</Reference>
             <Reference type="RULE">BR-DEC-15</Reference>    
@@ -52,7 +52,7 @@
                 </Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-116-GST</Reference>
-                <Reference type="RULE">BR-45</Reference>
+                <Reference type="RULE">BR-45-GST-SG</Reference>
                 <Reference type="RULE">BR-S-08</Reference>
                 <Reference type="RULE">BR-Z-08</Reference>
                 <Reference type="RULE">BR-E-08</Reference>
@@ -84,7 +84,7 @@
                 <Description>The total GST amount for a given GST category. Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-117-GST</Reference>
-                <Reference type="RULE">BR-46</Reference>
+                <Reference type="RULE">BR-46-GST-SG</Reference>
                 <Reference type="RULE">BR-CO-17</Reference>
                 <Reference type="RULE">BR-S-09</Reference>
                 <Reference type="RULE">BR-Z-09</Reference>
@@ -121,7 +121,7 @@
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-118-GST</Reference>  
                     <Reference type="CODE_LIST">UNCL5305</Reference>  
-                    <Reference type="RULE">BR-47</Reference>
+                    <Reference type="RULE">BR-47-GST-SG</Reference>
                     <Reference type="RULE">BR-S-01</Reference>
                     <Reference type="RULE">BR-Z-01</Reference>
                     <Reference type="RULE">BR-E-01</Reference>
@@ -140,7 +140,7 @@
                     <Description>The GST rate, represented as percentage that applies for the relevant GST category.</Description>
                     <DataType>Percentage</DataType>
                     <Reference type="BUSINESS_TERM">BT-119-GST</Reference>
-                    <Reference type="RULE">BR-48</Reference>
+                    <Reference type="RULE">BR-48-GST-SG</Reference>
                     <Reference type="RULE">SE-R-006</Reference>
                     <Value type="EXAMPLE">25</Value> 
                 </Element>

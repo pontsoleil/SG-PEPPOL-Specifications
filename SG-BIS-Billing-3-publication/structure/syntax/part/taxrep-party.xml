@@ -126,7 +126,7 @@
                 <Description>The GST identifier of the Seller's tax representative party.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-63-GST</Reference>
-                <Reference type="RULE">BR-56</Reference>
+                <Reference type="RULE">BR-56-GST-SG</Reference>
                 <Reference type="RULE">BR-CO-09</Reference>
                 <Reference type="RULE">BR-S-02</Reference>
                 <Reference type="RULE">BR-S-03</Reference>
