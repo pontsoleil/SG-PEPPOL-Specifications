@@ -127,9 +127,9 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Path>stylesheet/xslt.zip</Path>
         <Title>Stylesheet for UBL instances</Title>
-        <Property key="download">stylesheet-ubl.xslt</Property>
+        <Property key="download">xslt.zip</Property>
     </Resource>
     
     <Resource>
