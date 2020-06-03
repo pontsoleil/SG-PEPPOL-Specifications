@@ -12,7 +12,7 @@
   <title>International rules for Singapore BIS Billing</title>
 
 
-  <xi:include href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
-  <xi:include href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
+  <sch:extends href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
+  <sch:extends href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
 
  </schema>

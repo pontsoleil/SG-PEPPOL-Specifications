@@ -12,8 +12,8 @@
   <title>Singapore specific rules for Singapore BIS Billing</title>
 
 
-  <xi:include href="Parts/CEN-EN16931-UBL-SG-Variants.sch"/>
-  <xi:include href="Parts/PEPPOL-EN16931-UBL-SG-Variants.sch"/>
+  <sch:extends href="Parts/CEN-EN16931-UBL-SG-Variants.sch"/>
+  <sch:extends href="Parts/PEPPOL-EN16931-UBL-SG-Variants.sch"/>
 
  </schema>
 
