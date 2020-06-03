@@ -41,7 +41,7 @@
                      In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31-GST) shall be present</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
-                    <Reference type="RULE">BR-CO-26</Reference>
+                    <Reference type="RULE">BR-CO-26-GST-SG</Reference>
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
@@ -160,6 +160,7 @@
                         <Reference type="BUSINESS_TERM">BT-40</Reference>
                         <Reference type="RULE">BR-09</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
+                        <Reference type="RULE">PEPPOL-EN-16931-CL005</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">GB</Value>
                     </Element>

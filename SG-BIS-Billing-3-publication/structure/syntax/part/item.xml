@@ -144,8 +144,9 @@
                 <Description>The GST category code for the invoiced item.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-151-GST</Reference>
-                <Reference type="RULE">BR-CO-04</Reference>
+                <Reference type="RULE">BR-CO-04-GST-SG</Reference>
                 <Reference type="RULE">BR-O-12</Reference>
+                <Reference type="RULE">BR-CL-18-GST-SG</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
                 <Value type="EXAMPLE">S</Value>
             </Element>

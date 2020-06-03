@@ -14,9 +14,9 @@
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-110-GST, BT-111-GST</Reference>
             <Reference type="RULE">BR-53-GST-SG</Reference>
-            <Reference type="RULE">BR-CO-14</Reference>
-            <Reference type="RULE">BR-DEC-13</Reference>
-            <Reference type="RULE">BR-DEC-15</Reference>    
+            <Reference type="RULE">BR-CO-14-GST-SG</Reference>
+            <Reference type="RULE">BR-DEC-13-GST-SG</Reference>
+            <Reference type="RULE">BR-DEC-15-GST-SG</Reference>    
             <Reference type="RULE">UBL-DT-01</Reference>
             <Attribute>
                 <Term>currencyID</Term>
@@ -41,7 +41,7 @@
             </Description>
             <Reference type="BUSINESS_TERM">BG-23-GST</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R053</Reference>
-            <Reference type="RULE">BR-CO-18</Reference>
+            <Reference type="RULE">BR-CO-18-GST-SG</Reference>
             <Reference type="RULE">BR-O-11</Reference>
             
             <Element>
@@ -62,7 +62,7 @@
                 <Reference type="RULE">BR-O-08</Reference>
                 <Reference type="RULE">BR-IG-08</Reference>
                 <Reference type="RULE">BR-IP-08</Reference>
-                <Reference type="RULE">BR-DEC-19</Reference>
+                <Reference type="RULE">BR-DEC-19-GST-SG</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 
                 
@@ -85,7 +85,7 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-117-GST</Reference>
                 <Reference type="RULE">BR-46-GST-SG</Reference>
-                <Reference type="RULE">BR-CO-17</Reference>
+                <Reference type="RULE">BR-CO-17-GST-SG</Reference>
                 <Reference type="RULE">BR-S-09</Reference>
                 <Reference type="RULE">BR-Z-09</Reference>
                 <Reference type="RULE">BR-E-09</Reference>
@@ -95,7 +95,7 @@
                 <Reference type="RULE">BR-O-09</Reference>
                 <Reference type="RULE">BR-IG-09</Reference>
                 <Reference type="RULE">BR-IP-09</Reference>
-                <Reference type="RULE">BR-DEC-20</Reference>
+                <Reference type="RULE">BR-DEC-20-GST-SG</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 
                 
@@ -131,6 +131,7 @@
                     <Reference type="RULE">BR-O-10</Reference>
                     <Reference type="RULE">BR-IG-01</Reference>
                     <Reference type="RULE">BR-IP-01</Reference>
+                    <Reference type="RULE">BR-CL-17-GST-SG</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
