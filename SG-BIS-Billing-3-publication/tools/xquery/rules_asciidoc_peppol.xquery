@@ -13,7 +13,7 @@ let $flag := string($x/@flag)
 let $assert := string($x/@test)
 let $tekst := normalize-space($x/text())
 
-where starts-with($x/@id, 'PEPPOL')
+where not(starts-with($x/@id, 'UBL-') or starts-with($x/@id, 'CII-'))
 order by $x/@id
 
 return
