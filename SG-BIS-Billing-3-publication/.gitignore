@@ -9,3 +9,4 @@ tmp*
 .idea
 /.settings/
 /.project
+0-rebuild.sh
