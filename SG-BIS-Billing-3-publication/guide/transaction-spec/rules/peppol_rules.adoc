@@ -12,5 +12,5 @@ Please also see <<Restrictions on EN16931>> for further details on the restricti
 |Rule
 |Message/Context/Test
 
-include::{rules-dir}/ SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc[]
+include::{rules-dir}/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc[]
 |====

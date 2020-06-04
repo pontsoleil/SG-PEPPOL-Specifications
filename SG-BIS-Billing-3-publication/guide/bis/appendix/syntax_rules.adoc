@@ -10,5 +10,5 @@ The following {EN16931} syntax rules apply to invoice and credit note transactio
 |Rule
 |Message
 
-include::{rules-dir}/CEN-EN16931-UBL-SYNTAX.sch.adoc[]
+include::{rules-dir}/SG-Peppol-BIS-Billing_3-National-Rules.sch.adoc[]
 |====
