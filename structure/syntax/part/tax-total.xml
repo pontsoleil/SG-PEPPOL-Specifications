@@ -42,7 +42,6 @@
             <Reference type="BUSINESS_TERM">BG-23-GST</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R053</Reference>
             <Reference type="RULE">BR-CO-18-GST-SG</Reference>
-            <Reference type="RULE">BR-O-11</Reference>
             
             <Element>
                 <Term>cbc:TaxableAmount</Term>
@@ -53,15 +52,6 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-116-GST</Reference>
                 <Reference type="RULE">BR-45-GST-SG</Reference>
-                <Reference type="RULE">BR-S-08</Reference>
-                <Reference type="RULE">BR-Z-08</Reference>
-                <Reference type="RULE">BR-E-08</Reference>
-                <Reference type="RULE">BR-AE-08</Reference>
-                <Reference type="RULE">BR-IC-08</Reference>
-                <Reference type="RULE">BR-G-08</Reference>
-                <Reference type="RULE">BR-O-08</Reference>
-                <Reference type="RULE">BR-IG-08</Reference>
-                <Reference type="RULE">BR-IP-08</Reference>
                 <Reference type="RULE">BR-DEC-19-GST-SG</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 

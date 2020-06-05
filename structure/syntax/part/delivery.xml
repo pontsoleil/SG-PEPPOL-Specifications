@@ -126,7 +126,6 @@
                         <Reference type="BUSINESS_TERM">BT-80</Reference>
                         <Reference type="RULE">BR-57</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
-                        <Reference type="RULE">BR-IC-12</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">SE</Value>
                     </Element>
