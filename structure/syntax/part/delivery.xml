@@ -14,7 +14,6 @@
             <Description>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-72</Reference>
-            <Reference type="RULE">BR-IC-11</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Value type="EXAMPLE">2017-12-01</Value>
             
