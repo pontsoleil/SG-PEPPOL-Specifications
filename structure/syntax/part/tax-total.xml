@@ -132,6 +132,7 @@
                     <Reference type="RULE">BR-IG-01</Reference>
                     <Reference type="RULE">BR-IP-01</Reference>
                     <Reference type="RULE">BR-CL-17-GST-SG</Reference>
+                    <Reference type="RULE">BR-NG-01-GST-SG</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
