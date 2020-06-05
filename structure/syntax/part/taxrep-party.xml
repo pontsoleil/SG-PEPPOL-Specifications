@@ -127,34 +127,6 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-63-GST</Reference>
                 <Reference type="RULE">BR-56-GST-SG</Reference>
-                <Reference type="RULE">BR-CO-09</Reference>
-                <Reference type="RULE">BR-S-02</Reference>
-                <Reference type="RULE">BR-S-03</Reference>
-                <Reference type="RULE">BR-S-04</Reference>
-                <Reference type="RULE">BR-Z-02</Reference>
-                <Reference type="RULE">BR-Z-03</Reference>
-                <Reference type="RULE">BR-Z-04</Reference>
-                <Reference type="RULE">BR-E-02</Reference>
-                <Reference type="RULE">BR-E-03</Reference>
-                <Reference type="RULE">BR-E-04</Reference>
-                <Reference type="RULE">BR-AE-02</Reference>
-                <Reference type="RULE">BR-AE-03</Reference>
-                <Reference type="RULE">BR-AE-04</Reference>
-                <Reference type="RULE">BR-IC-02</Reference>
-                <Reference type="RULE">BR-IC-03</Reference>
-                <Reference type="RULE">BR-IC-04</Reference>
-                <Reference type="RULE">BR-G-02</Reference>
-                <Reference type="RULE">BR-G-03</Reference>
-                <Reference type="RULE">BR-G-04</Reference>
-                <Reference type="RULE">BR-O-02</Reference>
-                <Reference type="RULE">BR-O-03</Reference>
-                <Reference type="RULE">BR-O-04</Reference>
-                <Reference type="RULE">BR-IG-02</Reference>
-                <Reference type="RULE">BR-IG-03</Reference>
-                <Reference type="RULE">BR-IG-04</Reference>
-                <Reference type="RULE">BR-IP-02</Reference>
-                <Reference type="RULE">BR-IP-03</Reference>
-                <Reference type="RULE">BR-IP-04</Reference>
                 <Value type="EXAMPLE">FR932874294</Value>
             </Element>
             

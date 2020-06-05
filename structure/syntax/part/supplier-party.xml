@@ -88,7 +88,6 @@
                     <Description>The main address line in an address.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-35</Reference>
-                    <Reference type="RULE">IT-R-002</Reference>
                     <Value type="EXAMPLE">Main Street 1</Value>
                 </Element>
                 
@@ -107,7 +106,6 @@
                     <Description>The common name of the city, town or village, where the Seller address is located.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-37</Reference>
-                    <Reference type="RULE">IT-R-003</Reference>
                     <Value type="EXAMPLE">London</Value>
                 </Element>
                 
@@ -118,7 +116,6 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-38</Reference>
-                    <Reference type="RULE">IT-R-004</Reference>
                     <Value type="EXAMPLE">W1G 8LZ</Value>
                 </Element>
                 
@@ -159,7 +156,6 @@
                         <Reference type="BUSINESS_TERM">BT-40</Reference>
                         <Reference type="RULE">BR-09</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
-                        <Reference type="RULE">PEPPOL-EN-16931-CL005</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">GB</Value>
                     </Element>
@@ -177,41 +173,6 @@
                         reference that enables the Seller to state his registered tax status. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller GST identifier (BT-31-GST) shall be present</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-31-GST, BT-32</Reference>
-                    <Reference type="RULE">BR-CO-09</Reference>
-                    <Reference type="RULE">BR-CO-26</Reference>
-                    <Reference type="RULE">BR-S-02</Reference>
-                    <Reference type="RULE">BR-S-03</Reference>
-                    <Reference type="RULE">BR-S-04</Reference>
-                    <Reference type="RULE">BR-Z-02</Reference>
-                    <Reference type="RULE">BR-Z-03</Reference>
-                    <Reference type="RULE">BR-Z-04</Reference>
-                    <Reference type="RULE">BR-E-02</Reference>
-                    <Reference type="RULE">BR-E-03</Reference>
-                    <Reference type="RULE">BR-E-04</Reference>
-                    <Reference type="RULE">BR-AE-02</Reference>
-                    <Reference type="RULE">BR-AE-03</Reference>
-                    <Reference type="RULE">BR-AE-04</Reference>
-                    <Reference type="RULE">BR-IC-02</Reference>
-                    <Reference type="RULE">BR-IC-03</Reference>
-                    <Reference type="RULE">BR-IC-04</Reference>
-                    <Reference type="RULE">BR-G-02</Reference>
-                    <Reference type="RULE">BR-G-03</Reference>
-                    <Reference type="RULE">BR-G-04</Reference>
-                    <Reference type="RULE">BR-O-02</Reference>
-                    <Reference type="RULE">BR-O-03</Reference>
-                    <Reference type="RULE">BR-O-04</Reference>
-                    <Reference type="RULE">BR-IG-02</Reference>
-                    <Reference type="RULE">BR-IG-03</Reference>
-                    <Reference type="RULE">BR-IG-04</Reference>
-                    <Reference type="RULE">BR-IP-02</Reference>
-                    <Reference type="RULE">BR-IP-03</Reference>
-                    <Reference type="RULE">BR-IP-04</Reference>
-                    <Reference type="RULE">IT-R-001</Reference>
-                    <Reference type="RULE">NO-R-001</Reference>
-                    <Reference type="RULE">NO-R-002</Reference>
-                    <Reference type="RULE">SE-R-001</Reference>
-                    <Reference type="RULE">SE-R-002</Reference>
-                    <Reference type="RULE">SE-R-005</Reference>
                     <Value type="EXAMPLE">NO999888777</Value>
                 </Element>
                 
@@ -253,7 +214,6 @@
                     </Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-30</Reference>
-                    <Reference type="RULE">BR-CO-26</Reference>
                     <Reference type="RULE">DK-R-002</Reference>
                     <Reference type="RULE">DK-R-014</Reference>
                     <Reference type="RULE">SE-R-003</Reference>
