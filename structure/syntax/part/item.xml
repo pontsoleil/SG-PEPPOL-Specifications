@@ -122,7 +122,6 @@
                     <Term>listVersionID</Term>
                     <Name>Item classification identifier version identification scheme identifier</Name>
                     <Description>The identification scheme version identifier of the Item classification identifier</Description>
-                    <Reference type="RULE">DK-R-003</Reference>
                 </Attribute>
                 
                 <Value type="EXAMPLE">9873242</Value>
@@ -145,7 +144,6 @@
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-151-GST</Reference>
                 <Reference type="RULE">BR-CO-04-GST-SG</Reference>
-                <Reference type="RULE">BR-O-12</Reference>
                 <Reference type="RULE">BR-CL-18-GST-SG</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
                 <Value type="EXAMPLE">S</Value>
@@ -157,16 +155,6 @@
                 <Description>The GST rate, represented as percentage that applies to the invoiced item.</Description>
                 <DataType>Percentage</DataType>
                 <Reference type="BUSINESS_TERM">BT-152-GST</Reference>
-                <Reference type="RULE">BR-S-05</Reference>
-                <Reference type="RULE">BR-Z-05</Reference>
-                <Reference type="RULE">BR-E-05</Reference>
-                <Reference type="RULE">BR-AE-05</Reference>
-                <Reference type="RULE">BR-IC-05</Reference>
-                <Reference type="RULE">BR-G-05</Reference>
-                <Reference type="RULE">BR-O-05</Reference>
-                <Reference type="RULE">BR-IG-05</Reference>
-                <Reference type="RULE">BR-IP-05</Reference>
-                <Reference type="RULE">SE-R-006</Reference>
                 <Value type="EXAMPLE">25</Value>
             </Element>
             

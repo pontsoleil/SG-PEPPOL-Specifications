@@ -76,15 +76,6 @@
                 <Reference type="BUSINESS_TERM">BT-117-GST</Reference>
                 <Reference type="RULE">BR-46-GST-SG</Reference>
                 <Reference type="RULE">BR-CO-17-GST-SG</Reference>
-                <Reference type="RULE">BR-S-09</Reference>
-                <Reference type="RULE">BR-Z-09</Reference>
-                <Reference type="RULE">BR-E-09</Reference>
-                <Reference type="RULE">BR-AE-09</Reference>
-                <Reference type="RULE">BR-IC-09</Reference>
-                <Reference type="RULE">BR-G-09</Reference>
-                <Reference type="RULE">BR-O-09</Reference>
-                <Reference type="RULE">BR-IG-09</Reference>
-                <Reference type="RULE">BR-IP-09</Reference>
                 <Reference type="RULE">BR-DEC-20-GST-SG</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 
@@ -112,15 +103,6 @@
                     <Reference type="BUSINESS_TERM">BT-118-GST</Reference>  
                     <Reference type="CODE_LIST">UNCL5305</Reference>  
                     <Reference type="RULE">BR-47-GST-SG</Reference>
-                    <Reference type="RULE">BR-S-01</Reference>
-                    <Reference type="RULE">BR-Z-01</Reference>
-                    <Reference type="RULE">BR-E-01</Reference>
-                    <Reference type="RULE">BR-AE-01</Reference>
-                    <Reference type="RULE">BR-IC-01</Reference>
-                    <Reference type="RULE">BR-G-01</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-01</Reference>
-                    <Reference type="RULE">BR-IP-01</Reference>
                     <Reference type="RULE">BR-CL-17-GST-SG</Reference>
                     <Reference type="RULE">BR-NG-01-GST-SG</Reference>
                     <Value type="EXAMPLE">S</Value> 
@@ -133,7 +115,6 @@
                     <DataType>Percentage</DataType>
                     <Reference type="BUSINESS_TERM">BT-119-GST</Reference>
                     <Reference type="RULE">BR-48-GST-SG</Reference>
-                    <Reference type="RULE">SE-R-006</Reference>
                     <Value type="EXAMPLE">25</Value> 
                 </Element>
                 
@@ -143,16 +124,6 @@
                     <Description>A coded statement of the reason for why the amount is exempted from GST.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-121-GST</Reference>
-                    <Reference type="RULE">BR-CL-22</Reference>
-                    <Reference type="RULE">BR-S-10</Reference>
-                    <Reference type="RULE">BR-Z-10</Reference>
-                    <Reference type="RULE">BR-E-10</Reference>
-                    <Reference type="RULE">BR-AE-10</Reference>
-                    <Reference type="RULE">BR-IC-10</Reference>
-                    <Reference type="RULE">BR-G-10</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -163,15 +134,6 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-120-GST</Reference>
-                    <Reference type="RULE">BR-S-10</Reference>
-                    <Reference type="RULE">BR-Z-10</Reference>
-                    <Reference type="RULE">BR-E-10</Reference>
-                    <Reference type="RULE">BR-AE-10</Reference>
-                    <Reference type="RULE">BR-IC-10</Reference>
-                    <Reference type="RULE">BR-G-10</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
                     <Value type="EXAMPLE">Exempt</Value> 
                 </Element>
                 <Element>
