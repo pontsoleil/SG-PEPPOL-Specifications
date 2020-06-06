@@ -33,7 +33,7 @@ docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip .
 #International rules
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip
-docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target/SG-Peppol-BIS-Billing_3-International-Rules.sch -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip .
+docker run --rm -i -v $PROJECT/target/schematron:/src/SG-Peppol-BIS-Billing_3-International-Rules.sch -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip .
 
 
 # SG-EN16931-International Rules
