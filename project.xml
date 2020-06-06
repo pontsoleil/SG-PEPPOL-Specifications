@@ -122,7 +122,7 @@
         <Path>rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Path>
         <Title>Schematron for Singapore specific rules</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">SG-Peppol-BIS-Billing_3-SG-Rules.sch</Property>
+        <Property key="download">G-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip</Property>
     </Resource>
      <Resource>
         <Type>native:File</Type>
