@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<include>
-	<!--Suppressed abstract pattern model was here-->
-	<!--Suppressed abstract pattern syntax was here-->
-	<!--Start pattern based on abstract model-->
-	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-model">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-model">
 		<rule context="cac:LegalMonetaryTotal">
 			<assert test="exists(cbc:TaxExclusiveAmount)" flag="fatal" id="BR-13-GST-SG">[BR-13-GST-SG]-An Invoice shall have the Invoice total amount without GST (BT-109-GST).</assert>
 			<assert test="exists(cbc:TaxInclusiveAmount)" flag="fatal" id="BR-14-GST-SG">[BR-14-GST-SG]-An Invoice shall have the Invoice total amount with GST (BT-112-GST).</assert>
@@ -68,44 +64,3 @@
 			<assert test="string-length(substring-after(cbc:TaxAmount,'.'))&lt;=2" flag="fatal" id="BR-DEC-20-GST-SG">[BR-DEC-20-GST-SG]-The allowed maximum number of decimals for the GST category tax amount (BT-117-GST) is 2.</assert>
 		</rule>
 	</pattern>
-	<!--Start pattern based on abstract syntax-->
-	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-syntax">
-		
-		<rule context="/ubl:Invoice">
-			
-			<assert test="not(cac:PaymentMeans/cac:PayerFinancialAccount)" flag="warning" id="UBL-CR-423">[UBL-CR-423]-A UBL invoice should not include the PaymentMeans PayerFinancialAccount</assert>
-			
-			<assert test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='GST']/cbc:CompanyID) &lt;= 1)" flag="warning" id="UBL-SR-12-GST_SG">[UBL-SR-12-GST-SG]-Seller GST identifier shall occur maximum once</assert>
-			<assert test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID!='GST']/cbc:ID) &lt;= 1)" flag="warning" id="UBL-SR-13-GST-SG">[UBL-SR-13-GST-SG]-Seller tax registration shall occur maximum once</assert>
-			
-			<assert test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)" flag="warning" id="UBL-SR-18-GST">[UBL-SR-18-GST]-Buyer GST identifier shall occur maximum once</assert>
-			
-		</rule>
-		<rule context="cac:InvoiceLine">
-			
-			<assert test="(count(cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReason) &lt;= 1)" flag="warning" id="UBL-SR-38-GST-SG">[UBL-SR-38-GST-SG]-Invoiced item GST exemption reason text shall occur maximum once</assert>
-		</rule>
-		
-		
-		
-		<rule context="cac:TaxRepresentativeParty">
-					<assert test="(count(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)" flag="warning" id="UBL-SR-23-GST-SG">[UBL-SR-23-GST-SG]-Seller tax representative GST identifier shall occur maximum once, if the Seller has a tax representative</assert>
-		</rule>
-		<rule context="cac:TaxSubtotal">
-			<assert test="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)" flag="warning" id="UBL-SR-32-SG">[UBL-SR-32-SG]-GST exemption reason text shall occur maximum once</assert>
-		</rule>
-	</pattern>
-	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Codesmodel">
-		<!-- 2019-06-12/MF - Added newest ICD values manually -->
-		
-		<rule context="cac:TaxCategory/cbc:ID" flag="fatal">
-			<assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' SR SRCA-S SRCA-C ZR ES33 ESN33 DS OS NG ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-17-GST-SG" flag="fatal">[BR-CL-17-GST-SG]-Invoice tax categories MUST be coded using valid Singapore code values</assert>
-		</rule>
-		<rule context="cac:ClassifiedTaxCategory/cbc:ID" flag="fatal">
-			<assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' SR SRCA-S SRCA-C ZR ES33 ESN33 DS OS NG ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-18-GST-SG" flag="fatal">[BR-CL-18-GST-SG]-Invoice tax categories MUST be coded using valid Singapore code values</assert>
-		</rule>
-		
-		
-	</pattern>
-
-</include>

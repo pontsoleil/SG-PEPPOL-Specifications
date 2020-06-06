@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<include>
-  <!-- Empty elements -->
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-    <rule context="cac:*">
-      <assert id="PEPPOL-EN16931-R009" test="count(*) != 0" flag="fatal">Document MUST not contain
-        empty elements.</assert>
-    </rule>
-  </pattern>
+
+
 
   <!--
     Transaction rules
@@ -21,18 +15,7 @@
     R1XX - Line level
     R11X - Invoice period
   -->
-  <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-
-    <!-- Document level -->
-    <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
-     
-      <assert id="PEPPOL-EN16931-R004-SG"
-        test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0')"
-        flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0'.</assert>
-
-    </rule>
-</pattern>
-
+  
 
   <!-- Restricted code lists and formatting -->
   <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
@@ -60,4 +43,3 @@
 
   </pattern>
 
-</include>

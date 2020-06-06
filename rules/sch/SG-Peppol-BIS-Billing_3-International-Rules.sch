@@ -42,7 +42,11 @@
     <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
   </function>
 
-  <include href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
-  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
+  <include href="Parts/CEN-EN16931-UBL-SG-Reused_1.sch"/>
+  <include href="Parts/CEN-EN16931-UBL-SG-Reused_2.sch"/>
+  <include href="Parts/CEN-EN16931-UBL-SG-Reused_3.sch"/>
+  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused_1.sch"/>
+  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused_2.sch"/>
+  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused_3.sch"/>
 
  </schema>
