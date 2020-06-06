@@ -31,8 +31,8 @@
   <configuration>
     <identifier>peppolbis-en16931-01-3.0-ubl-invoice</identifier>
     <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <!--declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration-->
-    <declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+    <declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
+    <!--declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <inherit>ubl-invoice-2.1</inherit>
     <inherit>peppolbis-en16931-cen-ubl</inherit>
     <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
@@ -42,8 +42,8 @@
   <configuration>
     <identifier>peppolbis-en16931-01-3.0-ubl-creditnote</identifier>
     <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
-    <!--declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration-->
+    <!--declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
+    <declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <inherit>ubl-creditnote-2.1</inherit>
     <inherit>peppolbis-en16931-cen-ubl</inherit>
     <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
