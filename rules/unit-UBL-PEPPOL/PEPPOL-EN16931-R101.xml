@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-en16931-base-3.0-ubl">
+	configuration="sg-peppolbis-international-3.0-ubl">
 	<assert>
 		<description>Verify that element DocumentReference is not used for information other than invoiced line object.</description>
 		<scope>PEPPOL-EN16931-R101</scope>

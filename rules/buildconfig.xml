@@ -11,13 +11,13 @@
   <!-- UBL -->
 
   <configuration>
-    <identifier>peppolbis-en16931-cen-ubl</identifier>
+    <identifier>sg-peppolbis-international-3.0-ubl</identifier>
     <title>International Rules</title>
     <file path="sch/SG-Peppol-BIS-Billing_3-International-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
-    <identifier>peppolbis-en16931-base-3.0-ubl</identifier>
+    <identifier>sg-peppolbis-sg-3.0-ubl</identifier>
     <title>SG Specific Rules</title>
     <file path="sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
@@ -34,8 +34,8 @@
     <declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <!--declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <inherit>ubl-invoice-2.1</inherit>
-    <inherit>peppolbis-en16931-cen-ubl</inherit>
-    <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-international-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-sg-3.0-ubl</inherit>
     
   </configuration>
 
@@ -45,8 +45,8 @@
     <!--declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <inherit>ubl-creditnote-2.1</inherit>
-    <inherit>peppolbis-en16931-cen-ubl</inherit>
-    <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-international-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-sg-3.0-ubl</inherit>
     
   </configuration>
 
