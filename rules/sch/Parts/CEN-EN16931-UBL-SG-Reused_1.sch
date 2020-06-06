@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern id="UBL-model">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-model">
     <rule context="cac:AdditionalDocumentReference">
       <assert id="BR-52" flag="fatal" test="(cbc:ID) != ''">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).    </assert>
     </rule>

@@ -12,7 +12,7 @@
     R1XX - Line level
     R11X - Invoice period
   -->
-	<pattern>
+	<pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 		<!-- Document level -->
 		<rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
 			<assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be provided.</assert>

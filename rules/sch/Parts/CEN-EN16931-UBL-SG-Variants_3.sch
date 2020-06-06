@@ -5,7 +5,7 @@
 	
 	<!--Start pattern based on abstract syntax-->
 
-	<pattern id="Codesmodel">
+	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Codesmodel">
 		<!-- 2019-06-12/MF - Added newest ICD values manually -->
 		
 		<rule context="cac:TaxCategory/cbc:ID" flag="fatal">

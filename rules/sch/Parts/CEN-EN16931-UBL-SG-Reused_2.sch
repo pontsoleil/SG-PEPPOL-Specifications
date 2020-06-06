@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern id="UBL-syntax">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-syntax">
        <rule context="cac:AdditionalDocumentReference">
       <assert id="UBL-SR-33" flag="warning" test="(count(cbc:DocumentDescription) &lt;= 1)">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
       <!--Rule excluded:UBL-SR-43-->
