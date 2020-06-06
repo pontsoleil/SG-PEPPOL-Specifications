@@ -112,10 +112,11 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Path>
-        <Title>Schematron for PEPPOL rules (UBL)</Title>
-        <Description>Schematron file containing International rules used by Singapore according to ISO Schematron.</Description>
-        <Property key="download">SG-Peppol-BIS-Billing_3-International-Rules.sch</Property>
+        <Path>project.xml</Path>
+        <Title>Schematron for International rules applicable</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip</Property>
+         <Property key="filename">SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
