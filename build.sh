@@ -30,7 +30,7 @@ docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-Rules-Schematron.zip .
 #SG-Rules
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip
-docker run --rm -i -v $PROJECT/target/schematron/SG-Peppol-BIS-Billing_3-SG-Rules.sch:/src/SG-Peppol-BIS-Billing_3-SG-Rules.sch -v $PROJECT/target/site/files/SG-Peppol-BIS-Billing_3-SG-Rules.sch:/target/SG-Peppol-BIS-Billing_3-SG-Rules.sch -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip .
+docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip .
 #International rules
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/SG-Peppol-BIS-Billing_3-International-Rules.sch:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip .
