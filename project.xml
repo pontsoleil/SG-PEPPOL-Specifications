@@ -124,7 +124,13 @@
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">SG-Peppol-BIS-Billing_3-SG-Rules.sch</Property>
     </Resource>
-    
+     <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Schematron files</Title>
+        <Property key="download">SG-Peppol-BIS-Billing_3-Rules-Schematron.zip</Property>
+        <Property key="filename">SG-Peppol-BIS-Billing_3-Rules-Schematron.zip</Property>
+    </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>stylesheet/xslt.zip</Path>
