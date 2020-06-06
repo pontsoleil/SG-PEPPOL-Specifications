@@ -33,15 +33,15 @@ docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip .
 #International rules
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip
-docker run --rm -i -v $PROJECT/target/schematron/SG-Peppol-BIS-Billing_3-International-Rules.sch:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip .
+docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files/:/target -w /src kramos/alpine-zip -r /target/SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip .
 
 
 # SG-EN16931-International Rules
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Peppol-BIS-Billing_3-International-Rules.sch.adoc
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/target/schematron/SG-Peppol-BIS-Billing_3-International-Rules.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Peppol-BIS-Billing_3-International-Rules.sch.adoc
 
 
 # PEPPOL-EN16931-UBL
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/target/schematron/SG-Peppol-BIS-Billing_3-SG-Rules.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc
 
 
 
