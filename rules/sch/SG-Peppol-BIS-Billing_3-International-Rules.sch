@@ -10,9 +10,39 @@
   <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 
   <title>International rules for Singapore BIS Billing</title>
+  <phase id="EN16931model_phase">
+    <active pattern="UBL-model"/>
+  </phase>
+  <phase id="codelist_phase">
+    <active pattern="Codesmodel"/>
+  </phase>
+<let name="profile" value="       if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then         tokenize(normalize-space(/*/cbc:ProfileID), ':')[7]       else         'Unknown'"/>
+  <let name="supplierCountry" value="       if (/*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)) then         upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)))       else         if (/*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)) then           upper-case(normalize-space(/*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)))         else           if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then             upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode))           else             'XX'"/>
+  <!-- -->
+  <let name="documentCurrencyCode" value="/*/cbc:DocumentCurrencyCode"/>
+  <!-- Functions -->
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:gln" as="xs:boolean">
+    <param name="val"/>
+    <variable name="length" select="string-length($val) - 1"/>
+    <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
+    <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
+    <value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
+  </function>
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
+    <param name="exp" as="xs:decimal"/>
+    <param name="val" as="xs:decimal"/>
+    <param name="slack" as="xs:decimal"/>
+    <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
+  </function>
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
+    <param name="val"/>
+    <variable name="length" select="string-length($val) - 1"/>
+    <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
+    <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
+    <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
+  </function>
 
-
-  <extends href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
-  <extends href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
+  <include href="Parts/CEN-EN16931-UBL-SG-Reused.sch"/>
+  <include href="Parts/PEPPOL-EN16931-UBL-SG-Reused.sch"/>
 
  </schema>
