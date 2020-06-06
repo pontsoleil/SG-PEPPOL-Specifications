@@ -41,7 +41,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 
 
 # PEPPOL-EN16931-UBL
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Peppol-BIS-Billing_3-SG-Rules.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Peppol-BIS-Billing_3-SG-Rules.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc
 
 
 
