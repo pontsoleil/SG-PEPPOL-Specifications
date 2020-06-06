@@ -2,8 +2,8 @@
 
     Licensed under European Union Public Licence (EUPL) version 1.2.
 -->
-
-  <pattern id="UBL-model">
+<include>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-model">
     <rule context="cac:AdditionalDocumentReference">
       <assert id="BR-52" flag="fatal" test="(cbc:ID) != ''">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).    </assert>
     </rule>
@@ -199,7 +199,7 @@
     </rule>
    
    </pattern>
-  <pattern id="UBL-syntax">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-syntax">
        <rule context="cac:AdditionalDocumentReference">
       <assert id="UBL-SR-33" flag="warning" test="(count(cbc:DocumentDescription) &lt;= 1)">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
       <!--Rule excluded:UBL-SR-43-->
@@ -965,7 +965,7 @@
       <!--Rule excluded:UBL-SR-23-->
     </rule>
   </pattern>
-  <pattern id="Codesmodel">
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Codesmodel">
     <rule flag="fatal" context="cbc:InvoiceTypeCode | cbc:CreditNoteTypeCode">
       <assert id="BR-CL-01" flag="fatal" test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 130 202 203 204 211 295 325 326 380 383 384 385 386 387 388 389 390 393 394 395 456 457 527 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 261 262 296 308 381 396 420 458 532 ', concat(' ', normalize-space(.), ' ')))))">[BR-CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
     </rule>
@@ -1021,4 +1021,4 @@
       <assert id="BR-CL-24" flag="fatal" test="((@mimeCode = 'application/pdf' or @mimeCode = 'image/png' or @mimeCode = 'image/jpeg' or @mimeCode = 'text/csv' or @mimeCode = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' or @mimeCode = 'application/vnd.oasis.opendocument.spreadsheet'))">[BR-CL-24]-For Mime code in attribute use MIMEMediaType.</assert>
     </rule>
   </pattern>
-
+</include>

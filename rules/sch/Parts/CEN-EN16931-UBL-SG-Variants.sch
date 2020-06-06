@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<include>
 	<!--Suppressed abstract pattern model was here-->
 	<!--Suppressed abstract pattern syntax was here-->
 	<!--Start pattern based on abstract model-->
-	<pattern id="UBL-model">
+	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-model">
 		<rule context="cac:LegalMonetaryTotal">
 			<assert test="exists(cbc:TaxExclusiveAmount)" flag="fatal" id="BR-13-GST-SG">[BR-13-GST-SG]-An Invoice shall have the Invoice total amount without GST (BT-109-GST).</assert>
 			<assert test="exists(cbc:TaxInclusiveAmount)" flag="fatal" id="BR-14-GST-SG">[BR-14-GST-SG]-An Invoice shall have the Invoice total amount with GST (BT-112-GST).</assert>
@@ -69,7 +69,7 @@
 		</rule>
 	</pattern>
 	<!--Start pattern based on abstract syntax-->
-	<pattern id="UBL-syntax">
+	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="UBL-syntax">
 		
 		<rule context="/ubl:Invoice">
 			
@@ -95,7 +95,7 @@
 			<assert test="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)" flag="warning" id="UBL-SR-32-SG">[UBL-SR-32-SG]-GST exemption reason text shall occur maximum once</assert>
 		</rule>
 	</pattern>
-	<pattern id="Codesmodel">
+	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Codesmodel">
 		<!-- 2019-06-12/MF - Added newest ICD values manually -->
 		
 		<rule context="cac:TaxCategory/cbc:ID" flag="fatal">
@@ -108,3 +108,4 @@
 		
 	</pattern>
 
+</include>
