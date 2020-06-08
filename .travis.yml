@@ -3,3 +3,14 @@ services:
 - docker
 script:
 - sh build.sh
+deploy:
+  provider: s3
+  access_key_id: AKIA2RF3X5WM6ZLX4GHU
+  secret_access_key:JvNhe5dFyQX0RO5udM3ANCRP52JZgM7CWnaFq4+z30tmpSZ3GI129/oFthzmggvTxn6W2N1yLGyeeYp8bfDMKBUTQAqmjtjTOgzwqHxKsueXbF82PS5r6WRV/nIXiidzSrsuTTlODT1iDkEOcACbDhlqbijTYUbSrA1D/EsuDM6a8z9TfkWshQxbFfpAM6DR+bJNBLWYtYvouRHhT615hT614zwZXUWrr+hoGRkGx1/Z3fn5h2enxCo8PZGEnRstUAZm18R2PmHpeTA6lwM9Rs42X5gOOTegJJx65APDmVaRPcwRR9H/lR6fpVq9OI4h0SNZg49IzXpqn6QOZFn6mNThx2MdcRWXH34zYQYSWkbKuXSFOXZlV+cEnQvzWg4ymG+LIrX/JkU7PIZ2xU4wLFtamENlAkTbpb2us35UPUr+/knglf/lfeJkq5SCmt5LITSLnR0UfAUKYdtxB8nr3pmLIfb1TNsQZdboQw0P6ngy4cYyL/vI5Qfi4SNq9Wyem8jjDesYaIL2uo2WTIYzdYwEjq7OIgtNWuY3Qup4THzGRHe3apg7yvTTQu0UeXHV2zLSWbEfq+MvZ6EFaLwjfZ8mQ6DCFI8qjy0eKICFRkPCvorTTdRAZezeghe8Cwx9RaP6IvQuXefzzB+qQMG1k7ZSvxLdOLibYmffpI/rxDQ=
+  bucket: sg-bis-billing-3-test
+  local-dir: target/site
+  acl: public_read
+  skip_cleanup: true
+  on:
+    repo: SG-PEPPOL/SG-PEPPOL-Specifications
+    branch: feature/PEPPOLSync
