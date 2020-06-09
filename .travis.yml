@@ -6,7 +6,8 @@ script:
 deploy:
   provider: s3
   access_key_id: AKIA2RF3X5WM6ZLX4GHU
-  secret_access_key: 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
+  secret_access_key:
+    secure: HzjrJNsDMPedKPmy1mPwljqXMngkzRiTGfyWtFVFSFA3ds8Y45h3ljZYqpJ9uW/+Mu+wk5SoM7ykG3FzuXXyZMf6ptSZhNj1zUcEpJkpAl3HpSNAdE66Bqp5Y4saxg2xf/3EAeoagOicnpAMuq0tUxIayZ4iKQ1su+EG5By+6WaMM59lAIRvi2GbG2ZuWdIeEfb3AAcUXuU8L/lJJUTeIRBN/173YmdVS7HtOPxW8O7gb20huLWbL6ZIOTBgHNeyqOHAga9azSgCJazibFyIg92MU1GmppYOchkLShtpfsjVnGhZcOPif+GHKkbBq23fWcy+xXWUsAySCaQwLjYS3rE2/8fJrfsNIFw7Xi3WkMXvq5Gr2Nfxkbi8e9lwaGyD6Bulxg/mIQfZZjMZqRoyJElNgnrtSZt3ASojeyTLW+K1MPeSR28Ikx/mcUrqM8RR0b/ji+1aWtM/Yj9m0Iq6Ijoif/Z6BPViPfpKIgibgQTt8o3qDbOKLuM0tplhucVxKOr7nlGOz0ivwbYDF5tzpxm75ArVUft7ZVVU9Ru3Uc6u/1p1Jr+dnyccgnKpO3XKj8Arw7E8Afn11n31fkdiGy+AdfpB83LWaDEwx8Ja+KU1vFjFZ//7+83EkKTU1sP+pOluWxGrZq+3T7NoWz7aZnrse22YLMHpRgYrUDL9rlY=
   bucket: sg-bis-billing-3
   region: eu-west-1
   local-dir: target/site
