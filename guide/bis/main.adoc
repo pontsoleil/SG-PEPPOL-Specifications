@@ -20,7 +20,7 @@ v{version}
 
 = Link to main site of documentation
 
-link:/poacc/billing/3.0/[Main documentation site]
+link:/poacc/sg/billing/3/[Main documentation site]
 
 :leveloffset: +1
 
@@ -36,7 +36,7 @@ include::../transaction-spec/requirements/index.adoc[]
 
 include::../transaction-spec/datatypes/index.adoc[]
 
-include::../transaction-spec/vat-info/vat-info.adoc[]
+include::../transaction-spec/tax-info/tax-info.adoc[]
 
 include::../transaction-spec/calculations/rounding.adoc[]
 
@@ -53,10 +53,6 @@ include::../syntax/guideline.adoc[]
 include::../transaction-spec/validation/index.adoc[]
 
 include::../transaction-spec/rules/index.adoc[]
-
-include::restrictions/index.adoc[]
-
-include::appendix/cii.adoc[]
 
 include::appendix/national_rules.adoc[]
 

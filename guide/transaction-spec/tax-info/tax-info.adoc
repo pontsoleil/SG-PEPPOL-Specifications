@@ -1,0 +1,31 @@
+
+= Goods and Services Tax (GST)
+
+The chapters below describe the different GST informations that can be provided in a {peppol} invoice or credit note.
+
+Please also see <<GST category codes>> for details on the GST category code list, and <<Calculation of GST>> for detailed explanation and example on how to perform the calculations for GST Breakdown.
+
+== Line GST Information
+
+Each invoice line shall have the invoiced item GST category code (BT-151-GST), and for all GST categories except "Not subject to GST" (O), the GST rate shall be provided.
+
+== Document level allowance or charge
+
+Each document level charge or allowance must have the Document level allowance or charge GST category code (BT-95-GST and BT-102-GST), and for all GST categories except "Not subject to GST" (NG), the GST rate shall be provided.
+
+== GST Breakdown
+
+One GST Breakdown shall be provided for each distinct combination of GST category code and GST rate found in either the line GST information or the Document level allowance or charges. For some GST categories, the GST rate shall be zero, and hence the rate is not needed in order to group the GST Breakdown for these.
+
+Please note that for the GST rate, only significant decimals should be considered, i.e any difference in trailing zeros should not result in different GST breakdowns.
+
+.Example
+====
+Invoice line 1 has category code = SR and GST rate = *7* +
+Invoice line 2 has category code = SR and GST rate = *7.00* +
+This should result in only one GST Breakdown.
+====
+
+== Invoice total GST amount
+
+The invoice total GST amount (BT-110-GST) is the sum of all GST Category GST amounts (BT-117-GST)
