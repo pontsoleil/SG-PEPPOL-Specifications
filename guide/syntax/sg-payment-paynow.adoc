@@ -1,0 +1,13 @@
+
+
+
+.UBL example of payment means info when payment is done by PayNow
+[source, xml, indent=0]
+----
+include::{snippet-dir}/payment-sg.xml[tags=paynow]
+----
+<1> Mandatory, payment means code 
+<2> Remittance information
+<3> UEN used to identify the payee account
+
+

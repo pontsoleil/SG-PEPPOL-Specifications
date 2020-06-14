@@ -1,0 +1,11 @@
+
+
+
+.UBL example of payment means info when payment is done by Credit Card
+[source, xml, indent=0]
+----
+include::{snippet-dir}/payment-sg.xml[tags=creditcard]
+----
+<1> Mandatory, payment means code 
+<2> Remittance information
+

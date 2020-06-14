@@ -1,43 +1,29 @@
 
 = Payment means information
 
-== Credit transfer
+In addition to the payment means allowed according to Peppol BIS Billing 3, the following three alternatives are used in the context of Singapore Peppol BIS Billing 3.
 
-If payment is made by credit transfer, the Payment account identifier (BT-84) is mandatory
+== GIRO
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by credit transfer are:
+If payment is made by the GIRO-system (direct debit)
 
-* 30 - Credit transfer
-* 58 - SEPA credit transfer
+* Z01 - GIRO
 
-include::../../syntax/credit-payment.adoc[]
+PaymentTerms/Note can be used to indicated additional information about payment date.
+
+include::../../syntax/sg-payment-giro.adoc[]
 
 == Card Payment
 
-If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) shall be present in the invoice.
+If the Buyer had opted to pay by using a payment card, this can be indicated in the invoice. The card number or type of card should not be stated in the invoice.
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by card are:
-
-* 48 - Bank card
 * 54 - Credit card
-* 55 - Debet card
 
-include::../../syntax/card-payment.adoc[]
+include::../../syntax/sg-payment-card.adoc[]
 
-== Direct debit
+== Payment by PayNow Corporate
 
-See <<payment-means>> for all allowed codes. Examples of codes for payment by direct debit are:
 
-* 49 - Direct debit
-* 59 - SEPA direct debit
+* Z02
 
-include::../../syntax/direct-debit.adoc[]
-
-== Payment by post- or bank giro
-
-See <<payment-means>> for all allowed codes. Examples of codes for payment by giro are:
-
-* 50 - Payment by postgiro
-* 56 - Bankgiro
-
-include::../../syntax/giro.adoc[]
+include::../../syntax/sg-payment-paynow.adoc[]
