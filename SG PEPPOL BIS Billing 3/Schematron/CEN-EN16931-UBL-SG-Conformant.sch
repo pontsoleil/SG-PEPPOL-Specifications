@@ -122,7 +122,10 @@
 			<assert test="(cac:Price/cbc:PriceAmount) &gt;= 0" flag="fatal" id="BR-27">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
 			<assert test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))" flag="fatal" id="BR-28">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
 			<assert test="(cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/cbc:ID='GST']/cbc:ID)" flag="fatal" id="BR-CO-04-GST-SG">[BR-CO-04-GST-SG]-Each Invoice line (BG-25) shall be categorized with an Invoiced item GST category code (BT-151-GST).</assert>
+<!-- excluded 2020-06-23 
 			<assert test="string-length(substring-after(cbc:LineExtensionAmount,'.'))&lt;=2" flag="fatal" id="BR-DEC-23">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.    </assert>
+-->		
+
 		</rule>
 		<rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = 'false'] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = 'false']">
 			<assert test="exists(cbc:Amount)" flag="fatal" id="BR-41">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
@@ -208,9 +211,11 @@
 		<rule context="cac:AdditionalDocumentReference">
 			<assert test="(count(cbc:DocumentType) &lt;= 1)" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
 		</rule>
+		<!-- Excluded 2020-06-23 
 		<rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]">
 			<assert test="string-length(substring-after(.,'.'))&lt;=2" flag="fatal" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
 		</rule>
+-->
 		<rule context="//*[ends-with(name(), 'BinaryObject')]">
 			<assert test="(@mimeCode)" flag="fatal" id="UBL-DT-06">[UBL-DT-06]-Binary object elements shall contain the mime code attribute</assert>
 			<assert test="(@filename)" flag="fatal" id="UBL-DT-07">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
