@@ -2,12 +2,12 @@
 <!--
 ******************************************************************************************************************
 
-		PEPPOLInstance Documentation - reference stylesheet 	Version of this reference stylesheet: 1.0 
+		PEPPOLInstance Documentation - reference stylesheet 	Version of this reference stylesheet: 1.1 
 
 		title= SG-PEPPOL_BIS_HTML Stylesheet
 		publisher= IMDA
 		Creator= Midran
-		created= 2020-03-30
+		created= 2020-07-02
 		conformsTo= UBL-Invoice-2.1.xsd and UBL-CreditNote-2.1.xsd
 		description= "Stylesheet for SG PEPPOL BIS BILLING 3, covering Invoice and Credit Note.
 		This stylesheet was drawn up to serve developers and end-users as a neutral reference tool when
