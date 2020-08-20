@@ -487,8 +487,6 @@
                 <Reference type="BUSINESS_TERM">BT-131</Reference>
                 <Reference type="RULE">BR-24</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
-                <Reference type="RULE">BR-DEC-23</Reference>
-                <Reference type="RULE">UBL-DT-01</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>
