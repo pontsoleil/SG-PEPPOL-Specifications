@@ -15,8 +15,7 @@
             <Reference type="BUSINESS_TERM">BT-106</Reference>
             <Reference type="RULE">BR-12</Reference>
             <Reference type="RULE">BR-CO-10</Reference>
-            <Reference type="RULE">BR-DEC-09</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             
             
             <Attribute>
@@ -39,8 +38,7 @@
             <Reference type="BUSINESS_TERM">BT-109-GST</Reference>
             <Reference type="RULE">BR-13-GST-SG</Reference>
             <Reference type="RULE">BR-CO-13-GST-SG</Reference>
-            <Reference type="RULE">BR-DEC-12-GST-SG</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -60,8 +58,7 @@
             <Reference type="BUSINESS_TERM">BT-112-GST</Reference>
             <Reference type="RULE">BR-14-GST-SG</Reference>
             <Reference type="RULE">BR-CO-15-GST-SG</Reference>
-            <Reference type="RULE">BR-DEC-14-GST-SG</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -80,8 +77,7 @@
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-107</Reference>
             <Reference type="RULE">BR-CO-11</Reference>
-            <Reference type="RULE">BR-DEC-10</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -100,8 +96,7 @@
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-108</Reference>
             <Reference type="RULE">BR-CO-12</Reference>
-            <Reference type="RULE">BR-DEC-11</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -119,14 +114,14 @@
             <Description>The sum of amounts which have been paid in advance. Must be rounded to maximum 2 decimals.</Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-113</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
-                <Reference type="RULE">BR-DEC-16</Reference>
+
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -139,8 +134,7 @@
             <Description>The amount to be added to the invoice total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-114</Reference>
-            <Reference type="RULE">BR-DEC-17</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -160,8 +154,7 @@
             <Reference type="BUSINESS_TERM">BT-115</Reference>
             <Reference type="RULE">BR-15</Reference>
             <Reference type="RULE">BR-CO-16-GST-SG</Reference>
-            <Reference type="RULE">BR-DEC-18</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
+
             
             <Attribute>
                 <Term>currencyID</Term>
