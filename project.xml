@@ -102,10 +102,6 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/SEPA.xml</Path>
     </Resource> 
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/VATEX.xml</Path>
-    </Resource>
 
 
     <!-- Files -->
@@ -140,10 +136,4 @@
         <Property key="download">xslt.zip</Property>
     </Resource>
     
-    <Resource>
-        <Type>native:File</Type>
-        <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
-        <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource>
 </Project>
