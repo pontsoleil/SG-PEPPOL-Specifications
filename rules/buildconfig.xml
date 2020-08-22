@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-  <package url="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</package>
+  <package url="http://docs.peppol.eu/poacc/billing/sg/3/">SG Peppol BIS Billing 3.0</package>
 
   <testfolder>examples</testfolder>
   <testfolder>snippets</testfolder>
@@ -11,15 +11,15 @@
   <!-- UBL -->
 
   <configuration>
-    <identifier>sg-peppolbis-international-3.0-ubl</identifier>
+    <identifier>sg-peppolbis-international-3-ubl</identifier>
     <title>International Rules</title>
-    <file path="sch/SG-Peppol-BIS-Billing_3-International-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/CEN-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
   </configuration>
 
   <configuration>
-    <identifier>sg-peppolbis-sg-3.0-ubl</identifier>
+    <identifier>sg-peppolbis-sg-3-ubl</identifier>
     <title>SG Specific Rules</title>
-    <file path="sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PEPPOL-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
   </configuration>
 
 <!--  <configuration>
@@ -29,24 +29,24 @@
   </configuration>-->
 
   <configuration>
-    <identifier>peppolbis-en16931-01-3.0-ubl-invoice</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
+    <identifier>peppolbis-en16931-01-3-ubl-invoice</identifier>
+    <title>Peppol BIS Billing 3.0 (Profile 01)</title>
     <declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <!--declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <inherit>ubl-invoice-2.1</inherit>
-    <inherit>sg-peppolbis-international-3.0-ubl</inherit>
-    <inherit>sg-peppolbis-sg-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-international-3-ubl</inherit>
+    <inherit>sg-peppolbis-sg-3-ubl</inherit>
     
   </configuration>
 
   <configuration>
-    <identifier>peppolbis-en16931-01-3.0-ubl-creditnote</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
+    <identifier>peppolbis-en16931-01-3-ubl-creditnote</identifier>
+    <title>SG PEPPOL BIS Billing 3.0 (Profile 01)</title>
     <!--declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <inherit>ubl-creditnote-2.1</inherit>
-    <inherit>sg-peppolbis-international-3.0-ubl</inherit>
-    <inherit>sg-peppolbis-sg-3.0-ubl</inherit>
+    <inherit>sg-peppolbis-international-3-ubl</inherit>
+    <inherit>sg-peppolbis-sg-3-ubl</inherit>
     
   </configuration>
 
