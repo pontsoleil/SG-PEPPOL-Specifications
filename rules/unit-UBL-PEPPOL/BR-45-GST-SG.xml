@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
+	<assert>
+    <description>BR-45-GST-SG</description>
+		<scope>BR-45-GST-SG</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>BR-45-GST-SG</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SGD">33915.00</cbc:TaxableAmount> <!-- BT-116 -->
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-117 -->
+			<cac:TaxCategory>
+				<cbc:ID>NG</cbc:ID> <!-- BT-118 -->
+				<cbc:Percent>0</cbc:Percent> <!-- BT-152 -->								
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-118, qualifier -->
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<success>BR-45-GST-SG</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SGD">33915.00</cbc:TaxableAmount> <!-- BT-116 -->
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-117 -->
+			<cac:TaxCategory>
+				<cbc:ID>NG</cbc:ID> <!-- BT-118 -->
+				<cbc:Percent>0</cbc:Percent> <!-- BT-152 -->								
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-118, qualifier -->
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<error>BR-45-GST-SG</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
+		<cac:TaxSubtotal>
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-117 -->
+			<cac:TaxCategory>
+				<cbc:ID>NG</cbc:ID> <!-- BT-118 -->
+				<cbc:Percent>0</cbc:Percent> <!-- BT-152 -->								
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-118, qualifier -->
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+		<test>
+		<assert>
+			<error>BR-45-GST-SG</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
+		<cac:TaxSubtotal>
+
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-117 -->
+			<cac:TaxCategory>
+				<cbc:ID>NG</cbc:ID> <!-- BT-118 -->
+				<cbc:Percent>0</cbc:Percent> <!-- BT-152 -->								
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-118, qualifier -->
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+		</CreditNote>
+	</test>
+</testSet>

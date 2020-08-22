@@ -24,13 +24,13 @@
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>EN16931 International Rules</Title>
+        <Title>EN16931 Conformant Rules</Title>
     </Resource>
     <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>Rules for Singapore</Title>
+        <Title>Peppol Conformant Rules</Title>
     </Resource>
     
     <!-- Code lists -->
