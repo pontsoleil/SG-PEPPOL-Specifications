@@ -11,8 +11,8 @@
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
-    <Rules type="schematron">../../rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Rules>
-    <Rules type="schematron">../../rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Rules>
+    <Rules type="schematron">../../rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Rules>
+    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Rules>
 
     <Document>
         <Term>ubl:CreditNote</Term>
@@ -27,7 +27,7 @@
             <Reference type="BUSINESS_TERM">BT-24</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R004-SG</Reference>
             <Reference type="RULE">BR-01</Reference>
-            <Value type="DEFAULT">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
+            <Value type="DEFAULT">urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</Value>
         </Element>
 
         <Element>
