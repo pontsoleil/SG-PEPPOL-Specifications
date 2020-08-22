@@ -11,8 +11,11 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
 
-		
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="EUR">249</cbc:TaxAmount>
+	</cac:TaxTotal>
 
 		</Invoice>
 	</test>
@@ -25,7 +28,11 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
-		
+			<cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
+
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="EUR">249</cbc:TaxAmount>
+	</cac:TaxTotal>
 
 		</CreditNote>
 	</test>
@@ -37,7 +44,11 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
 
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">249</cbc:TaxAmount>
+	</cac:TaxTotal>
 		</Invoice>
 	</test>
 	
@@ -48,7 +59,11 @@
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+	<cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
 
+			<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SGD">249</cbc:TaxAmount>
+	</cac:TaxTotal>
 		</CreditNote>
 	</test>
 </testSet>

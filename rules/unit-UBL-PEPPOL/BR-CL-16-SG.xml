@@ -1,54 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
 	<assert>
-    <description>BR-13-GST-SG</description>
-		<scope>BR-13-GST-SG</scope>
+    <description>BR-CL-16-SG</description>
+		<scope>BR-CL-16-SG</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-CL-16-SG</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-		
+			<cac:PaymentMeans> 
+		<cbc:PaymentMeansCode>Z01</cbc:PaymentMeansCode>
+		</cac:PaymentMeans>
+
 
 		</Invoice>
 	</test>
 
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-CL-16-SG</success>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
 		
+			<cac:PaymentMeans> 
+		<cbc:PaymentMeansCode>Z01</cbc:PaymentMeansCode>
+		</cac:PaymentMeans>
 
 		</CreditNote>
 	</test>
 	
 	<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-CL-16-SG</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
+
+			<cac:PaymentMeans> 
+		<cbc:PaymentMeansCode>Z</cbc:PaymentMeansCode>
+		</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 		<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-CL-16-SG</error>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
+			<cac:PaymentMeans> 
+		<cbc:PaymentMeansCode>Z</cbc:PaymentMeansCode>
+		</cac:PaymentMeans>
+		
 		</CreditNote>
 	</test>
 </testSet>
