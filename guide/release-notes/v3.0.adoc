@@ -1,0 +1,10 @@
+= Version 3.0 - Release
+[horizontal]
+Release date:: 2020-XX-XX
+
+== Changes to BIS document
+
+* First version using this structure
+
+== Changes to validation artefacts
+

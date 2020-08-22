@@ -1,56 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
 	<assert>
-    	<description>Verify amount of tax totals.</description>
-		<scope>PEPPOL-EN16931-R053</scope>
+    <description>BR-13-GST-SG</description>
+		<scope>BR-13-GST-SG</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>PEPPOL-EN16931-R053</success>
+			<success>BR-13-GST-SG</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-			<cac:TaxTotal>
-				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
-			</cac:TaxTotal>
+		
 
 		</Invoice>
 	</test>
+
 	<test>
 		<assert>
-			<error>PEPPOL-EN16931-R053</error>
+			<success>BR-13-GST-SG</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+		
+
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<error>BR-13-GST-SG</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-
-			<!-- <cac:TaxTotal>
-				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
-			</cac:TaxTotal> -->
 
 		</Invoice>
 	</test>
-	<test>
+	
+		<test>
 		<assert>
-			<error>PEPPOL-EN16931-R053</error>
+			<error>BR-13-GST-SG</error>
 		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
-			<cac:TaxTotal>
-				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
-			</cac:TaxTotal>
-			<cac:TaxTotal>
-				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
-			</cac:TaxTotal>
-
-		</Invoice>
+		</CreditNote>
 	</test>
 </testSet>
