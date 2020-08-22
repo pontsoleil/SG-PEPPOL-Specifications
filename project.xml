@@ -23,13 +23,13 @@
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/SG-Peppol-BIS-Billing_3-International-Rules.sch</Path>
+        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>EN16931 International Rules</Title>
     </Resource>
     <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/SG-Peppol-BIS-Billing_3-SG-Rules.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
         <Title>Rules for Singapore</Title>
     </Resource>
     
@@ -106,22 +106,7 @@
 
     <!-- Files -->
     
-    <Resource>
-        <Type>native:File</Type>
-        <Path>project.xml</Path>
-        <Title>Schematron for International rules applicable</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip</Property>
-         <Property key="filename">SG-Peppol-BIS-Billing_3-International-Rules-Schematron.zip</Property>
-    </Resource>
-    <Resource>
-        <Type>native:File</Type>
-        <Path>project.xml</Path>
-        <Title>Schematron for Singapore specific rules</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip</Property>
-         <Property key="filename">SG-Peppol-BIS-Billing_3-SG-Rules-Schematron.zip</Property>
-    </Resource>
+
      <Resource>
         <Type>native:File</Type>
         <Path>project.xml</Path>
@@ -132,7 +117,7 @@
     <Resource>
         <Type>native:File</Type>
         <Path>stylesheet/xslt.zip</Path>
-        <Title>Stylesheet for UBL instances</Title>
+        <Title>Presentation Stylesheet</Title>
         <Property key="download">xslt.zip</Property>
     </Resource>
     

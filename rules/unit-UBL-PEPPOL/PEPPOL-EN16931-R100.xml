@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="sg-peppolbis-international-3.0-ubl">
+	configuration="sg-peppolbis-international-3-ubl">
 	<assert>
 		<description>Verify existence of not more than a single object identifier pr invoice
 			line</description>
