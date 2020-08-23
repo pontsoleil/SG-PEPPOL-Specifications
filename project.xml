@@ -4,7 +4,6 @@
     <Name>Singapore BIS Billing 3.0</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
-    <Documentation path="migration/">Migration plan</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
     <!-- Syntax -->
