@@ -1,54 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
 	<assert>
-    <description>BR-13-GST-SG</description>
-		<scope>BR-13-GST-SG</scope>
+    <description>BR-CO-26-GST-SG</description>
+		<scope>BR-CO-26-GST-SG</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-CO-26-GST-SG</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-		
+			<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5790000436064</cbc:EndpointID> <!-- BT-34, BT-34-1 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0035">5790000436071</cbc:ID> <!-- BT-29, BT-29-1 -->
+			</cac:PartyIdentification>
+					<cac:PartyName>
+				<cbc:Name>Sales trade name</cbc:Name> <!-- BT-28 -->
+			</cac:PartyName>
+
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>M2-1234567-K</cbc:CompanyID> <!-- BT-31 -->
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-31, qualifier -->
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+
+		</cac:Party>
+	</cac:AccountingSupplierParty>
 
 		</Invoice>
 	</test>
 
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-CO-26-GST-SG</success>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
-		
+					<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5790000436064</cbc:EndpointID> <!-- BT-34, BT-34-1 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0035">5790000436071</cbc:ID> <!-- BT-29, BT-29-1 -->
+			</cac:PartyIdentification>
+					<cac:PartyName>
+				<cbc:Name>Sales trade name</cbc:Name> <!-- BT-28 -->
+			</cac:PartyName>
+
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>M2-1234567-K</cbc:CompanyID> <!-- BT-31 -->
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID> <!-- BT-31, qualifier -->
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+
+		</cac:Party>
+	</cac:AccountingSupplierParty>
 
 		</CreditNote>
 	</test>
 	
 	<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-CO-26-GST-SG</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5790000436064</cbc:EndpointID> <!-- BT-34, BT-34-1 -->
 
+					<cac:PartyName>
+				<cbc:Name>Sales trade name</cbc:Name> <!-- BT-28 -->
+			</cac:PartyName>
+
+
+
+		</cac:Party>
+	</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
 	
 		<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-CO-26-GST-SG</error>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5790000436064</cbc:EndpointID> <!-- BT-34, BT-34-1 -->
 
+					<cac:PartyName>
+				<cbc:Name>Sales trade name</cbc:Name> <!-- BT-28 -->
+			</cac:PartyName>
+
+
+
+		</cac:Party>
+	</cac:AccountingSupplierParty>
 		</CreditNote>
 	</test>
 </testSet>
