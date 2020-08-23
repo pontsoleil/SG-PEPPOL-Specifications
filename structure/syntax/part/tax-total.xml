@@ -39,7 +39,13 @@
             <Reference type="BUSINESS_TERM">BG-23-GST</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R053</Reference>
             <Reference type="RULE">BR-CO-18-GST-SG</Reference>
-            
+            <Reference type="RULE">BR-NG-01-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-11-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-12-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-13-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-14-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-08-GST-SG</Reference>
+
             <Element>
                 <Term>cbc:TaxableAmount</Term>
                 <Name>GST category taxable amount</Name>
@@ -86,7 +92,7 @@
             
             <Element>
                 <Term>cac:TaxCategory</Term>
-                <Name>VAT CATEGORY</Name>
+                <Name>GST CATEGORY</Name>
                 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -98,7 +104,7 @@
                     <Reference type="RULE">BR-47-GST-SG</Reference>
                     <Reference type="RULE">BR-CL-17-GST-SG</Reference>
                     <Reference type="RULE">BR-NG-01-GST-SG</Reference>
-                    <Value type="EXAMPLE">S</Value> 
+                    <Value type="EXAMPLE">SR</Value> 
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -108,7 +114,7 @@
                     <DataType>Percentage</DataType>
                     <Reference type="BUSINESS_TERM">BT-119-GST</Reference>
                     <Reference type="RULE">BR-48-GST-SG</Reference>
-                    <Value type="EXAMPLE">25</Value> 
+                    <Value type="EXAMPLE">7</Value> 
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -135,8 +141,8 @@
                     
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Description>Mandatory element. Use “VAT”</Description>
-                        <Value type="DEFAULT">VAT</Value>
+                        <Description>Mandatory element. Use “GST”</Description>
+                        <Value type="DEFAULT">GST</Value>
                     </Element>
                 </Element>
             </Element>

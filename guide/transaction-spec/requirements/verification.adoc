@@ -28,9 +28,9 @@ as gross price and price discount may be added
 |R15
 |descriptive and coded information about allowances and charges at both document level and at invoice line level
 |R16
-|information about charges, (non-VAT-)taxes, duties and levies, with their VAT information, that are not included in the line amounts at document level
+|information about charges, (non-GST-)taxes, duties and levies, with their GST information, that are not included in the line amounts at document level
 |R17
-|information about charges, (non-VAT-)taxes, duties and levies that compose the taxable amount and are not included in the unit price at separate invoice lines, with a proper identification and/or description
+|information about charges, (non-GST-)taxes, duties and levies that compose the taxable amount and are not included in the unit price at separate invoice lines, with a proper identification and/or description
 |R18
 |information about charges at invoice line level as part of the line amount
 |R19

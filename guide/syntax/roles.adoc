@@ -11,7 +11,7 @@ include::{snippet-dir}/Snippet-full.xml[tags=seller]
 ----
 <1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers shall be prefixed with the country code
+<3> !!!!! VAT identifiers shall be prefixed with the country code 
 
 
 
@@ -26,7 +26,7 @@ include::{snippet-dir}/Snippet-full.xml[tags=buyer]
 ----
 <1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers shall be prefixed with the country code
+<3> !!!!! VAT identifiers shall be prefixed with the country code
 <4> schemeID attribute is recommended for party legal entity identifiers
 
 
@@ -61,4 +61,4 @@ Tax representative party for the seller is relevant for sellers delivering goods
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=taxrep]
 ----
-<1> VAT identifiers shall be prefixed with the country code
+<1> !!!!! VAT identifiers shall be prefixed with the country code

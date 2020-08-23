@@ -1,5 +1,5 @@
 
-.Document and VAT currency codes
+.Document and GST currency codes
 [cols="1,4"]
 |===
 h| Document location

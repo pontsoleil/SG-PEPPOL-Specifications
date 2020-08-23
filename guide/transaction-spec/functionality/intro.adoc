@@ -5,7 +5,7 @@ An invoice may support functions related to a number of related (internal) busin
 
 * Accounting
 * Invoice verification against the contract, the purchase order and the goods and service delivered
-* VAT reporting
+* GST reporting
 * Auditing
 * Payment
 

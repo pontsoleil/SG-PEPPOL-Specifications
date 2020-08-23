@@ -4,7 +4,7 @@
         <Term>cac:AllowanceCharge</Term>
         <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
         <Description>A group of business terms providing information about allowances applicable to the Invoice as a
-            whole. A group of business terms providing information about charges and taxes other than VAT, applicable
+            whole. A group of business terms providing information about charges and taxes other than GST, applicable
             to the Invoice as a whole.
         </Description>
         <Reference type="BUSINESS_TERM">BG-20, BG-21</Reference>
@@ -70,7 +70,7 @@
         <Element>
             <Term>cbc:Amount</Term>
             <Name>Document level allowance or charge amount</Name>
-            <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals
+            <Description>The amount of an allowance or a charge, without GST
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
@@ -84,7 +84,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
-                <Value type="EXAMPLE">EUR</Value>
+                <Value type="EXAMPLE">SGD</Value>
             </Attribute>
             <Value type="EXAMPLE">200</Value>
         </Element>
@@ -93,7 +93,7 @@
             <Term>cbc:BaseAmount</Term>
             <Name>Document level allowance or charge base amount</Name>
             <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to
-                calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
+                calculate the document level allowance or charge amount. 
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
@@ -106,7 +106,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
-                <Value type="EXAMPLE">EUR</Value>
+                <Value type="EXAMPLE">SGD</Value>
             </Attribute>
             
             <Value type="EXAMPLE">1000</Value>
@@ -123,8 +123,9 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-95-GST,BT-102-GST</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
-            <Value type="EXAMPLE">S</Value>
-            
+            <Value type="EXAMPLE">SR</Value>
+            <Reference type="RULE">BR-NG-03-GST-SG</Reference>
+            <Reference type="RULE">BR-NG-04-GST-SG</Reference>
             
         </Element>
         
@@ -134,7 +135,7 @@
             <Description>The GST rate, represented as percentage that applies to the document level allowance or charge.</Description>
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-96-GST,BT-103-GST</Reference>
-            <Value type="EXAMPLE">25</Value>
+            <Value type="EXAMPLE">7</Value>
             
         </Element>
         
@@ -144,8 +145,8 @@
             
             <Element>
                 <Term>cbc:ID</Term>
-                <Description>Mandatory element. Use “VAT”</Description>
-                <Value type="DEFAULT">VAT</Value>
+                <Description>Mandatory element. Use “GST”</Description>
+                <Value type="DEFAULT">GST</Value>
             </Element>
         </Element>
     </Element>

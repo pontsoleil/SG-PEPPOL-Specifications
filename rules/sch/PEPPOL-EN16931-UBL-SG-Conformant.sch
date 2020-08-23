@@ -100,7 +100,7 @@
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"
         test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
-        flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
+        flag="fatal">GST accounting currency code MUST be different from invoice currency code when
         provided.</assert>
       
     
@@ -156,7 +156,7 @@
       context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
       <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All
         currencyID attributes must have the same value as the invoice currency code (BT-5), except
-        for the invoice total VAT amount in accounting currency (BT-111) </assert>
+        for the invoice total GST amount in accounting currency (BT-111) </assert>
     </rule>
     
    

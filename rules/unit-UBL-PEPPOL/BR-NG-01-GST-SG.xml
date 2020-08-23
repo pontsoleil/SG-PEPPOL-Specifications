@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
 	<assert>
-    <description>BR-13-GST-SG</description>
-		<scope>BR-13-GST-SG</scope>
+    <description>BR-NG-01-GST</description>
+		<scope>BR-NG-01-GST</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-NG-01-GST</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -215,7 +215,7 @@
 
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>BR-NG-01-GST</success>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -424,7 +424,7 @@
 	
 	<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-NG-01-GST</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -644,7 +644,7 @@
 	
 		<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>BR-NG-01-GST</error>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

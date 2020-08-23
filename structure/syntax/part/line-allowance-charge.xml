@@ -7,6 +7,8 @@
             Invoice line.
         </Description>
         <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
+        <Reference type="RULE">BR-CO-23</Reference>
+        <Reference type="RULE">BR-CO-24</Reference>
         
         <Element>
             <Term>cbc:ChargeIndicator</Term>
@@ -31,6 +33,7 @@
             <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
             <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
+            
 
             <Value type="EXAMPLE">95</Value>
         </Element>
@@ -64,7 +67,7 @@
         <Element>
             <Term>cbc:Amount</Term>
             <Name>Line level allowance or charge amount</Name>
-            <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
+            <Description>The amount of an allowance or a charge, without GST. </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
             <Reference type="RULE">BR-41</Reference>

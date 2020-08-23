@@ -85,6 +85,7 @@
             <Reference type="BUSINESS_TERM">BT-3</Reference>
             <Reference type="RULE">BR-04</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
+            <Reference type="RULE">BR-CO-25</Reference>
             <Reference type="CODE_LIST">UNCL1001-cn</Reference>
             <Value type="EXAMPLE">381</Value>
         </Element>
@@ -572,8 +573,8 @@
                 <Term>cbc:LineExtensionAmount</Term>
                 <Name>Invoice line net amount</Name>
                 <Description>The total amount of the Invoice line.
-                    The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
-                    Must be rounded to maximum 2 decimals.</Description>
+                    The amount is “net” without GST, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
+                    </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-131</Reference>
                 <Reference type="RULE">BR-24</Reference>

@@ -11,7 +11,7 @@ include::verification.adoc[]
 
 include::auditing.adoc[]
 
-include::vat-reporting.adoc[]
+include::gst-reporting.adoc[]
 
 include::payment.adoc[]
 

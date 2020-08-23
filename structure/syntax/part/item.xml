@@ -106,7 +106,7 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-158</Reference>
                 <Reference type="RULE">BR-65</Reference>
-                
+                <Reference type="RULE">BR-NG-02-GST-SG</Reference>
                 
                 
                 <Attribute>
@@ -131,8 +131,8 @@
         
         <Element>
             <Term>cac:ClassifiedTaxCategory</Term>
-            <Name>LINE VAT INFORMATION</Name>
-            <Description>A group of business terms providing information about the VAT applicable for the goods and services
+            <Name>LINE GST INFORMATION</Name>
+            <Description>A group of business terms providing information about the GST applicable for the goods and services
                 invoiced on the Invoice line.
             </Description>
             <Reference type="BUSINESS_TERM">BG-30</Reference>
@@ -164,8 +164,8 @@
                 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Description>Mandatory element. Use “VAT”</Description>
-                    <Value type="DEFAULT">VAT</Value>
+                    <Description>Mandatory element. Use “GST”</Description>
+                    <Value type="DEFAULT">GST</Value>
                 </Element>
             </Element>
         </Element>

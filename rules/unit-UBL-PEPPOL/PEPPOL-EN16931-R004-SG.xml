@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
 	<assert>
-    <description>BR-13-GST-SG</description>
-		<scope>BR-13-GST-SG</scope>
+    <description>PEPPOL-EN16931-R004-SG</description>
+		<scope>PEPPOL-EN16931-R004-SG</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>PEPPOL-EN16931-R004-SG</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-		
+			<cbc:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</cbc:CustomizationID> <!-- BT-24 -->
+
 
 		</Invoice>
 	</test>
 
 	<test>
 		<assert>
-			<success>BR-13-GST-SG</success>
+			<success>PEPPOL-EN16931-R004-SG</success>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 
-		
+			<cbc:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</cbc:CustomizationID> <!-- BT-24 -->
+
 
 		</CreditNote>
 	</test>
 	
 	<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>PEPPOL-EN16931-R004-SG</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:CustomizationID>ERROR-urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</cbc:CustomizationID> <!-- BT-24 -->
 
 		</Invoice>
 	</test>
 	
 		<test>
 		<assert>
-			<error>BR-13-GST-SG</error>
+			<error>PEPPOL-EN16931-R004-SG</error>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+	<cbc:CustomizationID>ERROR-urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</cbc:CustomizationID> <!-- BT-24 -->
 
 		</CreditNote>
 	</test>
