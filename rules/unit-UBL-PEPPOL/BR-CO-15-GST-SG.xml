@@ -12,7 +12,8 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-		
+			<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode> <!-- BT-5 -->
+
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="SGD">2374.05</cbc:TaxAmount> <!-- BT-110 -->
 		<cac:TaxSubtotal>
@@ -49,6 +50,7 @@
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode> <!-- BT-5 -->
 
 			<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="SGD">2374.05</cbc:TaxAmount> <!-- BT-110 -->
@@ -85,6 +87,7 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode> <!-- BT-5 -->
 
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
@@ -121,6 +124,7 @@
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode> <!-- BT-5 -->
 
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> <!-- BT-110 -->
