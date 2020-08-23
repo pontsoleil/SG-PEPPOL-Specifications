@@ -14,4 +14,4 @@ deploy:
   on:
     repo: SG-PEPPOL/SG-PEPPOL-Specifications
     branch: feature/PEPPOLSync
-  skip_cleanup: 'false'
+  skip_cleanup: 'true'
