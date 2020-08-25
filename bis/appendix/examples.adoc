@@ -1,0 +1,8 @@
+[appendix]
+[[examples]]
+= Example files
+
+The example files are published on GitHub. 
+
+* {link-examples}
+
