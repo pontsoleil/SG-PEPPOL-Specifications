@@ -8,3 +8,5 @@ Release date:: 2019-06-12
 
 == Changes to validation artefacts
 
+* None 
+

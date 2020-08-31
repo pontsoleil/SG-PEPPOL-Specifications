@@ -4,7 +4,9 @@ Release date:: 2020-06-23
 
 == Changes to BIS document
 
-* Adding rules to support out of scope invoicing. 
+* None. 
 
 == Changes to validation artefacts
+
+* Adding rules to support out of scope invoicing. 
 

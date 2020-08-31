@@ -2,9 +2,15 @@
 [horizontal]
 Release date:: 2019-10-24
 
+****
+IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. 
+****
+
 == Changes to BIS document
 
 * Updated GST category code list with value NG for companies not registered for GST 
 
 == Changes to validation artefacts
+
+* Added rules for new NG code. 
 

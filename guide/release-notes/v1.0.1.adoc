@@ -8,3 +8,5 @@ Release date:: 2019-01-07
 
 == Changes to validation artefacts
 
+* First version using the standard Peppol schematrons with extension. 
+
