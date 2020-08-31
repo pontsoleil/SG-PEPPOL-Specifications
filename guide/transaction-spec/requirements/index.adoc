@@ -14,7 +14,7 @@ include::accounting.adoc[]
 
 include::verification.adoc[]
 
-include::vat.adoc[]
+include::gst.adoc[]
 
 include::auditing.adoc[]
 
