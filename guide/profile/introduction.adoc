@@ -1,16 +1,14 @@
 [preface]
 = Introduction to openPeppol and BIS
+This specification is an extension of the PEPPOL BIS Billing 3.0 specification, following the guidance given in TR 16931-5 “Guidelines on the use of sector or country extensions in conjunction with EN16931-1” Any instance documents compliant to this specification will be conformant to the PEPPOL BIS Billing 3.0 and to the European Standard EN 16931.
 
+The main requirement for the extensions comes from the fact that Singapore uses Goods and Service Tax (GST) instead of Value Added Tax (VAT). This has consequences on code lists and the naming of some business terms.
 
-This {Peppol} BIS provides a set of specifications for implementing a {Peppol} business process.
+On a syntactical level, this specification only uses the OASIS UBL 2.1 XML format.
 
-TESTING RENDERING
+A {peppol} BIS provides a set of specifications for implementing a {peppol} business process. A BIS document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for the support and implementation of these requirements.
 
-
-This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents compliant to this specification will be compliant with the European Standard ({EN16931}).
-
-The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
-
+The purpose of this document is to describe the use of the invoice and credit note messages as used by Singapore in the PEPPOL network, and to facilitate an efficient implementation and increased use of electronic collaboration.
 
 .Statement of copyright
 ****
