@@ -1,4 +1,4 @@
-= Version 1.0.2 - Release
+= Version 3.0.2 - Release
 [horizontal]
 Release date:: 2019-06-12
 

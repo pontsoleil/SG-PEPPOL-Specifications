@@ -10,7 +10,7 @@ On a syntactical level, this specification only uses the OASIS UBL 2.1 XML forma
 
 A {peppol} BIS provides a set of specifications for implementing a {peppol} business process. A BIS document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for the support and implementation of these requirements.
 
-The purpose of this document is to describe the use of the invoice and credit note messages as used by Singapore in the PEPPOL network, and to facilitate an efficient implementation and increased use of electronic collaboration
+The purpose of this document is to describe the use of the invoice and credit note messages as used by Singapore in the PEPPOL network, and to facilitate an efficient implementation and increased use of electronic collaboration.
 
 
 .Statement of copyright
