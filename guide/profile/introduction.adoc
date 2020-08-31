@@ -4,6 +4,9 @@
 
 This {Peppol} BIS provides a set of specifications for implementing a {Peppol} business process.
 
+TESTING RENDERING
+
+
 This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents compliant to this specification will be compliant with the European Standard ({EN16931}).
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
