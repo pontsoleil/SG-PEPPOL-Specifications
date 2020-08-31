@@ -2,7 +2,7 @@
 
 An amount states a numerical monetary value. The currency of the amount is defined as a separate business term.
 
-IMPORTANT: Amount is floating up to two fraction digits.
+IMPORTANT: Amount is floating with [yellow-background]#unlimited fraction# digits.
 
 
 [cols="1s,1,1,1", options="header"]

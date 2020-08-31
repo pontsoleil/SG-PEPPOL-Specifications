@@ -1,8 +1,7 @@
 
-= VAT accounting currency
+= GST accounting currency
 
-Article 230 of {VAT-dir} states:
-[quote]
+[yellow-background]#This clause needs to be revised in line with Singapore regulation on currencies (tax total, invoice with and without gst)#
 ____
 The amounts which appear on the invoice may be expressed in
 any currency, provided that the amount of VAT payable is
@@ -14,4 +13,4 @@ ____
 
 If the invoice currency is different from the national currency, this is expressed in the invoice by stating the national currency in the element VAT accounting currency (BT-6), and the amount of VAT payable in national currency is stated in the element Invoice total VAT amount in accounting currency (BT-111). The exchange rate to use for calculating is described in Article 91 of {VAT-dir}. The exchange rate is not specified in the invoice instance, and hence this calculation is not validated.
 
-include::../../syntax/vat-currency.adoc[]
+include::../../syntax/gst-currency.adoc[]

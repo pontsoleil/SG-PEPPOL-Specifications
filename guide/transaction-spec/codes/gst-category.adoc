@@ -1,0 +1,57 @@
+
+= GST category codes
+
+The following codes shall be used to specify GST categories.
+
+include::../../syntax/codelists/gst-category.adoc[]
+
+Valid values are listed in the table below:
+
+[cols="3,2,4,1", options="header"]
+.Code list
+|===
+| Type of supply | Code | Description | Rate
+
+.3+^.^| Standard rated
+| SR
+| Local supply of goods and services
+| 7%
+
+| SRCA-S
+| Customer accounting supply made by the supplier
+| N/A
+
+| SRCA-C
+| Customer accounting supply made by the customer on supplier’s behalf
+| 7%
+
+| Zero rated
+| ZR
+| Supplies involving goods for export/ provision of international services
+| 0%
+
+.2+^.^| Exempt
+| ES33
+| Specific categories of exempt supplies listed under regulation 33 of the GST (General) Regulations
+| N/A
+
+| ESN33
+| Exempt supplies other than those listed under regulation 33 of the GST (General) Regulations
+| N/A
+
+| Deemed supplies
+| DS
+| Supplies required to be reported pursuant to the GST legislation
+| 7%
+
+| Out-of-Scope supplies
+| OS
+| Supplies outside the scope of the GST Act
+| N/A
+
+| Supplies from Non GST registered company
+| NG
+| Supplies from a company which is not registered for GST
+| N/A
+|===
+

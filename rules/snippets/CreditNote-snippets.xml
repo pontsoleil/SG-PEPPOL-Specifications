@@ -8,7 +8,7 @@
     <cbc:IssueDate>2017-11-13</cbc:IssueDate>
     <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:BillingReference>
@@ -43,7 +43,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>GB1232434</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -73,7 +73,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>SE4598375937</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -124,41 +124,41 @@
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReason>Insurance</cbc:AllowanceChargeReason>
-            <cbc:Amount currencyID="EUR">25</cbc:Amount><!--2-->
+            <cbc:Amount currencyID="SGD">25</cbc:Amount><!--2-->
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:AllowanceCharge>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">331.25</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="SGD">331.25</cbc:TaxAmount>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">1325</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">331.25</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="SGD">1325</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SGD">331.25</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">1300</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">1325</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">1656.25</cbc:TaxInclusiveAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">25</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="EUR">1656.25</cbc:PayableAmount>
+        <cbc:LineExtensionAmount currencyID="SGD">1300</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="SGD">1325</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SGD">1656.25</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="SGD">25</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="SGD">1656.25</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     
 <cac:CreditNoteLine>
     <cbc:ID>1</cbc:ID>
     <cbc:CreditedQuantity unitCode="DAY">7</cbc:CreditedQuantity>
-    <cbc:LineExtensionAmount currencyID= "EUR">2800</cbc:LineExtensionAmount>
+    <cbc:LineExtensionAmount currencyID= "SGD">2800</cbc:LineExtensionAmount>
 
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
        <cac:OrderLineReference>
@@ -180,19 +180,19 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
     <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">400</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="SGD">400</cbc:PriceAmount>
     </cac:Price>
     </cac:CreditNoteLine>
     
 <cac:CreditNoteLine>
     <cbc:ID>2</cbc:ID>
     <cbc:CreditedQuantity unitCode="DAY">-3</cbc:CreditedQuantity>
-    <cbc:LineExtensionAmount currencyID="EUR">-1500</cbc:LineExtensionAmount>
+    <cbc:LineExtensionAmount currencyID="SGD">-1500</cbc:LineExtensionAmount>
     <cac:OrderLineReference>
         <cbc:LineID>123</cbc:LineID>
     </cac:OrderLineReference>
@@ -212,12 +212,12 @@
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25.0</cbc:Percent>
             <cac:TaxScheme>
-                <cbc:ID>VAT</cbc:ID>
+                <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
         </cac:ClassifiedTaxCategory>
     </cac:Item>
     <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">500</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="SGD">500</cbc:PriceAmount>
     </cac:Price>
 </cac:CreditNoteLine>
 </CreditNote>

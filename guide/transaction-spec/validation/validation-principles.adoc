@@ -1,5 +1,6 @@
 = Validation Principles
 
+[yellow-background]#Evaluate for relevance to Singapore since SG is non using a CIUS#
 Stages in the validation process:
 
 Validation of syntax::

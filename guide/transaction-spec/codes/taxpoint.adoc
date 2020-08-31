@@ -1,6 +1,6 @@
 
 = Value added tax point date code
-
+[yellow-background]#Relevance for Singapore#
 A subset of values from {UNCL2005} shall be used.
 
 include::../../syntax/codelists/taxpoint-date.adoc[]

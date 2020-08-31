@@ -1,0 +1,7 @@
+
+= GST exemption reason code
+
+[yellow-background]#How is this handled, should this section be left out?#
+
+
+include::../../syntax/codelists/vat-exempt.adoc[]
