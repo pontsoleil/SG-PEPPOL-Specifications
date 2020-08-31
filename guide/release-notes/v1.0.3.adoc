@@ -1,0 +1,10 @@
+= Version 1.0.2 - Release
+[horizontal]
+Release date:: 2019-10-24
+
+== Changes to BIS document
+
+* Updated GST category code list with value NG for companies not registered for GST 
+
+== Changes to validation artefacts
+

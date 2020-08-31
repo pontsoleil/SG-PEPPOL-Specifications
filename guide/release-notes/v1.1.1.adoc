@@ -1,0 +1,10 @@
+= Version 1.1.1 - Release
+[horizontal]
+Release date:: 2020-10-01
+
+== Changes to BIS document
+
+* Documentation moved from differencial to full documentation. 
+
+== Changes to validation artefacts
+

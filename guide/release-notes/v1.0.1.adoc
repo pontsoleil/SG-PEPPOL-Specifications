@@ -1,11 +1,10 @@
-= Version 3.1 - Release
+= Version 3.0.1 - Release
 [horizontal]
-Release date:: 2020-XX-XX
+Release date:: 2019-01-07
 
 == Changes to BIS document
 
 * First version using the standard Peppol documentation structure 
-* 
 
 == Changes to validation artefacts
 

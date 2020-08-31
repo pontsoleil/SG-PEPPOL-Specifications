@@ -1,0 +1,10 @@
+= Version 1.0.2 - Release
+[horizontal]
+Release date:: 2019-06-12
+
+== Changes to BIS document
+
+* Updated GST category codes and electronic identification scheme code lists 
+
+== Changes to validation artefacts
+
