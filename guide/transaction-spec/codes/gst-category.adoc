@@ -7,12 +7,12 @@ include::../../syntax/codelists/gst-category.adoc[]
 
 Valid values are listed in the table below:
 
-[cols="3,2,4,1", options="header"]
+[cols="2,1,4,1", options="header"]
 .Code list
 |===
 | Type of supply | Code | Description | Rate
 
-.3+^.^| Standard rated
+.3+.^| Standard rated
 | SR
 | Local supply of goods and services
 | 7%
@@ -30,7 +30,7 @@ Valid values are listed in the table below:
 | Supplies involving goods for export/ provision of international services
 | 0%
 
-.2+^.^| Exempt
+.2+.^| Exempt
 | ES33
 | Specific categories of exempt supplies listed under regulation 33 of the GST (General) Regulations
 | N/A
