@@ -80,7 +80,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
-                <Value type="EXAMPLE">EUR</Value>
+                <Value type="EXAMPLE">SGD</Value>
             </Attribute>
             
             <Value type="EXAMPLE">200</Value>  
@@ -103,7 +103,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
-                <Value type="EXAMPLE">EUR</Value>
+                <Value type="EXAMPLE">SGD</Value>
             </Attribute>
             
             <Value type="EXAMPLE">1000</Value>  

@@ -21,7 +21,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
-                <Value type="EXAMPLE">EUR</Value>
+                <Value type="EXAMPLE">SGD</Value>
             </Attribute>
             
             <Value type="EXAMPLE">486.25</Value>  
@@ -63,7 +63,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
-                    <Value type="EXAMPLE">EUR</Value>
+                    <Value type="EXAMPLE">SGD</Value>
                 </Attribute>
                 
                 <Value type="EXAMPLE">1945.00</Value> 
@@ -85,7 +85,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
-                    <Value type="EXAMPLE">EUR</Value>
+                    <Value type="EXAMPLE">SGD</Value>
                 </Attribute>
                 <Value type="EXAMPLE">486.25</Value> 
             </Element>

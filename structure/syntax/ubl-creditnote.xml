@@ -114,7 +114,7 @@
             <Reference type="RULE">BR-05</Reference>
             <Reference type="RULE">BR-CL-04</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
-            <Value type="EXAMPLE">EUR</Value>
+            <Value type="EXAMPLE">SGD</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -129,7 +129,7 @@
             <Reference type="RULE">BR-CL-05</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
-            <Value type="EXAMPLE">SEK</Value>
+            <Value type="EXAMPLE">MYR</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -563,7 +563,7 @@
                     <Reference type="RULE">BR-23</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Reference type="CODE_LIST">UNECERec21</Reference>
-                    <Value type="EXAMPLE">C62</Value>
+                    <Value type="EXAMPLE">H87</Value>
                 </Attribute>
                 <Value type="EXAMPLE">40</Value>
             </Element>
@@ -584,7 +584,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
-                    <Value type="EXAMPLE">EUR</Value>
+                    <Value type="EXAMPLE">SGD</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">3800</Value>

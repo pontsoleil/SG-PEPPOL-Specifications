@@ -106,7 +106,7 @@
                     <Description>The common name of the city, town or village, where the Seller address is located.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-37</Reference>
-                    <Value type="EXAMPLE">London</Value>
+                    <Value type="EXAMPLE">Singapore</Value>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -157,7 +157,7 @@
                         <Reference type="RULE">BR-09</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">GB</Value>
+                        <Value type="EXAMPLE">SG</Value>
                     </Element>
                 </Element>
             </Element>

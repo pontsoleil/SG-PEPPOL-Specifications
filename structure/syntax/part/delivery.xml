@@ -76,7 +76,7 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-77</Reference>
-                    <Value type="EXAMPLE">Malmö</Value>
+                    <Value type="EXAMPLE">Kuala Lumpur</Value>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -127,7 +127,7 @@
                         <Reference type="RULE">BR-57</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">SE</Value>
+                        <Value type="EXAMPLE">MY</Value>
                     </Element>
                 </Element>
             </Element>

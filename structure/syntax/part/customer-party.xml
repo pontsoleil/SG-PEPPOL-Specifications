@@ -84,7 +84,7 @@
                     <Description>The main address line in an address.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-50</Reference>
-                    <Value type="EXAMPLE">Hovudgatan 32</Value>
+                    <Value type="EXAMPLE">High street</Value>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -104,7 +104,7 @@
                     <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-52</Reference>
-                    <Value type="EXAMPLE">Stockholm</Value>
+                    <Value type="EXAMPLE">Singapore</Value>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -155,7 +155,7 @@
                         <Reference type="RULE">BR-11</Reference>
                         <Reference type="RULE">BR-CL-14</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">SE</Value>
+                        <Value type="EXAMPLE">SG</Value>
                     </Element>
                 </Element>
             </Element>
@@ -252,7 +252,7 @@
                     <Description>An e-mail address for the contact point.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-58</Reference>
-                    <Value type="EXAMPLE">jens.j@buyer.se</Value>
+                    <Value type="EXAMPLE">jens.j@buyer.sg</Value>
                 </Element>
             </Element>
         </Element>

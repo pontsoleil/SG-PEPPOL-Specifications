@@ -38,7 +38,7 @@
                 <Description>The main address line in an address.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-64</Reference>
-                <Value type="EXAMPLE">Lille gatan 545</Value>
+                <Value type="EXAMPLE">Carpender street</Value>
             </Element>
             
             <Element cardinality="0..1">
@@ -59,7 +59,7 @@
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-66</Reference>
-                <Value type="EXAMPLE">Göteborg</Value>
+                <Value type="EXAMPLE">Singapore</Value>
             </Element>
             
             <Element cardinality="0..1">
@@ -78,7 +78,7 @@
                 <Description>The subdivision of a country.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-68</Reference>
-                <Value type="EXAMPLE">Region Vest</Value>
+                <Value type="EXAMPLE">Region West</Value>
             </Element>
             
             
@@ -111,7 +111,7 @@
                     <Reference type="RULE">BR-20</Reference>
                     <Reference type="RULE">BR-CL-14</Reference>
                     <Reference type="CODE_LIST">ISO3166</Reference>
-                    <Value type="EXAMPLE">SE</Value>
+                    <Value type="EXAMPLE">SG</Value>
                 </Element>
             </Element>
         </Element>
