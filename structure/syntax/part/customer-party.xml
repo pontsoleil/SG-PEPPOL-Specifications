@@ -162,7 +162,7 @@
             
             <Element cardinality="0..1">
                 <Term>cac:PartyTaxScheme</Term>
-                <Name>PARTY VAT IDENTIFIER</Name>
+                <Name>PARTY GST IDENTIFIER</Name>
                 
                 <Element>
                     <Term>cbc:CompanyID</Term>
@@ -180,9 +180,9 @@
                     
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Description>Mandatory element. Use “VAT”</Description>
+                        <Description>Mandatory element. Use “GST”</Description>
                         <DataType>Identifier</DataType>
-                        <Value type="DEFAULT">VAT</Value>
+                        <Value type="DEFAULT">GST</Value>
                         
                     </Element>
                 </Element>

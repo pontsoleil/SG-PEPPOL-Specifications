@@ -66,11 +66,11 @@
         <Element cardinality="0..1">
             <Term>cbc:TaxPointDate</Term>
             <Name>Value added tax point date</Name>
-            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date
-                can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.
+            <Description>The date when the GST becomes accountable for the Seller and for the Buyer in so far as that date
+                can be determined and differs from the date of issue of the invoice. This element is required if the tax point date is different from the Invoice issue date.
             </Description>
             <DataType>Date</DataType>
-            <Reference type="BUSINESS_TERM">BT-7</Reference>
+            <Reference type="BUSINESS_TERM">BT-7-GST</Reference>
             <Reference type="RULE">BR-CO-03</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
@@ -106,11 +106,11 @@
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Invoice currency code</Name>
-            <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting
-                currency. Only one currency shall be used in the Invoice, except for the GST accounting currency code (BT-6-GST) and the invoice total VAT amount in accounting currency (BT-111).
+            <Description>The currency in which all Invoice amounts are given, except for the Total GST amount in accounting
+                currency. Only one currency shall be used in the Invoice, except for the GST accounting currency code (BT-6-GST) and the invoice total GST amount in accounting currency (BT-111).
             </Description>
             <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">BT-5</Reference>
+            <Reference type="BUSINESS_TERM">BT-5-GST</Reference>
             <Reference type="RULE">BR-05</Reference>
             <Reference type="RULE">BR-CL-04</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
@@ -187,9 +187,9 @@
             <Element cardinality="0..1">
                 <Term>cbc:DescriptionCode</Term>
                 <Name>Value added tax point date code</Name>
-                <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
+                <Description>The code of the date when the GST becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
-                <Reference type="BUSINESS_TERM">BT-8</Reference>
+                <Reference type="BUSINESS_TERM">BT-8-GST</Reference>
                 <Reference type="RULE">BR-CO-03</Reference>
                 <Reference type="RULE">BR-CL-06</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>

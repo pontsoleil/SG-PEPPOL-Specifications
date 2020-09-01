@@ -12,10 +12,10 @@
         <Element>
             <Term>cbc:PriceAmount</Term>
             <Name>Item net price</Name>
-            <Description>The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the
+            <Description>The price of an item, exclusive of GST, after subtracting item price discount. The Item net price has to be equal with the
                 Item gross price less the Item price discount, if they are both provided. Item price can not be negative.</Description>
             <DataType>Amount</DataType>
-            <Reference type="BUSINESS_TERM">BT-146</Reference>
+            <Reference type="BUSINESS_TERM">BT-146-GST</Reference>
             <Reference type="RULE">BR-26</Reference>
             <Reference type="RULE">BR-27</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R046</Reference>
@@ -91,9 +91,9 @@
             <Element cardinality="0..1">
                 <Term>cbc:BaseAmount</Term>
                 <Name>Item gross price</Name>
-                <Description>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative</Description>
+                <Description>The unit price, exclusive of GST, before subtracting Item price discount, can not be negative</Description>
                 <DataType>Amount</DataType>
-                <Reference type="BUSINESS_TERM">BT-148</Reference>
+                <Reference type="BUSINESS_TERM">BT-148-GST</Reference>
                 <Reference type="RULE">BR-28</Reference>
                 
                 <Attribute>
