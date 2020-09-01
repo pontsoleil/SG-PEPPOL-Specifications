@@ -13,7 +13,7 @@
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
     <!-- tag::vat-curr1[] -->
-    <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
+    <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode><!-- BT-5 -->
     <!--1-->
     <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
     <!--2-->
