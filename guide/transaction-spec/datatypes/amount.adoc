@@ -2,7 +2,7 @@
 
 An amount states a numerical monetary value. The currency of the amount is defined as a separate business term.
 
-IMPORTANT: Amount is floating with [yellow-background]#unlimited fraction# digits.
+IMPORTANT: Amount is floating with unlimited fraction digits but may be restricted for specific amounts such as BT-115 Payable amount which is resticted to 2 decimals.
 
 
 [cols="1s,1,1,1", options="header"]

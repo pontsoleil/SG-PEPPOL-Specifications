@@ -16,8 +16,8 @@ include::preceding-invoice.adoc[]
 
 include::allowance.adoc[]
 
-include::gst-currency.adoc[]
-
+<!-- include::gst-currency.adoc[]
+ -->
 include::payment.adoc[]
 
 include::item.adoc[]

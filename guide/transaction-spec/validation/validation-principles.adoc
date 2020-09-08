@@ -1,6 +1,5 @@
 = Validation Principles
 
-[yellow-background]#Evaluate for relevance to Singapore since SG is non using a CIUS#
 Stages in the validation process:
 
 Validation of syntax::
@@ -10,14 +9,15 @@ Validation of syntax::
   * All UBL 2.1 mandatory elements shall be present.
   * The element’s contents shall be according to the element’s type definition.
 
-Validation against {EN16931}::
+Validation against a subset of {EN16931}::
  To verify that the instance message is compliant to the european standard, like:
   * Valid codes for currencies, countries, tax  etc.
   * Mandatory elements according to {EN16931}.
   * Logical correlations between information element, i.e. that start date is lower than or equal to end date, calculations give the correct result etc.
+  * The subset excludes EN16931 rules that are specific to Europe.
 
-CIUS - General rules::
-General rule that applies to all invoices and are triggered by the existence of one or more specific business term(s).
+Peppol BIS Billing 3.0 - General rules::
+General rule that applies to all invoices in Peppol and are triggered by the existence of one or more specific business term(s).
 
 * *Example rule text* +
 _An invoice shall have a buyers reference *or* an order reference_
@@ -25,10 +25,10 @@ _An invoice shall have a buyers reference *or* an order reference_
 * *Context that triggers the rule* +
 _Existence of either Buyer reference (BT-10) *OR* Purchased order reference (BT-13)_
 
-CIUS - Country qualified validation rules::
-Applies only for invoices issued in a specific country. The rule is triggered by the given country code of the seller (BT-40).
+Singapore - Country qualified validation rules::
+Specific rule relevant for Singapore such for calculation of GST.
 * *Example rule text* +
-_When the Seller is Swedish, the Legal Registration Number shall be numeric with 10 digits._
+_[BR-NG-11-GST-SG]-An Invoice that contains a GST breakdown group (BG-23) with a GST category code (BT-118-GST) "NG" shall not contain other GST breakdown groups (BG-23)_
 
 * *Context that triggers the rule* +
-_Existence of Seller/Address/CountryCode=‘SE’ *AND* existence of Seller/LegalRegistrationNumber_
+_The SG BIS Customization identifier_

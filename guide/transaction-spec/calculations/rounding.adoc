@@ -6,9 +6,8 @@ To minimize the risk of differences due to rounding, the following rules apply:
 
 [IMPORTANT]
 ====
-* All document level amounts shall be rounded to two decimals for accounting
-* Invoice line net amount shall be rounded to two decimals
-* Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included GST.
+* Amounts do not need to be roundes and can have unlimited decimals, with the following expemption.
+** Invoice Payable amount (BT-11) shall be rounded to two decimals
 ====
 
 Please also see <<Calculation>> for details on how to calculate the different amounts.

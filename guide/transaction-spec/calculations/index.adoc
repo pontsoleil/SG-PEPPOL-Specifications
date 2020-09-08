@@ -10,6 +10,6 @@ include::line-calc.adoc[]
 
 include::allowance-calc.adoc[]
 
-include::vat.adoc[]
+include::gst.adoc[]
 
 :leveloffset: -1
