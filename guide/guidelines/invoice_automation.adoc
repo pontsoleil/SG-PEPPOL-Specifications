@@ -6,9 +6,8 @@
 
 The use of references in the invoice is a key mechanism for the buyer to automate the approval and matching process. With proper software, much of the tedious job of manual business controls and verification can be rationalized with none or a minimum of manual intervention. 
 
-[IMPORTANT]
 ****
-It is important that they buyer takes the capability of the seller into consideration when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
+NOTE: It is important that they buyer takes the capability of the seller into consideration when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
 ****
 
 == Three primary references which are commonly used
@@ -23,8 +22,7 @@ It is important that they buyer takes the capability of the seller into consider
 |UBL: OrderReference/ID
 
 |BT-132 Referenced purchase order line reference
-|BL invoice: InvoiceLine/OrderLineReference/LineID 
-'''
+|UBL invoice: InvoiceLine/OrderLineReference/LineID[%hardbreaks]
 UBL Creditnote: CreditNoteLine/OrderLineReference/LineID
 |===
                                                                                                    
@@ -44,8 +42,7 @@ An invoiced object is a service or commodity that gives raise to recurring invoi
 |UBL: AdditionalDocumentReference/ID with DocumentTypeCode=”130”
 
 |BT-128 Invoice line object identifier
-|UBL invoice: InvoiceLine/DocumentReference/ID with DocumentTypeCode=”130”
-'''
+|UBL invoice: InvoiceLine/DocumentReference/ID with DocumentTypeCode=”130”[%hardbreaks]
 UBL Creditnote: CreditNoteLine/DocumentReference/ID with DocumentTypeCode=”130
 |===
 
@@ -73,8 +70,7 @@ BT-12 *Contract reference* refers to a framework agreement or other kind of cont
 |UBL: AccountingCost
 
 |BT-133 Invoice line Buyer accounting reference
-|UBLInvoice: InvoiceLine/AccountingCost
-'''
+|UBLInvoice: InvoiceLine/AccountingCost[%hardbreaks]
 UBL Creditnote: CreditNoteLine/AccountingCost
 |===
 
@@ -87,8 +83,7 @@ If instructed in advance the seller can provide, in the invoice, a text string t
 |Business Term |Location in syntax 
 
 |BT-11 Project reference
-|UBL invoice: ProjectReference/ID
-'''
+|UBL invoice: ProjectReference/ID[%hardbreaks]
 UBL credit note: AdditionalDocumentReference/ID with DocumentTypeCode=”50”
 |===
 
