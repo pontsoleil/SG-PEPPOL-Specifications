@@ -8,7 +8,7 @@ The use of references in the invoice is a key mechanism for the buyer to automat
 
 [IMPORTANT]
 ****
-It is important that they buyer takes the into consideration the capability of the seller when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
+It is important that they buyer takes the capability of the seller into consideration when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
 ****
 
 == Three primary references which are commonly used
@@ -23,7 +23,8 @@ It is important that they buyer takes the into consideration the capability of t
 |UBL: OrderReference/ID
 
 |BT-132 Referenced purchase order line reference
-|BL invoice: InvoiceLine/OrderLineReference/LineID
+|BL invoice: InvoiceLine/OrderLineReference/LineID 
+'''
 UBL Creditnote: CreditNoteLine/OrderLineReference/LineID
 |===
                                                                                                    
@@ -44,6 +45,7 @@ An invoiced object is a service or commodity that gives raise to recurring invoi
 
 |BT-128 Invoice line object identifier
 |UBL invoice: InvoiceLine/DocumentReference/ID with DocumentTypeCode=”130”
+'''
 UBL Creditnote: CreditNoteLine/DocumentReference/ID with DocumentTypeCode=”130
 |===
 
@@ -72,6 +74,7 @@ BT-12 *Contract reference* refers to a framework agreement or other kind of cont
 
 |BT-133 Invoice line Buyer accounting reference
 |UBLInvoice: InvoiceLine/AccountingCost
+'''
 UBL Creditnote: CreditNoteLine/AccountingCost
 |===
 
@@ -85,6 +88,7 @@ If instructed in advance the seller can provide, in the invoice, a text string t
 
 |BT-11 Project reference
 |UBL invoice: ProjectReference/ID
+'''
 UBL credit note: AdditionalDocumentReference/ID with DocumentTypeCode=”50”
 |===
 
@@ -92,29 +96,58 @@ If instructed in advance the seller can associate the invoice to a project by me
 
 == Despatch advice reference
 
-BT-16 Despatch advice reference                   UBL: DespatchDocumentReference/ID
-BT-16 Despatch advice referenceis the supplier’s reference to a despatch advice that may be used to reconciliate the invoice with the goods despatched and (hopefully) received. The invoice can refer to at most one despatch advice.
+|===
+|Business Term |Location in syntax 
+
+|BT-16 Despatch advice reference 
+|UBL: DespatchDocumentReference/ID
+|===
+
+BT-16 *Despatch advice reference* is the supplier’s reference to a despatch advice that may be used to reconciliate the invoice with the goods despatched and (hopefully) received. The invoice can refer to at most one despatch advice.
 
 == Supporting document reference
 
-BT-122 Supporting document reference, and 
-BT-123 Supporting document description    UBL: AdditionalDocumentReference/ID, without DocumentTypeCode, and with DocumentDescription 
+|===
+|Business Term |Location in syntax 
 
-BT-122 Supporting document reference is a general-purpose reference to a document substantiating claims in the invoice. When used in this specific context, the referenced document is expected to be known by both seller and buyer, nevertheless it is adviced that BT-122 should be accompanied by BT-123 Supporting document descriptionto clarify the subject matter of the document.
+|BT-122 Supporting document reference and 
+BT-123 Supporting document description 
+|UBL: AdditionalDocumentReference/ID, without DocumentTypeCode, and with DocumentDescription
+|===
+
+BT-122 *Supporting document reference* is a general-purpose reference to a document substantiating claims in the invoice. When used in this specific context, the referenced document is expected to be known by both seller and buyer, nevertheless it is adviced that BT-122 should be accompanied by BT-123 *Supporting document description* to clarify the subject matter of the document.
 
 == Sales order reference
 
-BT-14 Sales order reference   UBL: OrderReference/SalesOrderID
-BT-14 Sales order referenceis the seller’s reference to the order (corresponding to the buyer’s BT-13 Purchase order reference). The business term may have been given in a response to the order. The purpose for including it in the invoice is to simplify the seller’s tracing of the order in case queries should arise as the buyer processes the invoice.
+|===
+|Business Term |Location in syntax 
+
+|BT-14 Sales order reference 
+|UBL: OrderReference/SalesOrderID
+|===
+
+BT-14 *Sales order reference* is the seller’s reference to the order (corresponding to the buyer’s BT-13 *Purchase order reference*). The business term may have been given in a response to the order. The purpose for including it in the invoice is to simplify the seller’s tracing of the order in case queries should arise as the buyer processes the invoice.
 
 == Tender or lot reference
 
-BT-17 Tender or lot reference                         UBL: OriginatorDocumentReference/ID
-Note–The UBL mapping of BT-12 to OriginatorDocumentReference implies reference to the originating tender document, it is not to be understood as reference to the originator or the originator’s internal requisition leading to the invoice.
+|===
+|Business Term |Location in syntax 
+
+|BT-17 Tender or lot reference  
+|UBL: OriginatorDocumentReference/ID
+|===
+
+Note–The UBL mapping of BT-17 to OriginatorDocumentReference implies reference to the originating tender document, it is not to be understood as reference to the originator or the originator’s internal requisition leading to the invoice.
 
 == Receiving advice reference
 
-BT-15 Receiving advice reference UBL: ReceiptDocumentReference/ID
+|===
+|Business Term |Location in syntax 
+
+|BT-15 Receiving advice reference 
+|UBL: ReceiptDocumentReference/ID
+|===
+
 In case the buyer during the delivery process has responded to the seller with a message/notification that the goods were received, then this element can be used to refer to this message/notification
  
 
