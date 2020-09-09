@@ -5,6 +5,7 @@
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
+	<Documentation path="guidelines/">Guidelines</Documentation>
 
     <!-- Syntax -->
     <Resource>
@@ -17,20 +18,6 @@
         <Path>structure/syntax/ubl-creditnote.xml</Path>
         <Title>UBL Credit Note</Title>
     </Resource>
-
-    <!-- Guidelines -->
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-invoice.xml</Path>
-        <Title>UBL Invoice</Title>
-    </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-creditnote.xml</Path>
-        <Title>UBL Credit Note</Title>
-    </Resource>
-	
-	<Guidelines path="release-notes/">Release notes</Guidelines>	
 
     <!-- Rules -->
     <Resource>

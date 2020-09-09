@@ -1,4 +1,4 @@
-= Release notes for SG Peppol BIS Billing v3
+= Guidelines for SG Peppol BIS Billing v3
 openPEPPOL AISBL <http://www.peppol.eu/>
 :icons: font
 :source-highlighter: coderay
@@ -10,16 +10,6 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 
 :leveloffset: +1
 
-include::v3.0.5.adoc[]
-
-include::v3.0.4.adoc[]
-
-include::v3.0.3.adoc[]
-
-include::v3.0.2.adoc[]
-
-include::v3.0.1.adoc[]
-
-include::v3.0.0.adoc[]
+include::invoice_automation.adoc[]
 
 :leveloffset: -1

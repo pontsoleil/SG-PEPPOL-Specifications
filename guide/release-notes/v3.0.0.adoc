@@ -1,0 +1,12 @@
+= Version 3.0.0 - Release
+[horizontal]
+Release date:: 2019-01-07
+
+== Changes to BIS document
+
+* First version using the standard Peppol documentation structure 
+
+== Changes to validation artefacts
+
+* First version using the standard Peppol schematrons with extension. 
+

@@ -1,16 +1,14 @@
-= Version 3.0.2 - Release
+= Version 3.0.3 - Release
 [horizontal]
-Release date:: 2019-10-24
+Release date:: 2020-03-30
 
 ****
 IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. 
 ****
 
-== Changes to BIS document
+== Changes to BIS document and validation artefacts
 
-* Updated GST category code list with value NG for companies not registered for GST 
+* Editorial corrections of BT-numbers. Added GST-prefixed business terms for exemption reason text and code and rate on line level
 
-== Changes to validation artefacts
-
-* Added rules for new NG code. 
+ 
 
