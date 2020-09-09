@@ -13,49 +13,82 @@ It is important that they buyer takes the into consideration the capability of t
 
 == Three primary references which are commonly used
 
-BT-10 Buyer reference                                                             UBL: BuyerReference 
-BT-13 Purchase order reference                                             UBL: OrderReference/ID
-BT-132 Referenced purchase order line reference                          UBL invoice: InvoiceLine/OrderLineReference/LineID
-                                                                                                    UBL Creditnote: CreditNoteLine/OrderLineReference/LineID
+|===
+|Business Term |Location in syntax 
 
-An invoice must contain BT-10 Buyer reference or BT-13 Purchase order reference, or both. These business terms are designated, by the buyer, to be unique within the organisational unit identified by the buyer’s PEPPOL-ID. They are provided to the supplier in the order or contract, or at time of purchase, to be returned in the invoice with the purpose of automating internal forwarding of invoices, or matching invoice-to-order, in the buyer’s system. 
+|BT-10 Buyer reference
+|UBL: BuyerReference
 
-The invoice may refer to only one order, i.e. at most one BT-13Purchase order reference may be present in the invoice. If BT-13 is present, each invoice line may refer to one order line by means of BT-132 Referenced purchase order line reference. Presence of BT-13 does however not imply that line level referencing always has to be provided. Also, be mindful of the fact that order line and invoice line do not always have a one-to-one relation. 
+|BT-13 Purchase order reference
+|UBL: OrderReference/ID
+
+|BT-132 Referenced purchase order line reference
+|BL invoice: InvoiceLine/OrderLineReference/LineID
+UBL Creditnote: CreditNoteLine/OrderLineReference/LineID
+|===
+                                                                                                   
+
+An invoice must contain BT-10 *Buyer reference* or BT-13 *Purchase order reference*, or both. These business terms are designated, by the buyer, to be unique within the organisational unit identified by the buyer’s PEPPOL-ID. They are provided to the supplier in the order or contract, or at time of purchase, to be returned in the invoice with the purpose of automating internal forwarding of invoices, or matching invoice-to-order, in the buyer’s system. 
+
+The invoice may refer to only one order, i.e. at most one BT-13 *Purchase order reference* may be present in the invoice. If BT-13 is present, each invoice line may refer to one order line by means of BT-132 *Referenced purchase order line reference*. Presence of BT-13 does however not imply that line level referencing always has to be provided. Also, be mindful of the fact that order line and invoice line do not always have a one-to-one relation. 
 
 == Recurring services or commodity
 
 An invoiced object is a service or commodity that gives raise to recurring invoicing, based on consumption per period. The standard EN16931 mentions subscriptions, meter readings (e.g. for energy or telephony), vehicle lease, and such like, as candidates for invoiced objects; as a contrast, a document attached to an invoice is not regarded as an invoiced object. The buyer may set up a registry of invoiced objects, where each entry –i.e. each invoiced object–is associated with pre-defined criteria or parameters representing the expected consumption pattern, this will then allow for automatic validation of spending. 
 
+|===
+|Business Term |Location in syntax 
 
-BT-18 Invoiced object identifier                     UBL: AdditionalDocumentReference/ID with DocumentTypeCode=”130”
-BT-128 Invoice line object identifier              UBL invoice: InvoiceLine/DocumentReference/ID with DocumentTypeCode=”130”
-                                                                           UBL Creditnote: CreditNoteLine/DocumentReference/IDwith DocumentTypeCode=”130
+|BT-18 Invoiced object identifier
+|UBL: AdditionalDocumentReference/ID with DocumentTypeCode=”130”
 
-BT-18 Invoiced object identifier and BT-128 Invoice line object identifier are used to refer to invoiced objects: the former applies for the invoice as a whole while the latter applies to an individual invoice line. BT-18 and BT-128 may be used in combination. BT-18 is overruled on a line where BT-128 is present. The object identifiers are designated by the supplier, so a mechanism is needed to guarantee unique matching in the buyer’s system .It is advisable to use the optional scheme identifier to help identifying the type of invoiced object.
+|BT-128 Invoice line object identifier
+|UBL invoice: InvoiceLine/DocumentReference/ID with DocumentTypeCode=”130”
+UBL Creditnote: CreditNoteLine/DocumentReference/ID with DocumentTypeCode=”130
+|===
 
-= Other references
+
+BT-18 *Invoiced object identifier* and BT-128 *Invoice line object identifier* are used to refer to invoiced objects: the former applies for the invoice as a whole while the latter applies to an individual invoice line. BT-18 and BT-128 may be used in combination. BT-18 is overruled on a line where BT-128 is present. The object identifiers are designated by the supplier, so a mechanism is needed to guarantee unique matching in the buyer’s system. It is advisable to use the optional scheme identifier to help identifying the type of invoiced object.
+
 
 == Contract Reference
 
-BT-12 Contract reference                                UBL: ContractDocumentReference/ID
-BT-12 Contract reference refers to a framework agreement or other kind of contract forming the basis for the supply being invoiced. The invoice can refer to at most one contract. It is expected that the buyer controls the unicity of references used to identify the contracts. 
+|===
+|Business Term |Location in syntax 
+
+|BT-12 Contract reference
+|UBL: ContractDocumentReference/ID
+|===
+
+BT-12 *Contract reference* refers to a framework agreement or other kind of contract forming the basis for the supply being invoiced. The invoice can refer to at most one contract. It is expected that the buyer controls the unicity of references used to identify the contracts. 
 
 == Buyer accounting reference
 
-BT-19 Buyer accounting reference                 UBL: AccountingCost
-BT-133 Invoice line Buyer accounting reference                         UBLInvoice: InvoiceLine/AccountingCost
-                                                                                                                                                      UBL Creditnote: CreditNoteLine/AccountingCost
+|===
+|Business Term |Location in syntax 
 
+|BT-19 Buyer accounting reference
+|UBL: AccountingCost
 
-If instructed in advance the seller can provide, in the invoice, a text string to be used when booking the invoice into buyer’sa ccounts. This information can be for the invoice as a whole (BT-19 Buyer accounting reference), or for individual an invoice line (BT-133 Invoice line Buyer accounting reference), or a combination of them. 
+|BT-133 Invoice line Buyer accounting reference
+|UBLInvoice: InvoiceLine/AccountingCost
+UBL Creditnote: CreditNoteLine/AccountingCost
+|===
+
+If instructed in advance the seller can provide, in the invoice, a text string to be used when booking the invoice into buyer’s accounts. This information can be for the invoice as a whole (BT-19 *Buyer accounting reference*), or for individual an invoice line (BT-133 *Invoice line Buyer accounting reference*), or a combination of them. 
 
 == Project reference
 
 
-BT-11 Project reference          UBL invoice: ProjectReference/ID
-                                                                           UBL credit note: AdditionalDocumentReference/ID with DocumentTypeCode=”50”
+|===
+|Business Term |Location in syntax 
 
-If instructed in advance the seller can associate the invoice to a project by means of BT-11 Project reference, it will then apply to the whole invoice.
+|BT-11 Project reference
+|UBL invoice: ProjectReference/ID
+UBL credit note: AdditionalDocumentReference/ID with DocumentTypeCode=”50”
+|===
+
+If instructed in advance the seller can associate the invoice to a project by means of BT-11 *Project reference*, it will then apply to the whole invoice.
 
 == Despatch advice reference
 
