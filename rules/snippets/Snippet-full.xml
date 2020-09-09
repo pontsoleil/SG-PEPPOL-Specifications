@@ -13,7 +13,7 @@
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
     <!-- tag::vat-curr1[] -->
-    <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode><!-- BT-5 -->
+    <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
     <!--1-->
     <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
     <!--2-->
@@ -68,7 +68,7 @@
     <!-- tag::seller[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID> <!--BT-999-->
             <!--1-->
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0088">7300010000001</cbc:ID>
@@ -92,7 +92,6 @@
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>GB76576657</cbc:CompanyID>
-                <!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -142,7 +141,6 @@
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>SE459837593701</cbc:CompanyID>
-                <!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -196,7 +194,6 @@
         </cac:PostalAddress>
         <cac:PartyTaxScheme>
             <cbc:CompanyID>GB122324324535</cbc:CompanyID>
-            <!--1-->
             <cac:TaxScheme>
                 <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
