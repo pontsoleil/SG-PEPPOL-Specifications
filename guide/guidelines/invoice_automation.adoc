@@ -1,14 +1,17 @@
-= Invoice Automation
+= Invoice Automation (use of references)
 [horizontal]
-Release date:: 2020-09-15
 
-==Invoice automation (use of references)
+
+== Introduction to Invoice automation
 
 The use of references in the invoice is a key mechanism for the buyer to automate the approval and matching process. With proper software, much of the tedious job of manual business controls and verification can be rationalized with none or a minimum of manual intervention. 
 
-TIPS: It is important that they buyer takes the into consideration the capability of the seller when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
+[IMPORTANT]
+****
+It is important that they buyer takes the into consideration the capability of the seller when requiring certain reference. Some referencing mechanisms are widely implemented (such as the Buyer Reference and the Order Reference) while other may be less common (such as Project Reference or Tender Reference). The buyer should consider carefully which mechanisms to deploy and implement an automation strategy which takes the type of product/service and the type of seller into consideration.
+****
 
-Three primary references which are commonly used
+== Three primary references which are commonly used
 
 BT-10 Buyer reference                                                             UBL: BuyerReference 
 BT-13 Purchase order reference                                             UBL: OrderReference/ID
@@ -19,7 +22,7 @@ An invoice must contain BT-10 Buyer reference or BT-13 Purchase order reference,
 
 The invoice may refer to only one order, i.e. at most one BT-13Purchase order reference may be present in the invoice. If BT-13 is present, each invoice line may refer to one order line by means of BT-132 Referenced purchase order line reference. Presence of BT-13 does however not imply that line level referencing always has to be provided. Also, be mindful of the fact that order line and invoice line do not always have a one-to-one relation. 
 
-Recurring services or commodity
+== Recurring services or commodity
 
 An invoiced object is a service or commodity that gives raise to recurring invoicing, based on consumption per period. The standard EN16931 mentions subscriptions, meter readings (e.g. for energy or telephony), vehicle lease, and such like, as candidates for invoiced objects; as a contrast, a document attached to an invoice is not regarded as an invoiced object. The buyer may set up a registry of invoiced objects, where each entry –i.e. each invoiced object–is associated with pre-defined criteria or parameters representing the expected consumption pattern, this will then allow for automatic validation of spending. 
 
@@ -30,51 +33,53 @@ BT-128 Invoice line object identifier              UBL invoice: InvoiceLine/Docu
 
 BT-18 Invoiced object identifier and BT-128 Invoice line object identifier are used to refer to invoiced objects: the former applies for the invoice as a whole while the latter applies to an individual invoice line. BT-18 and BT-128 may be used in combination. BT-18 is overruled on a line where BT-128 is present. The object identifiers are designated by the supplier, so a mechanism is needed to guarantee unique matching in the buyer’s system .It is advisable to use the optional scheme identifier to help identifying the type of invoiced object.
 
-Other references
+= Other references
 
-Contract Reference
+== Contract Reference
 
 BT-12 Contract reference                                UBL: ContractDocumentReference/ID
 BT-12 Contract reference refers to a framework agreement or other kind of contract forming the basis for the supply being invoiced. The invoice can refer to at most one contract. It is expected that the buyer controls the unicity of references used to identify the contracts. 
 
-Buyer accounting reference
+== Buyer accounting reference
 
 BT-19 Buyer accounting reference                 UBL: AccountingCost
 BT-133 Invoice line Buyer accounting reference                         UBLInvoice: InvoiceLine/AccountingCost
                                                                                                                                                       UBL Creditnote: CreditNoteLine/AccountingCost
 
-Project reference
 
-If instructed in advance the seller can provide, in the invoice, a text string to be used when booking the invoice intobuyer’saccounts. This information can be for the invoice as a whole (BT-19 Buyer accounting reference), or for individual an invoice line (BT-133 Invoice line Buyer accounting reference), or a combination of them. 
+If instructed in advance the seller can provide, in the invoice, a text string to be used when booking the invoice into buyer’sa ccounts. This information can be for the invoice as a whole (BT-19 Buyer accounting reference), or for individual an invoice line (BT-133 Invoice line Buyer accounting reference), or a combination of them. 
+
+== Project reference
+
 
 BT-11 Project reference          UBL invoice: ProjectReference/ID
                                                                            UBL credit note: AdditionalDocumentReference/ID with DocumentTypeCode=”50”
 
 If instructed in advance the seller can associate the invoice to a project by means of BT-11 Project reference, it will then apply to the whole invoice.
 
-Despatch advice reference
+== Despatch advice reference
 
 BT-16 Despatch advice reference                   UBL: DespatchDocumentReference/ID
 BT-16 Despatch advice referenceis the supplier’s reference to a despatch advice that may be used to reconciliate the invoice with the goods despatched and (hopefully) received. The invoice can refer to at most one despatch advice.
 
-Supporting document reference
+== Supporting document reference
 
 BT-122 Supporting document reference, and 
 BT-123 Supporting document description    UBL: AdditionalDocumentReference/ID, without DocumentTypeCode, and with DocumentDescription 
 
 BT-122 Supporting document reference is a general-purpose reference to a document substantiating claims in the invoice. When used in this specific context, the referenced document is expected to be known by both seller and buyer, nevertheless it is adviced that BT-122 should be accompanied by BT-123 Supporting document descriptionto clarify the subject matter of the document.
 
-Sales order reference
+== Sales order reference
 
 BT-14 Sales order reference   UBL: OrderReference/SalesOrderID
 BT-14 Sales order referenceis the seller’s reference to the order (corresponding to the buyer’s BT-13 Purchase order reference). The business term may have been given in a response to the order. The purpose for including it in the invoice is to simplify the seller’s tracing of the order in case queries should arise as the buyer processes the invoice.
 
-Tender or lot reference
+== Tender or lot reference
 
 BT-17 Tender or lot reference                         UBL: OriginatorDocumentReference/ID
 Note–The UBL mapping of BT-12 to OriginatorDocumentReference implies reference to the originating tender document, it is not to be understood as reference to the originator or the originator’s internal requisition leading to the invoice.
 
-Receiving advice reference
+== Receiving advice reference
 
 BT-15 Receiving advice reference UBL: ReceiptDocumentReference/ID
 In case the buyer during the delivery process has responded to the seller with a message/notification that the goods were received, then this element can be used to refer to this message/notification

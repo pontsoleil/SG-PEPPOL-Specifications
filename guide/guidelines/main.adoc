@@ -1,5 +1,6 @@
 = Guidelines for SG Peppol BIS Billing v3
 openPEPPOL AISBL <http://www.peppol.eu/>
+Updated date:: 2020-09-15
 :icons: font
 :source-highlighter: coderay
 :toc: left
