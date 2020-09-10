@@ -1,10 +1,8 @@
 [[peppol_rules]]
-= SG specific transaction business rules
+= PEPPOL specific transaction business rules
 
-The following rules have been defined by Singapore in addition to the rules adopted from {peppol}.
-These rules apply in *all* profiles that use this transaction specification.
-
-Please also see <<Restrictions on EN16931>> for further details on the restrictions imposed by these rules.
+The following {peppol} rules apply to invoice and credit note transaction as it is used in this Singapore BIS.
+The PEPPOL BIS uses a forked version of the validation rules from {EN16931}.
 
 .PEPPOL transaction business rules
 [cols="1,4", options="header"]
@@ -12,5 +10,5 @@ Please also see <<Restrictions on EN16931>> for further details on the restricti
 |Rule
 |Message/Context/Test
 
-include::{rules-dir}/SG-Peppol-BIS-Billing_3-SG-Rules.sch.adoc[]
+include::{rules-dir}/SG-Subset-PEPPOL-EN16931-UBL.sch.adoc[]
 |====

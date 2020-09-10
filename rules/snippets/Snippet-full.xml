@@ -15,7 +15,7 @@
     <!-- tag::vat-curr1[] -->
     <cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
     <!--1-->
-    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+    <cbc:TaxCurrencyCode>MYR</cbc:TaxCurrencyCode>
     <!--2-->
     <!-- end::vat-curr1[] -->
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
@@ -80,18 +80,18 @@
             <cac:PostalAddress>
                 <cbc:StreetName>Main street 1</cbc:StreetName>
                 <cbc:AdditionalStreetName>Postbox 123</cbc:AdditionalStreetName>
-                <cbc:CityName>London</cbc:CityName>
-                <cbc:PostalZone>GB 123 EW</cbc:PostalZone>
-                <cbc:CountrySubentity>West London district</cbc:CountrySubentity>
+                <cbc:CityName>Singapore</cbc:CityName>
+                <cbc:PostalZone>1000</cbc:PostalZone>
+                <cbc:CountrySubentity>Singapore</cbc:CountrySubentity>
                 <cac:AddressLine>
                     <cbc:Line>Third address line</cbc:Line>
                 </cac:AddressLine>
                 <cac:Country>
-                    <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>SG</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>GB76576657</cbc:CompanyID>
+                <cbc:CompanyID>M2-1234567-K</cbc:CompanyID>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -104,7 +104,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>SupplierOfficialName Ltd</cbc:RegistrationName>
-                <cbc:CompanyID>GB983294</cbc:CompanyID>
+                <cbc:CompanyID>B5963654</cbc:CompanyID>
                 <cbc:CompanyLegalForm>Private Limited Company</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
             <cac:Contact>
@@ -118,42 +118,42 @@
     <!-- tag::buyer[] -->
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0195">5790000436071</cbc:EndpointID>
             <!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0002">FR23342</cbc:ID>
+                <cbc:ID schemeID="0002">345KS5324</cbc:ID>
                 <!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>BuyerTradingName AS</cbc:Name>
+                <cbc:Name>BuyerTradingName Ltd</cbc:Name>
             </cac:PartyName>
             <cac:PostalAddress>
-                <cbc:StreetName>Hovedgatan 32</cbc:StreetName>
-                <cbc:AdditionalStreetName>Po box 878</cbc:AdditionalStreetName>
-                <cbc:CityName>Stockholm</cbc:CityName>
-                <cbc:PostalZone>45634</cbc:PostalZone>
+                <cbc:StreetName>Central road 56</cbc:StreetName>
+                <cbc:AdditionalStreetName>Second floor</cbc:AdditionalStreetName>
+                <cbc:CityName>Singapore</cbc:CityName>
+                <cbc:PostalZone>101</cbc:PostalZone>
                 <cac:AddressLine>
                     <cbc:Line>Third line</cbc:Line>
                 </cac:AddressLine>
                 <cac:Country>
-                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>SG</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>SE459837593701</cbc:CompanyID>
+                <cbc:CompanyID>459837593701</cbc:CompanyID>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Buyer Official Name</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0195">39937423947</cbc:CompanyID>
                 <!--4-->
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Lisa Johnson</cbc:Name>
                 <cbc:Telephone>23434234</cbc:Telephone>
-                <cbc:ElectronicMail>lj@buyer.se</cbc:ElectronicMail>
+                <cbc:ElectronicMail>lj@buyer.sg</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
     </cac:AccountingCustomerParty>
@@ -162,14 +162,14 @@
     <!-- tag::payee[] -->
     <cac:PayeeParty>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0192">987654325</cbc:ID>
+            <cbc:ID schemeID="0195">987654325</cbc:ID>
             <!--1-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Payee party</cbc:Name>
         </cac:PartyName>
         <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="0192">987654325</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0195">987654325</cbc:CompanyID>
             <!--2-->
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
@@ -180,20 +180,20 @@
             <cbc:Name>TaxRepresentative Name</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
-            <cbc:StreetName>Regent street 32</cbc:StreetName>
+            <cbc:StreetName>Coleman street 32</cbc:StreetName>
             <cbc:AdditionalStreetName>Building 23</cbc:AdditionalStreetName>
-            <cbc:CityName>London</cbc:CityName>
-            <cbc:PostalZone>23W 45H</cbc:PostalZone>
+            <cbc:CityName>Singapore</cbc:CityName>
+            <cbc:PostalZone>56236</cbc:PostalZone>
             <cbc:CountrySubentity>Subentity</cbc:CountrySubentity>
             <cac:AddressLine>
                 <cbc:Line>Back door</cbc:Line>
             </cac:AddressLine>
             <cac:Country>
-                <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+                <cbc:IdentificationCode>SG</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyTaxScheme>
-            <cbc:CompanyID>GB122324324535</cbc:CompanyID>
+            <cbc:CompanyID>9165905</cbc:CompanyID>
             <cac:TaxScheme>
                 <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
@@ -208,13 +208,13 @@
             <cac:Address>
                 <cbc:StreetName>Delivery street 2</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building 56</cbc:AdditionalStreetName>
-                <cbc:CityName>Stockholm</cbc:CityName>
+                <cbc:CityName>Singapore</cbc:CityName>
                 <cbc:PostalZone>21234</cbc:PostalZone>
                 <cac:AddressLine>
                     <cbc:Line>Gate 15</cbc:Line>
                 </cac:AddressLine>
                 <cac:Country>
-                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>SG</cbc:IdentificationCode>
                 </cac:Country>
             </cac:Address>
         </cac:DeliveryLocation>
@@ -247,8 +247,8 @@
         <cbc:Amount currencyID="SGD">200</cbc:Amount>
         <cbc:BaseAmount currencyID="SGD">1000</cbc:BaseAmount>
         <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25</cbc:Percent>
+            <cbc:ID>SR</cbc:ID>
+            <cbc:Percent>7</cbc:Percent>
             <cac:TaxScheme>
                 <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
@@ -260,8 +260,8 @@
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="SGD">300</cbc:Amount>
         <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25</cbc:Percent>
+            <cbc:ID>SR</cbc:ID>
+            <cbc:Percent>7</cbc:Percent>
             <cac:TaxScheme>
                 <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
@@ -270,14 +270,14 @@
     <!-- tag::vat-curr2[] -->
 
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="SGD">1000.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="SGD">280.00</cbc:TaxAmount>
         <!--3-->
         <cac:TaxSubtotal>
             <cbc:TaxableAmount currencyID="SGD">4000.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="SGD">1000</cbc:TaxAmount>
+            <cbc:TaxAmount currencyID="SGD">280</cbc:TaxAmount>
             <cac:TaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25</cbc:Percent>
+                <cbc:ID>SR</cbc:ID>
+                <cbc:Percent>7</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -285,24 +285,24 @@
         </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="SEK">100017.50</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="MYR">853.50</cbc:TaxAmount>
         <!--4-->
     </cac:TaxTotal>
     <!-- end::vat-curr2[] -->
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="SGD">4100</cbc:LineExtensionAmount>
         <cbc:TaxExclusiveAmount currencyID="SGD">4000</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="SGD">5000</cbc:TaxInclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SGD">4280</cbc:TaxInclusiveAmount>
         <cbc:AllowanceTotalAmount currencyID="SGD">300</cbc:AllowanceTotalAmount>
         <cbc:ChargeTotalAmount currencyID="SGD">200</cbc:ChargeTotalAmount>
         <cbc:PrepaidAmount currencyID="SGD">1000</cbc:PrepaidAmount>
-        <cbc:PayableAmount currencyID="SGD">4000</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="SGD">3280</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="H87">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="SGD">4100.00</cbc:LineExtensionAmount>
-        <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
+        <cbc:AccountingCost>Accounting string</cbc:AccountingCost>
         <cac:InvoicePeriod>
             <cbc:StartDate>2017-12-01</cbc:StartDate>
             <cbc:EndDate>2017-12-05</cbc:EndDate>
@@ -344,7 +344,7 @@
                 <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
-                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                <cbc:IdentificationCode>MY</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
                 <!-- SRV= GTIN -->
@@ -356,8 +356,8 @@
             </cac:CommodityClassification>
             <!-- end::intrastat[] -->
             <cac:ClassifiedTaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25.0</cbc:Percent>
+                <cbc:ID>SR</cbc:ID>
+                <cbc:Percent>7.0</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -370,7 +370,7 @@
         <!-- tag::price[] -->
         <cac:Price>
             <cbc:PriceAmount currencyID="SGD">4100</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="H87">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
                 <cbc:Amount currencyID="SGD">100</cbc:Amount>

@@ -238,8 +238,8 @@
     <cbc:Amount currencyID="SGD">20</cbc:Amount>
     <cbc:BaseAmount currencyID="SGD">1000</cbc:BaseAmount>
     <cac:TaxCategory>
-      <cbc:ID>S</cbc:ID>
-      <cbc:Percent>25</cbc:Percent>
+      <cbc:ID>SR</cbc:ID>
+      <cbc:Percent>7</cbc:Percent>
       <cac:TaxScheme>
         <cbc:ID>GST</cbc:ID>
       </cac:TaxScheme>
@@ -251,21 +251,21 @@
     <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
     <cbc:Amount currencyID="SGD">10</cbc:Amount>
     <cac:TaxCategory>
-      <cbc:ID>S</cbc:ID>
-      <cbc:Percent>25</cbc:Percent>
+      <cbc:ID>SR</cbc:ID>
+      <cbc:Percent>7</cbc:Percent>
       <cac:TaxScheme>
         <cbc:ID>GST</cbc:ID>
       </cac:TaxScheme>
     </cac:TaxCategory>
   </cac:AllowanceCharge>
   <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="SGD">952.50</cbc:TaxAmount>
+    <cbc:TaxAmount currencyID="SGD">266.7</cbc:TaxAmount>
     <cac:TaxSubtotal>
       <cbc:TaxableAmount currencyID="SGD">3810.0</cbc:TaxableAmount>
-      <cbc:TaxAmount currencyID="SGD">952.50</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="SGD">266.7</cbc:TaxAmount>
       <cac:TaxCategory>
-        <cbc:ID>S</cbc:ID>
-        <cbc:Percent>25.0</cbc:Percent>
+        <cbc:ID>SR</cbc:ID>
+        <cbc:Percent>7.0</cbc:Percent>
         <cac:TaxScheme>
           <cbc:ID>GST</cbc:ID>
         </cac:TaxScheme>
@@ -275,15 +275,15 @@
   <cac:LegalMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="SGD">3800</cbc:LineExtensionAmount>
     <cbc:TaxExclusiveAmount currencyID="SGD">3810</cbc:TaxExclusiveAmount>
-    <cbc:TaxInclusiveAmount currencyID="SGD">4762.5</cbc:TaxInclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="SGD">4076.7</cbc:TaxInclusiveAmount>
     <cbc:AllowanceTotalAmount currencyID="SGD">10</cbc:AllowanceTotalAmount>
     <cbc:ChargeTotalAmount currencyID="SGD">20</cbc:ChargeTotalAmount>
     <cbc:PrepaidAmount currencyID="SGD">1000</cbc:PrepaidAmount>
-    <cbc:PayableAmount currencyID="SGD">3762.50</cbc:PayableAmount>
+    <cbc:PayableAmount currencyID="SGD">3076.7</cbc:PayableAmount>
   </cac:LegalMonetaryTotal>
   <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
-    <cbc:InvoicedQuantity unitCode="C62">2</cbc:InvoicedQuantity>
+    <cbc:InvoicedQuantity unitCode="H87">2</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID="SGD">3800.00</cbc:LineExtensionAmount>
     <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
     <cac:InvoicePeriod>
@@ -324,14 +324,14 @@
         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:StandardItemIdentification>
       <cac:OriginCountry>
-        <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+        <cbc:IdentificationCode>MY</cbc:IdentificationCode>
       </cac:OriginCountry>
       <cac:CommodityClassification>
         <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
       </cac:CommodityClassification>
       <cac:ClassifiedTaxCategory>
-        <cbc:ID>S</cbc:ID>
-        <cbc:Percent>25.0</cbc:Percent>
+        <cbc:ID>SR</cbc:ID>
+        <cbc:Percent>7.0</cbc:Percent>
         <cac:TaxScheme>
           <cbc:ID>GST</cbc:ID>
         </cac:TaxScheme>
@@ -343,7 +343,7 @@
     </cac:Item>
     <cac:Price>
       <cbc:PriceAmount currencyID="SGD">1950</cbc:PriceAmount>
-      <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+      <cbc:BaseQuantity unitCode="H87">1</cbc:BaseQuantity>
       <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:Amount currencyID="SGD">200</cbc:Amount>
