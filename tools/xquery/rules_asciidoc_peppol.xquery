@@ -18,4 +18,4 @@ order by $x/@id
 
 return
 
-    concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")
+    concat("| ", $RuleId, " *(", $flag , ")* | ", $tekst, " &#10;")
