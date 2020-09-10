@@ -126,5 +126,14 @@
         <Title>Presentation Stylesheet</Title>
         <Property key="download">xslt.zip</Property>
     </Resource>
+    <!-- Files -->
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Example files</Title>
+        <Property key="download">SG-BIS-Billing3-Examples.zip</Property>
+        <Property key="filename">SG-BIS-Billing3-Examples.zip</Property>
+    </Resource>	
+
     
 </Project>

@@ -90,7 +90,7 @@
           <cbc:TaxableAmount currencyID="SGD">33915.00</cbc:TaxableAmount>
           <cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
           <cac:TaxCategory>
-            <cbc:ID>SR</cbc:ID>
+            <cbc:ID>NG</cbc:ID>
             <cbc:Percent>0</cbc:Percent>
             <cac:TaxScheme>
               <cbc:ID>GST</cbc:ID>
@@ -132,7 +132,7 @@
           <cbc:TaxableAmount currencyID="SGD">33915.00</cbc:TaxableAmount>
           <cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
           <cac:TaxCategory>
-            <cbc:ID>SR</cbc:ID>
+            <cbc:ID>NG</cbc:ID>
             <cbc:Percent>0</cbc:Percent>
             <cac:TaxScheme>
               <cbc:ID>GST</cbc:ID>

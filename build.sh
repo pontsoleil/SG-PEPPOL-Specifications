@@ -46,6 +46,9 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 # SG Rules
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Billing3-UBL.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Billing3-UBL.sch.adoc
 
+# Example files
+docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/PSG-BIS-Billing3-Examples.zip
+docker run --rm -i -v $PROJECT/rules/examples:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/SG-BIS-Billing3-Examples.zip .
 
 
 # Guides
