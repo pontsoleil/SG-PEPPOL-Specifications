@@ -8,7 +8,7 @@ The PEPPOL BIS uses a forked version of the validation rules from {EN16931}.
 [cols="1,4", options="header"]
 |====
 |Rule
-|Message/Context/Test
+|Message
 
 include::{rules-dir}/SG-Subset-PEPPOL-EN16931-UBL.sch.adoc[]
 |====

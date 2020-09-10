@@ -117,14 +117,15 @@
         <Type>native:File</Type>
         <Path>project.xml</Path>
         <Title>Schematron files</Title>
-        <Property key="download">SG-Peppol-BIS-Billing_3-Rules-Schematron.zip</Property>
-        <Property key="filename">SG-Peppol-BIS-Billing_3-Rules-Schematron.zip</Property>
+        <Property key="download">SG-BIS-Billing3-Schematron.zip</Property>
+        <Property key="filename">SG-BIS-Billing3-Schematron.zip</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>stylesheet/xslt.zip</Path>
         <Title>Presentation Stylesheet</Title>
-        <Property key="download">xslt.zip</Property>
+        <Property key="download">SG-BIS-Billing3-Stylesheet.zip</Property>
+		<Property key="filename">SG-BIS-Billing3-Stylesheet.zip</Property>
     </Resource>
     <!-- Files -->
     <Resource>
