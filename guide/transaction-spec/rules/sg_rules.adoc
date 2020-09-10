@@ -1,4 +1,4 @@
-[[peppol_rules]]
+[[sg_rules]]
 = SG specific transaction business rules
 
 The following rules have been defined by Singapore in addition to the rules adopted from {peppol}.

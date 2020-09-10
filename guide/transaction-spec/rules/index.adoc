@@ -8,6 +8,6 @@ include::peppol_rules.adoc[]
 
 include::tc434_rules.adoc[]
 
-include::SG-rules.adoc[]
+include::sg_rules.adoc[]
 
 :leveloffset: -1
