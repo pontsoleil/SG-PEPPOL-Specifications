@@ -17,4 +17,3 @@ Specifically three types of payment means are used for invoices in Singapore:
 NOTE: PaymentMeans Codes Z01 and Z02 are not recoginized codes in UNCL4461. They have been added in the Singapore extension of Peppol BIS Billing 3.
 ====
 
-Detailed requirements for supporing payment functionality can be found at <<paymentreq>>
