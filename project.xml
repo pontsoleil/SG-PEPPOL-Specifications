@@ -36,7 +36,7 @@
         <Identifier>ubl-sg</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/SG-Billing3-UBL.sch</Path>
-        <Title>SG specific Rules</Title>
+        <Title>SG Specific Rules</Title>
     </Resource>	
     
     <!-- Code lists -->
