@@ -41,10 +41,10 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 
 
 # PEPPOL-EN16931-UBL-subset
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Subset-PEPPOL-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Subset-PEPPOL-EN16931-UBL.sch.adoc
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Subset-PEPPOL-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/SG-Subset-PEPPOL-EN16931-UBL.sch.adoc
 
 # SG Rules
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Billing3-UBL.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/SG-Billing3-UBL.sch.adoc
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/target/schematron/SG-Billing3-UBL.sch -q:tools/xquery/rules_asciidoc_sg.xquery -o:/target/SG-Billing3-UBL.sch.adoc
 
 # Example files
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/PSG-BIS-Billing3-Examples.zip
