@@ -1,10 +1,11 @@
-= Version 3.0.5 - Release
+= Version 3.0.5
 [horizontal]
 Release date:: 2020-10-01
 
 == Changes to BIS document
 
-* Documentation moved from differencial to full documentation. 
+* Documentation moved from differencial to full documentation.
+* Documentation changed to browsable html format.
 
 == Changes to validation artefacts
 

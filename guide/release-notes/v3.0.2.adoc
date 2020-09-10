@@ -1,12 +1,12 @@
-= Version 3.0.2 - Release
+= Version 3.0.2
 [horizontal]
-Release date:: 2019-06-12
+Release date:: 2019-10-24
 
 == Changes to BIS document
 
-* Updated GST category codes and electronic identification scheme code lists 
+* Updated GST category code list with value NG for companies not registered for GST 
 
 == Changes to validation artefacts
 
-* None 
+* Scheamtrons updated to support NG code. 
 

@@ -1,14 +1,11 @@
-= Version 3.0.3 - Release
+= Version 3.0.3
 [horizontal]
 Release date:: 2020-03-30
 
-****
-IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. 
-****
-
-== Changes to BIS document and validation artefacts
+== Changes to BIS document
 
 * Editorial corrections of BT-numbers. Added GST-prefixed business terms for exemption reason text and code and rate on line level
 
- 
+== Changes to validation artefacts 
 
+* Rules modified for corrected BT numbers.

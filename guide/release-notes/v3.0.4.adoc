@@ -1,12 +1,12 @@
-= Version 3.1.0 - Release
+= Version 3.1.0
 [horizontal]
 Release date:: 2020-06-23
 
 == Changes to BIS document
 
-* None. 
+* Added section for Singapore payment means. 
 
 == Changes to validation artefacts
 
-* Adding rules to support out of scope invoicing. 
+* Modified code list validation for payment means. 
 
