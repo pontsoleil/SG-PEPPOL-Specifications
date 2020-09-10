@@ -86,10 +86,6 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL2005.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4461.xml</Path>
     </Resource>
     <Resource>
@@ -122,7 +118,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>stylesheet/xslt.zip</Path>
+        <Path>project.xml</Path>
         <Title>Presentation Stylesheet</Title>
         <Property key="download">SG-BIS-Billing3-Stylesheet.zip</Property>
 		<Property key="filename">SG-BIS-Billing3-Stylesheet.zip</Property>
