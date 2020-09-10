@@ -1,5 +1,5 @@
 
-= Value added tax point date code
+= Tax point date code
 [yellow-background]#Relevance for Singapore#
 A subset of values from {UNCL2005} shall be used.
 

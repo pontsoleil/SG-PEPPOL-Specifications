@@ -101,7 +101,7 @@
 
         <Element cardinality="0..1">
             <Term>cbc:TaxPointDate</Term>
-            <Name>Value added tax point date</Name>
+            <Name>Tax point date</Name>
             <Description>The date when the GST becomes accountable for the Seller and for the Buyer in so far as that date
                 can be determined and differs from the date of issue of the invoice.This element is required if the tax point date is different from the Invoice issue date.
             </Description>
@@ -194,7 +194,7 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:DescriptionCode</Term>
-                <Name>Value added tax point date code</Name>
+                <Name>Tax point date code</Name>
                 <Description>The code of the date when the GST becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-8-GST</Reference>

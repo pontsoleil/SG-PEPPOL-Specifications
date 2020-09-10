@@ -84,7 +84,7 @@
       <assert test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)" flag="fatal" id="BR-08">[BR-08]-An Invoice shall contain the Seller postal address. </assert>
       <assert test="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)" flag="fatal" id="BR-10">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
       <assert test="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)" flag="fatal" id="BR-16">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
-      <assert test="(exists(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and exists(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode))" flag="fatal" id="BR-CO-03">[BR-CO-03]-Value added tax point date (BT-7) and Value added tax point date code (BT-8) are mutually exclusive.</assert>
+      <assert test="(exists(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and exists(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode))" flag="fatal" id="BR-CO-03">[BR-CO-03]-Tax point date (BT-7) and Tax point date code (BT-8) are mutually exclusive.</assert>
       <!-- excluded (two decimal check)			
 			<assert test="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode]))" flag="fatal" id="BR-DEC-13-GST-SG">[BR-DEC-13-GST-SG]-The allowed maximum number of decimals for the Invoice total GST amount (BT-110-GST) is 2.</assert>
 			-->
@@ -927,7 +927,7 @@
       <assert test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))" id="BR-CL-05" flag="fatal">[BR-CL-05]-Tax currency code MUST be coded using ISO code list 4217 alpha-3</assert>
     </rule>
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode" flag="fatal">
-      <assert test="((not(contains(normalize-space(.), ' ')) and contains(' 3 35 432 ', concat(' ', normalize-space(.), ' '))))" id="BR-CL-06" flag="fatal">[BR-CL-06]-Value added tax point date code MUST be coded using a restriction of
+      <assert test="((not(contains(normalize-space(.), ' ')) and contains(' 3 35 432 ', concat(' ', normalize-space(.), ' '))))" id="BR-CL-06" flag="fatal">[BR-CL-06]-Tax point date code MUST be coded using a restriction of
       UNTDID 2005iterm
       .</assert>
     </rule>
