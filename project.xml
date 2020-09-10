@@ -23,15 +23,21 @@
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/CEN-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>EN16931 Conformant Rules</Title>
+        <Path>rules/sch/SG-Subset-CEN-EN16931-UBL.sch</Path>
+        <Title>SG Subset of EN16931 Rules</Title>
     </Resource>
     <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL-SG-Conformant.sch</Path>
-        <Title>Peppol Conformant Rules</Title>
+        <Path>rules/sch/SG-Subset-PEPPOL-EN16931-UBL.sch</Path>
+        <Title>SG Subset of Peppol BIS Billing 3 Rules</Title>
     </Resource>
+    <Resource>
+        <Identifier>ubl-sg</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/SG-Billing3-UBL.sch</Path>
+        <Title>SG specific Rules</Title>
+    </Resource>	
     
     <!-- Code lists -->
     <Resource>

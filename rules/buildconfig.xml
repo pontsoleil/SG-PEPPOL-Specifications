@@ -11,16 +11,22 @@
   <!-- UBL -->
 
   <configuration>
-    <identifier>sg-peppolbis-international-3-ubl</identifier>
-    <title>International Rules</title>
-    <file path="sch/CEN-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
+    <identifier>sg-subset-en16931-ubl</identifier>
+    <title>Subset of EN16931 rules</title>
+    <file path="sch/SG-Subset-CEN-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
   </configuration>
 
   <configuration>
-    <identifier>sg-peppolbis-sg-3-ubl</identifier>
-    <title>SG Specific Rules</title>
-    <file path="sch/PEPPOL-EN16931-UBL-SG-Conformant.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
+    <identifier>sg-subset-peppolbis-3-ubl</identifier>
+    <title>Subset of Peppol BIS 3 rules</title>
+    <file path="sch/SG-Subset-PEPPOL-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
   </configuration>
+  
+  <configuration>
+    <identifier>sg-specific-ubl</identifier>
+    <title>SG Specific Rules</title>
+    <file path="sch/SG-Billing3-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/sg/3/rules/{}/"/>
+  </configuration>  
 
 <!--  <configuration>
     <identifier>peppolbis-en16931-stylesheet-3.0-ubl</identifier>
@@ -34,8 +40,9 @@
     <declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <!--declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <inherit>ubl-invoice-2.1</inherit>
-    <inherit>sg-peppolbis-international-3-ubl</inherit>
-    <inherit>sg-peppolbis-sg-3-ubl</inherit>
+    <inherit>sg-subset-en16931-ubl</inherit>
+    <inherit>sg-subset-peppolbis-3-ubl</inherit>
+	<inherit>sg-specific-ubl</inherit>
     
   </configuration>
 
@@ -45,8 +52,9 @@
     <!--declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration-->
     <declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0</declaration>
     <inherit>ubl-creditnote-2.1</inherit>
-    <inherit>sg-peppolbis-international-3-ubl</inherit>
-    <inherit>sg-peppolbis-sg-3-ubl</inherit>
+    <inherit>sg-subset-en16931-ubl</inherit>
+    <inherit>sg-subset-peppolbis-3-ubl</inherit>
+	<inherit>sg-specific-ubl</inherit>
     
   </configuration>
 

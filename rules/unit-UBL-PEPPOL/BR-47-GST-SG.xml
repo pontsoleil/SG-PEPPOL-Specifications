@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-peppolbis-international-3-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="sg-specific-ubl">
 	<assert>
     <description>BR-47-GST-SG</description>
 		<scope>BR-47-GST-SG</scope>
