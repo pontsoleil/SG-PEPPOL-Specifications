@@ -119,8 +119,8 @@
             <cbc:AllowanceChargeReason>Insurance</cbc:AllowanceChargeReason>
             <cbc:Amount currencyID="SGD">25</cbc:Amount><!--1-->
             <cac:TaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25.0</cbc:Percent>
+                <cbc:ID>SR</cbc:ID>
+                <cbc:Percent>7.0</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -128,13 +128,13 @@
         </cac:AllowanceCharge>
     <!-- end::negative[] -->
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="SGD">331.25</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="SGD">92.75</cbc:TaxAmount>
         <cac:TaxSubtotal>
             <cbc:TaxableAmount currencyID="SGD">1325</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="SGD">331.25</cbc:TaxAmount>
+            <cbc:TaxAmount currencyID="SGD">92.75</cbc:TaxAmount>
             <cac:TaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25.0</cbc:Percent>
+                <cbc:ID>SR</cbc:ID>
+                <cbc:Percent>7.0</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -146,9 +146,9 @@
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="SGD">1300</cbc:LineExtensionAmount>
         <cbc:TaxExclusiveAmount currencyID="SGD">1325</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="SGD">1656.25</cbc:TaxInclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SGD">1417.75</cbc:TaxInclusiveAmount>
         <cbc:ChargeTotalAmount currencyID="SGD">25</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="SGD">1656.25</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="SGD">1417.75</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <!-- end::negative[] -->
     <!-- tag::negative[] -->
@@ -175,8 +175,8 @@
                 <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25.0</cbc:Percent>
+                <cbc:ID>SR</cbc:ID>
+                <cbc:Percent>7.0</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
@@ -206,14 +206,14 @@
             <cbc:ID schemeID="0088">7300010000001</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:OriginCountry>
-            <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            <cbc:IdentificationCode>MY</cbc:IdentificationCode>
         </cac:OriginCountry>
         <cac:CommodityClassification>
             <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
         </cac:CommodityClassification>
         <cac:ClassifiedTaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25.0</cbc:Percent>
+            <cbc:ID>SR</cbc:ID>
+            <cbc:Percent>7.0</cbc:Percent>
             <cac:TaxScheme>
                 <cbc:ID>GST</cbc:ID>
             </cac:TaxScheme>
