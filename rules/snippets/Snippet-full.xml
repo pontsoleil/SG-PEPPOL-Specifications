@@ -68,11 +68,9 @@
     <!-- tag::seller[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID> <!--BT-999-->
-            <!--1-->
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID> <!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
-                <!--2-->
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID> <!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>SupplierTradingName Ltd.</cbc:Name>
