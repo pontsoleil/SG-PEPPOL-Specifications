@@ -7,7 +7,7 @@ To minimize the risk of differences due to rounding, the following rules apply:
 [IMPORTANT]
 ====
 * Amounts do not need to be roundes and can have unlimited decimals, with the following expemption.
-** Invoice Payable amount (BT-11) shall be rounded to two decimals
+** Invoice Payable amount (BT-115) shall be rounded to two decimals
 ====
 
 Please also see <<Calculation>> for details on how to calculate the different amounts.
