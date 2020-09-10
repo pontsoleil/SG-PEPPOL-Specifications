@@ -201,30 +201,23 @@
   </cac:Delivery>
   <!-- tag::giro[] -->
   <cac:PaymentMeans>
-    <cbc:PaymentMeansCode name="GIRO">Z01</cbc:PaymentMeansCode>
-    <!--1-->
-    <cbc:PaymentID>93274234</cbc:PaymentID>
-    <!--2-->
+    <cbc:PaymentMeansCode name="GIRO">Z01</cbc:PaymentMeansCode> <!--1-->
+    <cbc:PaymentID>93274234</cbc:PaymentID> <!--2-->
   </cac:PaymentMeans>
   <!-- end::giro[] -->
   <!-- tag::paynow[] -->
   <cac:PaymentMeans>
-    <cbc:PaymentMeansCode name="PayNow">Z02</cbc:PaymentMeansCode>
-    <!--1-->
-    <cbc:PaymentID>93274234</cbc:PaymentID>
-    <!--2-->
+    <cbc:PaymentMeansCode name="PayNow">Z02</cbc:PaymentMeansCode> <!--1-->
+    <cbc:PaymentID>93274234</cbc:PaymentID> <!--2-->
     <cac:PayeeFinancialAccount>
-      <cbc:ID>UEN123456879</cbc:ID>
-      <!--3-->
+      <cbc:ID>UEN123456879</cbc:ID> <!--3-->
     </cac:PayeeFinancialAccount>
   </cac:PaymentMeans>
   <!-- end::paynow[] -->
   <!-- tag::creditcard[] -->
   <cac:PaymentMeans>
-    <cbc:PaymentMeansCode name="Credit Card">54</cbc:PaymentMeansCode>
-    <!--1-->
-    <cbc:PaymentID>93274234</cbc:PaymentID>
-    <!--2-->
+    <cbc:PaymentMeansCode name="Credit Card">54</cbc:PaymentMeansCode> <!--1-->
+    <cbc:PaymentID>93274234</cbc:PaymentID> <!--2-->
   </cac:PaymentMeans>
   <!-- end::creditcard[] -->
   <cac:PaymentTerms>

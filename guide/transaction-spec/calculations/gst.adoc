@@ -5,12 +5,12 @@ One GST Breakdown shall be provided for each distinct combination of GST categor
 
 For each distinct combination of GST category code and GST rate the calculations are:
 ====
-stem:["GST category taxable amount (BT-116)" = sum("Invoice line net amounts (BT-113)")] +
+stem:["GST category taxable amount (BT-116-GST)" = sum("Invoice line net amounts (BT-113)")] +
 stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amount (BT-93)"]
 ====
 
 ====
-stem:["GST category tax amount (BT-117)" = "GST category taxable amount (BT-116)" times ("GST rate (BT-119)" div 100)]
+stem:["GST category tax amount (BT-117-GST)" = "GST category taxable amount (BT-116-GST)" times ("GST rate (BT-119-GST)" div 100)]
 ====
 
 IMPORTANT: For GST Breakdown where the GST Category is "Not subject to GST" (O), the GST category tax amount shall be zero.

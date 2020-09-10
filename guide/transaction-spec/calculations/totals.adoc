@@ -12,7 +12,7 @@ Formulas for the calculations of totals are as follows:
 
 | BT-106
 | Sum of invoice line net amounts
-| stem:[sum("BT-131: Invoice line net amount")]
+| stem:[sum("BT-131-GST: Invoice line net amount")]
 
 | BT-107
 | Sum of allowances on document level
@@ -23,25 +23,25 @@ Formulas for the calculations of totals are as follows:
 | stem:[sum("BT-99: Document level charge amount")]
 
 
-| BT-109
+| BT-109-GST
 | Invoice total amount without GST
 | stem:[\ \ \ \ "BT-106: Sum of invoice line net amounts"] +
 stem:[- \ "BT-107: Sum of allowances on document level"] +
 stem:[+ \ "BT-108: Sum of charges on document level"]
 
-| BT-110
+| BT-110-GST
 | Invoice total GST amount
 | stem:[sum("BT-117: GST category tax amount")]
 
 
-| BT-112
+| BT-112-GST
 | Invoice total amount with GST
-| stem:[\ \ \ \ "BT-109: Invoice total amount without GST"] +
-stem:[+ \ "BT-110: Invoice total GST amount"]
+| stem:[\ \ \ \ "BT-109-GST: Invoice total amount without GST"] +
+stem:[+ \ "BT-110-GST: Invoice total GST amount"]
 
 | BT-115
 | Amount due for payment
-| stem:[\ \ \ \ "BT-112: Invoice total amount with GST"] +
+| stem:[\ \ \ \ "BT-112-GST: Invoice total amount with GST"] +
 stem:[- \ "BT-113: Paid amount"] +
 stem:[+ \ "BT-114: Rounding amount"]
 
