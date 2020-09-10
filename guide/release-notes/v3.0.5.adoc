@@ -10,3 +10,5 @@ Release date:: 2020-10-01
 
 * Reintroduced decimal check on Payable Amount - [BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.
 * Added EAS EndpointID code list rule BR-CL-25 and aligned with Peppol-rules
+* Aligned EAS and ICD codelists with latest Peppol/EN16931 schematrons
+* Separation of Singapore specific rules into separate file

@@ -22,7 +22,9 @@ NOTE: It is important that they buyer takes the capability of the seller into co
 |UBL: OrderReference/ID
 
 |BT-132 Referenced purchase order line reference
-|UBL invoice: InvoiceLine/OrderLineReference/LineID[%hardbreaks]
+|UBL invoice: InvoiceLine/OrderLineReference/LineID
+
+
 UBL Creditnote: CreditNoteLine/OrderLineReference/LineID
 |===
                                                                                                    
