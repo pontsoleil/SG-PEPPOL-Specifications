@@ -51,7 +51,3 @@ include::../syntax/guideline.adoc[]
 include::../transaction-spec/validation/index.adoc[]
 
 include::../transaction-spec/rules/index.adoc[]
-
-include::appendix/examples.adoc[]
-
-//include::rules/index.adoc[]
