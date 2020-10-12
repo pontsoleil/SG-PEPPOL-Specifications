@@ -21,7 +21,7 @@
   <!--Start pattern based on abstract model-->
   <pattern id="Peppol derived">
     <!-- Document level -->
-    <rule context="cn:CreditNote | ubl:Invoice">
+    <rule context="/ubl:Invoice | /cn:CreditNote">
       <assert id="PEPPOL-EN16931-R004-SG" test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0')" flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:sg:3.0'.</assert>
     </rule>
   </pattern>
@@ -32,7 +32,7 @@
       <assert test="((cbc:ChargeTotalAmount) and (cbc:AllowanceTotalAmount) and (round(xs:decimal(cbc:TaxExclusiveAmount) * 10 * 10) div 100 = round((xs:decimal(cbc:LineExtensionAmount) + xs:decimal(cbc:ChargeTotalAmount) - xs:decimal(cbc:AllowanceTotalAmount)) * 10 * 10) div 100 ))  or (not(cbc:ChargeTotalAmount) and (cbc:AllowanceTotalAmount) and (round(xs:decimal(cbc:TaxExclusiveAmount) * 10 * 10) div 100 = round((xs:decimal(cbc:LineExtensionAmount) - xs:decimal(cbc:AllowanceTotalAmount)) * 10 * 10 ) div 100)) or ((cbc:ChargeTotalAmount) and not(cbc:AllowanceTotalAmount) and (round(xs:decimal(cbc:TaxExclusiveAmount) * 10 * 10) div 100 = round((xs:decimal(cbc:LineExtensionAmount) + xs:decimal(cbc:ChargeTotalAmount)) * 10 * 10 ) div 100)) or (not(cbc:ChargeTotalAmount) and not(cbc:AllowanceTotalAmount) and (xs:decimal(cbc:TaxExclusiveAmount) = xs:decimal(cbc:LineExtensionAmount)))" flag="fatal" id="BR-CO-13-GST-SG">[BR-CO-13-GST-SG]-Invoice total amount without GST (BT-109-GST) = Σ Invoice line net amount (BT-131) - Sum of allowances on document level (BT-107) + Sum of charges on document level (BT-108).</assert>
       <assert test="((cbc:PrepaidAmount) and not((cbc:PayableRoundingAmount)) and (round(xs:decimal(cbc:PayableAmount) * 10 * 10) div 100 = (round((xs:decimal(cbc:TaxInclusiveAmount) - xs:decimal(cbc:PrepaidAmount)) * 10 * 10) div 100))) or (not((cbc:PrepaidAmount)) and not((cbc:PayableRoundingAmount)) and xs:decimal(cbc:PayableAmount) = xs:decimal(cbc:TaxInclusiveAmount)) or ((cbc:PrepaidAmount) and (cbc:PayableRoundingAmount) and ((round((xs:decimal(cbc:PayableAmount) - xs:decimal(cbc:PayableRoundingAmount)) * 10 * 10) div 100) = (round((xs:decimal(cbc:TaxInclusiveAmount) - xs:decimal(cbc:PrepaidAmount)) * 10 * 10) div 100))) or (not((cbc:PrepaidAmount)) and (cbc:PayableRoundingAmount) and ((round((xs:decimal(cbc:PayableAmount) - xs:decimal(cbc:PayableRoundingAmount)) * 10 * 10) div 100) = round(xs:decimal(cbc:TaxInclusiveAmount) * 10 * 10) div 100)) " flag="fatal" id="BR-CO-16-GST-SG">[BR-CO-16-GST-SG]-Amount due for payment (BT-115) = Invoice total amount with GST (BT-112-GST-SG) -Paid amount (BT-113) +Rounding amount (BT-114).</assert>
     </rule>
-    <rule context="//ubl:Invoice | //cn:CreditNote">
+    <rule context="/ubl:Invoice | /cn:CreditNote">
       <assert test="every $taxcurrency in cbc:TaxCurrencyCode satisfies exists(//cac:TaxTotal/cbc:TaxAmount[@currencyID=$taxcurrency])" flag="fatal" id="BR-53-GST-SG">[BR-53-GST-SG]-If the GST accounting currency code (BT-6-GST) is present, then the Invoice total GST amount in accounting currency (BT-111-GST) shall be provided.</assert>
       <assert test="every $Currency in cbc:DocumentCurrencyCode satisfies round(cac:LegalMonetaryTotal/xs:decimal(cbc:TaxInclusiveAmount) * 10 * 10) div 100 = round( (cac:LegalMonetaryTotal/xs:decimal(cbc:TaxExclusiveAmount) + cac:TaxTotal/xs:decimal(cbc:TaxAmount[@currencyID=$Currency])) * 10 * 10) div 100" flag="fatal" id="BR-CO-15-GST-SG">[BR-CO-15-GST-SG]-Invoice total amount with GST (BT-112-GST) = Invoice total amount without GST (BT-109-GST) + Invoice total GST amount (BT-110-GST).</assert>
       <assert test="exists(cac:TaxTotal/cac:TaxSubtotal)" flag="fatal" id="BR-CO-18-GST-SG">[BR-CO-18-GST-SG]-An Invoice shall at least have one GST Breakdown group (BG-23-GST).</assert>
@@ -58,7 +58,7 @@
     <rule context="cac:TaxRepresentativeParty">
       <assert test="exists(cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'GST']/cbc:CompanyID)" flag="fatal" id="BR-56-GST-SG">[BR-56-GST-SG]-Each Seller tax representative party (BG-11) shall have a Seller tax representative GST identifier (BT-63-GST).</assert>
     </rule>
-    <rule context="//ubl:Invoice/cac:TaxTotal | //cn:CreditNote/cac:TaxTotal">
+    <rule context="/ubl:Invoice/cac:TaxTotal | /cn:CreditNote/cac:TaxTotal">
       <assert test="(round(xs:decimal(child::cbc:TaxAmount) * 10 * 10) div 100 = round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)" flag="fatal" id="BR-CO-14-GST-SG">[BR-CO-14-GST-SG]-Invoice total GST amount (BT-110-GST) = Σ GST category tax amount (BT-117-GST).</assert>
     </rule>
     <rule context="cac:TaxTotal/cac:TaxSubtotal">
@@ -71,12 +71,12 @@
   </pattern>
   <!--Start pattern based on abstract syntax-->
   <pattern id="UBL-syntax">
-    <rule context="/ubl:Invoice">
+    <rule context="/ubl:Invoice | /cn:CreditNote">
       <assert test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='GST']/cbc:CompanyID) &lt;= 1)" flag="warning" id="UBL-SR-12-GST-SG">[UBL-SR-12-GST-SG]-Seller GST identifier shall occur maximum once</assert>
       <assert test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID!='GST']/cbc:ID) &lt;= 1)" flag="warning" id="UBL-SR-13-GST-SG">[UBL-SR-13-GST-SG]-Seller tax registration shall occur maximum once</assert>
       <assert test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)" flag="warning" id="UBL-SR-18-SG">[UBL-SR-18-GST]-Buyer GST identifier shall occur maximum once</assert>
     </rule>
-    <rule context="cac:InvoiceLine">
+    <rule context="cac:InvoiceLine | cac:CreditNoteLine">
       <assert test="(count(cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReason) &lt;= 1)" flag="warning" id="UBL-SR-38-GST-SG">[UBL-SR-38-GST-SG]-Invoiced item GST exemption reason text shall occur maximum once</assert>
     </rule>
     <rule context="cac:TaxRepresentativeParty">
