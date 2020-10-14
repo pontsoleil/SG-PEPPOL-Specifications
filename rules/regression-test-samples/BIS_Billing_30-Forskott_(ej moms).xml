@@ -79,6 +79,7 @@
 			<!-- Out of scope of GST: -->
 			<cac:TaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cbc:TaxExemptionReason>Finansiell transaktion</cbc:TaxExemptionReason>
  				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -107,6 +108,7 @@
 			<!-- Outside scope of GST, but ClassifiedTaxCategory is required: -->
 			<cac:ClassifiedTaxCategory>
 				<cbc:ID>OS</cbc:ID> 
+				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID> 
 				</cac:TaxScheme>

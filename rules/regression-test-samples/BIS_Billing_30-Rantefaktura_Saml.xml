@@ -91,6 +91,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cbc:TaxExemptionReason>ML ej tillämplig</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -122,6 +123,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>
@@ -147,6 +149,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>
@@ -172,6 +175,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>

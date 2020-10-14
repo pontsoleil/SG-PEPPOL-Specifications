@@ -97,6 +97,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
 			<cac:TaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cbc:TaxExemptionReason>Inomstatlig fakturering, ML är inte tillämplig</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -122,6 +123,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
 			<cac:ClassifiedTaxCategory>
 				<cbc:ID>OS</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>
