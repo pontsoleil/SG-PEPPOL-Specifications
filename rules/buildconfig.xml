@@ -3,6 +3,7 @@
 
   <package url="http://docs.peppol.eu/poacc/billing/sg/3/">SG Peppol BIS Billing 3.0</package>
 
+  <testfolder>regression-test-samples</testfolder>
   <testfolder>examples</testfolder>
   <testfolder>snippets</testfolder>
   <testfolder>unit-UBL-PEPPOL</testfolder>
