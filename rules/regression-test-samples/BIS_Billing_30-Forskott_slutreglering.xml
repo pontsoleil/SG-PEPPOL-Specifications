@@ -20,7 +20,7 @@
  	<cbc:IssueDate>2018-08-02</cbc:IssueDate>
  	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode> 
 	<cbc:Note>Final invoice</cbc:Note>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 
 	<cac:OrderReference>
 		<cbc:ID>20180007</cbc:ID>
@@ -85,10 +85,10 @@
 
 	<cac:TaxTotal>
 		<!-- GST on the whole cost for the suply:  -->
-		<cbc:TaxAmount currencyID="GSD">95000</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">95000</cbc:TaxAmount>
  		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">380000</cbc:TaxableAmount>
- 			<cbc:TaxAmount currencyID="GSD">95000</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">380000</cbc:TaxableAmount>
+ 			<cbc:TaxAmount currencyID="SGD">95000</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -100,18 +100,18 @@
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">380000</cbc:LineExtensionAmount> 
-		<cbc:TaxExclusiveAmount currencyID="GSD">380000</cbc:TaxExclusiveAmount> 
-		<cbc:TaxInclusiveAmount currencyID="GSD">475000</cbc:TaxInclusiveAmount> 
+		<cbc:LineExtensionAmount currencyID="SGD">380000</cbc:LineExtensionAmount> 
+		<cbc:TaxExclusiveAmount currencyID="SGD">380000</cbc:TaxExclusiveAmount> 
+		<cbc:TaxInclusiveAmount currencyID="SGD">475000</cbc:TaxInclusiveAmount> 
 		<!-- Advance payment is deducted:  -->
-		<cbc:PrepaidAmount currencyID="GSD">400000</cbc:PrepaidAmount> 
-		<cbc:PayableAmount currencyID="GSD">75000</cbc:PayableAmount>
+		<cbc:PrepaidAmount currencyID="SGD">400000</cbc:PrepaidAmount> 
+		<cbc:PayableAmount currencyID="SGD">75000</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal> 
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity> 
-		<cbc:LineExtensionAmount currencyID="GSD">200000</cbc:LineExtensionAmount> 
+		<cbc:LineExtensionAmount currencyID="SGD">200000</cbc:LineExtensionAmount> 
 		<cac:Item>
 			<cbc:Name>Fast kostnad, enligt avtal</cbc:Name> 
 			<cac:ClassifiedTaxCategory>
@@ -123,14 +123,14 @@
 			</cac:ClassifiedTaxCategory> 
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">200000</cbc:PriceAmount> 
+			<cbc:PriceAmount currencyID="SGD">200000</cbc:PriceAmount> 
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>2</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="C62">180</cbc:InvoicedQuantity> 
-		<cbc:LineExtensionAmount currencyID="GSD">180000</cbc:LineExtensionAmount> 
+		<cbc:LineExtensionAmount currencyID="SGD">180000</cbc:LineExtensionAmount> 
 		<cac:Item>
 			<cbc:Name>Rörlig kostnad</cbc:Name> 
 			<cac:ClassifiedTaxCategory>
@@ -142,7 +142,7 @@
 			</cac:ClassifiedTaxCategory> 
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">1000</cbc:PriceAmount> 
+			<cbc:PriceAmount currencyID="SGD">1000</cbc:PriceAmount> 
 		</cac:Price>
 	</cac:InvoiceLine>
 

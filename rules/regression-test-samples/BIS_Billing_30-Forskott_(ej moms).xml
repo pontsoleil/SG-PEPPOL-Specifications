@@ -19,7 +19,7 @@
 	<cbc:ID>20180112</cbc:ID>
  	<cbc:IssueDate>2018-01-09</cbc:IssueDate>
  	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode> 
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 
 	<cac:OrderReference>
 		<cbc:ID>20180007</cbc:ID>
@@ -72,10 +72,10 @@
 
 	<!-- In spite of its cardinality, TaxTotal is needed due to ClassifiedTaxCategory on InvoiceLine: -->
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
  		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">400000</cbc:TaxableAmount>
- 			<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">400000</cbc:TaxableAmount>
+ 			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<!-- Out of scope of GST: -->
 			<cac:TaxCategory>
 				<cbc:ID>O</cbc:ID>
@@ -88,20 +88,20 @@
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">400000</cbc:LineExtensionAmount> 
-		<cbc:TaxExclusiveAmount currencyID="GSD">400000</cbc:TaxExclusiveAmount> 
-		<cbc:TaxInclusiveAmount currencyID="GSD">400000</cbc:TaxInclusiveAmount> 
+		<cbc:LineExtensionAmount currencyID="SGD">400000</cbc:LineExtensionAmount> 
+		<cbc:TaxExclusiveAmount currencyID="SGD">400000</cbc:TaxExclusiveAmount> 
+		<cbc:TaxInclusiveAmount currencyID="SGD">400000</cbc:TaxInclusiveAmount> 
 		<!-- No prevoius advace: -->   
-		<cbc:PrepaidAmount currencyID="GSD">0</cbc:PrepaidAmount>
+		<cbc:PrepaidAmount currencyID="SGD">0</cbc:PrepaidAmount>
 		<!-- Advance claimed thru this bill: -->
- 		<cbc:PayableAmount currencyID="GSD">400000</cbc:PayableAmount> 
+ 		<cbc:PayableAmount currencyID="SGD">400000</cbc:PayableAmount> 
 	</cac:LegalMonetaryTotal> 
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity> 
 		<!-- Avance payment: -->
-		<cbc:LineExtensionAmount currencyID="GSD">400000</cbc:LineExtensionAmount> 
+		<cbc:LineExtensionAmount currencyID="SGD">400000</cbc:LineExtensionAmount> 
 		<cac:Item>
 			<cbc:Name>Förskott för produktionsmaterialkostnad</cbc:Name> 
 			<!-- Outside scope of GST, but ClassifiedTaxCategory is required: -->
@@ -113,7 +113,7 @@
 			</cac:ClassifiedTaxCategory> 
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">400000</cbc:PriceAmount> 
+			<cbc:PriceAmount currencyID="SGD">400000</cbc:PriceAmount> 
 		</cac:Price>
 	</cac:InvoiceLine>
 

@@ -18,7 +18,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:IssueDate>2007-02-05</cbc:IssueDate>
 	<cbc:DueDate>2007-03-05</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>UserID111, 6081</cbc:AccountingCost>
 	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
 
@@ -127,10 +127,10 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">207.76</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">207.76</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">831.02</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">207.76</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">831.02</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">207.76</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -142,19 +142,19 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">831.02</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">831.02</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">1038.78</cbc:TaxInclusiveAmount>
-		<cbc:AllowanceTotalAmount currencyID="GSD">0</cbc:AllowanceTotalAmount>
-		<cbc:ChargeTotalAmount currencyID="GSD">0</cbc:ChargeTotalAmount>
-		<cbc:PayableRoundingAmount currencyID="GSD">0.22</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="GSD">1039</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">831.02</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">831.02</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">1038.78</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="SGD">0</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="SGD">0</cbc:ChargeTotalAmount>
+		<cbc:PayableRoundingAmount currencyID="SGD">0.22</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SGD">1039</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 
 	<cac:InvoiceLine>
 		<cbc:ID>10</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">77</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">53.9</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">53.9</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -170,14 +170,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">0.7</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">0.7</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>15</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="MIN">693.8</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">0</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">0</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -193,7 +193,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">0</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">0</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
@@ -201,7 +201,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cbc:ID>20</cbc:ID>
 		<cbc:Note>"Ring mer"-kampanj: 100 samtal</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">104</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">22.8</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">22.8</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -209,7 +209,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cac:AllowanceCharge>
 			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Kampanj</cbc:AllowanceChargeReason>
-			<cbc:Amount currencyID="GSD">50</cbc:Amount>
+			<cbc:Amount currencyID="SGD">50</cbc:Amount>
 		</cac:AllowanceCharge>
 		<cac:Item>
 			<cbc:Name>Samtal i Sverige: vårt mobilnät, öppn.avg</cbc:Name>
@@ -222,13 +222,13 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">0.7</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">0.7</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>25</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="MIN">411.5</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">205.75</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">205.75</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -244,13 +244,13 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">0.5</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">0.5</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>30</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">30</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">45</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">45</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -266,14 +266,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">1.5</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">1.5</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>35</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="MIN">75.3</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">192.02</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">192.02</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -289,7 +289,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2.55</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2.55</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
@@ -297,7 +297,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cbc:ID>40</cbc:ID>
 		<cbc:Note>Quantity Unit: "4L"=Megabyte</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="4L">5.311</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">79.67</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">79.67</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -313,14 +313,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">15</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">15</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>50</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">5</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">10</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">10</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -336,14 +336,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>55</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="MIN">18.7</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">49.56</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">49.56</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -359,14 +359,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2.65</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2.65</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>60</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">9</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">22.32</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">22.32</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -382,14 +382,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2.48</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2.48</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>70</cbc:ID>
 		<cbc:Note>Dagens Witz KB, tel 0777-123456</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">2</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">50</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">50</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2006-11-05</cbc:StartDate>
 			<cbc:EndDate>2007-02-04</cbc:EndDate>
@@ -397,7 +397,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cac:AllowanceCharge>
 			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Kvantitetsrabatt</cbc:AllowanceChargeReason>
-			<cbc:Amount currencyID="GSD">5</cbc:Amount>
+			<cbc:Amount currencyID="SGD">5</cbc:Amount>
 		</cac:AllowanceCharge>
 		<cac:Item>
 			<cbc:Name>Förmedlad tjänst</cbc:Name>
@@ -410,13 +410,13 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">27.5</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">27.5</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>80</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">100</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">100</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2007-02-05</cbc:StartDate>
 			<cbc:EndDate>2007-05-04</cbc:EndDate>
@@ -432,7 +432,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">100</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">100</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

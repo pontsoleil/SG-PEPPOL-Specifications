@@ -26,7 +26,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<!-- The invoice currency:        -->
 	<cbc:DocumentCurrencyCode>USD</cbc:DocumentCurrencyCode>
 	<!-- The GST accounting currency: -->
-	<cbc:TaxCurrencyCode>GSD</cbc:TaxCurrencyCode>
+	<cbc:TaxCurrencyCode>SGD</cbc:TaxCurrencyCode>
 	<cbc:BuyerReference>HaGre</cbc:BuyerReference>
 
 	<cac:AccountingSupplierParty>
@@ -144,9 +144,9 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
 
-	<!-- TaxTotal showing the amount of GST in GST accounting currency (GSD):  -->
+	<!-- TaxTotal showing the amount of GST in GST accounting currency (SGD):  -->
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">205845.40</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">205845.40</cbc:TaxAmount>
 	</cac:TaxTotal>
 
 	<!-- All amounts are presented and calculated in invoice currency (USD): -->

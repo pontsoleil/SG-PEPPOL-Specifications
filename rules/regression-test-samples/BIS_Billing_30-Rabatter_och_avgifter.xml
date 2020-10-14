@@ -17,7 +17,7 @@
 	<cbc:IssueDate>2018-10-02</cbc:IssueDate>
 	<cbc:DueDate>2018-11-02</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:BuyerReference>EmPe</cbc:BuyerReference>
 
 	<cac:OrderReference>
@@ -106,8 +106,8 @@
 		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Campaign discount</cbc:AllowanceChargeReason>
 		<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
-		<cbc:Amount currencyID="GSD">450</cbc:Amount>
-		<cbc:BaseAmount currencyID="GSD">4500</cbc:BaseAmount>
+		<cbc:Amount currencyID="SGD">450</cbc:Amount>
+		<cbc:BaseAmount currencyID="SGD">4500</cbc:BaseAmount>
 		<cac:TaxCategory>
 			<cbc:ID>SR</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
@@ -123,8 +123,8 @@
 		<cbc:AllowanceChargeReasonCode>WH</cbc:AllowanceChargeReasonCode>
 		<cbc:AllowanceChargeReason>Lagerhållning</cbc:AllowanceChargeReason>
 		<cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric>
-		<cbc:Amount currencyID="GSD">3530</cbc:Amount>
-		<cbc:BaseAmount currencyID="GSD">176500</cbc:BaseAmount>
+		<cbc:Amount currencyID="SGD">3530</cbc:Amount>
+		<cbc:BaseAmount currencyID="SGD">176500</cbc:BaseAmount>
 		<cac:TaxCategory>
 			<cbc:ID>SR</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
@@ -138,7 +138,7 @@
 		<!-- Charge, fixed cost per invoice: -->
 		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Expeditionsavgift</cbc:AllowanceChargeReason>
-		<cbc:Amount currencyID="GSD">100</cbc:Amount>
+		<cbc:Amount currencyID="SGD">100</cbc:Amount>
 		<cac:TaxCategory>
 			<cbc:ID>SR</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
@@ -149,10 +149,10 @@
 	</cac:AllowanceCharge>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">44920</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">44920</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">179680</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">44920</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">179680</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">44920</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -164,21 +164,21 @@
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">176500</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">179680</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">224600</cbc:TaxInclusiveAmount>
-		<cbc:AllowanceTotalAmount currencyID="GSD">450</cbc:AllowanceTotalAmount>
-		<cbc:ChargeTotalAmount currencyID="GSD">3630</cbc:ChargeTotalAmount>
-		<cbc:PrepaidAmount currencyID="GSD">0</cbc:PrepaidAmount>
-		<cbc:PayableRoundingAmount currencyID="GSD">0</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="GSD">224600</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">176500</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">179680</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">224600</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="SGD">450</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="SGD">3630</cbc:ChargeTotalAmount>
+		<cbc:PrepaidAmount currencyID="SGD">0</cbc:PrepaidAmount>
+		<cbc:PayableRoundingAmount currencyID="SGD">0</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SGD">224600</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Note>Utgående modell</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">100</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">172000</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">172000</cbc:LineExtensionAmount>
 
 		<cac:AllowanceCharge> 
 			<!-- Discount, no sequential calculation: -->
@@ -186,8 +186,8 @@
 			<cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
 			<cbc:AllowanceChargeReason>Produktionsfel</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>6</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">12000</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">200000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">12000</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">200000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 		<cac:AllowanceCharge> 
 			<!-- Discount, no sequential calculation: -->
@@ -195,8 +195,8 @@
 			<cbc:AllowanceChargeReasonCode>68</cbc:AllowanceChargeReasonCode>
 			<cbc:AllowanceChargeReason>Utgående serie</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">40000</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">200000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">40000</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">200000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 		<cac:AllowanceCharge> 
 			<!-- Charge for service, no sequential calculation: -->
@@ -204,8 +204,8 @@
 			<cbc:AllowanceChargeReasonCode>ACJ</cbc:AllowanceChargeReasonCode>
 			<cbc:AllowanceChargeReason>Målning</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>12</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">24000</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">200000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">24000</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">200000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 
 		<cac:Item>
@@ -220,13 +220,13 @@
 		</cac:Item>
 
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2000</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2000</cbc:PriceAmount>
 			<cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
 			<cac:AllowanceCharge> 
 				<!-- Discount on list price: -->
 				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-				<cbc:Amount currencyID="GSD">100</cbc:Amount>
-				<cbc:BaseAmount currencyID="GSD">2100</cbc:BaseAmount>
+				<cbc:Amount currencyID="SGD">100</cbc:Amount>
+				<cbc:BaseAmount currencyID="SGD">2100</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 		</cac:Price>
 	</cac:InvoiceLine>
@@ -235,23 +235,23 @@
 		<cbc:ID>2</cbc:ID>
 		<cbc:Note>Promotion campaign</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">5</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">4500</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">4500</cbc:LineExtensionAmount>
 
 		<cac:AllowanceCharge> 
 			<!-- Discount, implied sequential calculation: -->
 			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Leveransstörning</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">1000</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">5000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">1000</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">5000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 		<cac:AllowanceCharge> 
 			<!-- Discount, implied sequential calculation: -->
 			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Instegsartikel, ny serie</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>25</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">1000</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">4000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">1000</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">4000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 		<cac:AllowanceCharge> 
 			<!-- Charge for service, implied sequential calculation: -->
@@ -259,8 +259,8 @@
 			<cbc:AllowanceChargeReasonCode>ACJ</cbc:AllowanceChargeReasonCode>
 			<cbc:AllowanceChargeReason>Målning</cbc:AllowanceChargeReason>
 			<cbc:MultiplierFactorNumeric>50</cbc:MultiplierFactorNumeric>
-			<cbc:Amount currencyID="GSD">1500</cbc:Amount>
-			<cbc:BaseAmount currencyID="GSD">3000</cbc:BaseAmount>
+			<cbc:Amount currencyID="SGD">1500</cbc:Amount>
+			<cbc:BaseAmount currencyID="SGD">3000</cbc:BaseAmount>
 		</cac:AllowanceCharge>
 
 		<cac:Item>
@@ -275,13 +275,13 @@
 		</cac:Item>
 
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">5000</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">5000</cbc:PriceAmount>
 			<cbc:BaseQuantity unitCode="EA">5</cbc:BaseQuantity>
 			<cac:AllowanceCharge> 
 				<!-- Discount on list price: -->
 				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-				<cbc:Amount currencyID="GSD">1000</cbc:Amount>
-				<cbc:BaseAmount currencyID="GSD">6000</cbc:BaseAmount>
+				<cbc:Amount currencyID="SGD">1000</cbc:Amount>
+				<cbc:BaseAmount currencyID="SGD">6000</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 		</cac:Price>
 	</cac:InvoiceLine>

@@ -18,7 +18,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:IssueDate>2007-11-05</cbc:IssueDate>
 	<cbc:DueDate>2007-11-15</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode >GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode >SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>UserID111, 6081</cbc:AccountingCost>
 	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
 
@@ -104,10 +104,10 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">88.86</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">88.86</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">856</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">51.36</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">856</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">51.36</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>6</cbc:Percent>
@@ -117,8 +117,8 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:TaxCategory>
 		</cac:TaxSubtotal>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">150</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">37.5</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">150</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">37.5</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -130,17 +130,17 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
 	</cac:TaxTotal>
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">1006</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">1006</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">1094.86</cbc:TaxInclusiveAmount>
-		<cbc:PayableRoundingAmount currencyID="GSD">0.14</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="GSD">1095</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">1006</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">1006</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">1094.86</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SGD">0.14</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SGD">1095</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">150</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">150</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:EndDate>2001-10-29</cbc:EndDate>
 		</cac:InvoicePeriod>
@@ -158,14 +158,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">150</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">150</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>2</cbc:ID>
 		<cbc:Note>Beställare: EXP/1QJ853N</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">856</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">856</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2001-10-29</cbc:StartDate>
 			<cbc:EndDate>2001-10-29</cbc:EndDate>
@@ -173,7 +173,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cac:AllowanceCharge>
 			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Priority</cbc:AllowanceChargeReason>
-			<cbc:Amount currencyID="GSD">6</cbc:Amount>
+			<cbc:Amount currencyID="SGD">6</cbc:Amount>
 		</cac:AllowanceCharge>
 		<cac:Item>
 			<cbc:Description>Stockholm - Lillby</cbc:Description>
@@ -194,7 +194,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:AdditionalItemProperty>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">850</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">850</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

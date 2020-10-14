@@ -16,7 +16,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:IssueDate>2007-07-24</cbc:IssueDate>
 	<cbc:DueDate>2007-10-24</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>HANOR</cbc:AccountingCost>
 	<cbc:BuyerReference>Admin</cbc:BuyerReference>
 
@@ -103,10 +103,10 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">6250</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">6250</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">25000</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">6250</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">25000</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">6250</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -118,12 +118,12 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">25000</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">25000</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">31250</cbc:TaxInclusiveAmount>
-		<cbc:AllowanceTotalAmount currencyID="GSD">0</cbc:AllowanceTotalAmount>
-		<cbc:ChargeTotalAmount currencyID="GSD">0</cbc:ChargeTotalAmount>
-		<cbc:PayableAmount currencyID="GSD">31250</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">25000</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">25000</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">31250</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="SGD">0</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="SGD">0</cbc:ChargeTotalAmount>
+		<cbc:PayableAmount currencyID="SGD">31250</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
@@ -131,7 +131,7 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 		Adress: Västskolan, XSTAD.
                 Pris enl ök.</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA" unitCodeListID="UNECERec20">40</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">25000</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">25000</cbc:LineExtensionAmount>
 		<!-- Invoiced objectt (line):  -->
 		<cac:DocumentReference>
 			<cbc:ID>Västskolan</cbc:ID>
@@ -149,7 +149,7 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">625</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">625</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

@@ -20,7 +20,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:IssueDate>2017-11-20</cbc:IssueDate>
 	<cbc:DueDate>2017-11-30</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
 
 	<cac:InvoicePeriod>
@@ -113,10 +113,10 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">1100</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">1100</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>O</cbc:ID>
 				<cbc:TaxExemptionReason>Inköpskort, bruttobelopp faktureras</cbc:TaxExemptionReason>
@@ -128,16 +128,16 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">1100</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">1100</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">1100</cbc:TaxInclusiveAmount>
-		<cbc:PayableAmount currencyID="GSD">1100</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">1100</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">1100</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">1100</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="SGD">1100</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">280</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">280</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:EndDate>2017-10-08</cbc:EndDate>
 		</cac:InvoicePeriod>
@@ -152,7 +152,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">280</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">280</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
@@ -160,7 +160,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cbc:ID>2</cbc:ID>
 		<cbc:Note>Bakfickans parkering, Stockholm</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="HUR">4</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">300</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">300</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:EndDate>2017-10-15</cbc:EndDate>
 		</cac:InvoicePeriod>
@@ -175,7 +175,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">75</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">75</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
@@ -185,14 +185,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			Nybo, Stortorget, Stockholm
 			(Nettobel, exkl moms)</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">4</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">20</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">20</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:EndDate>2017-10-15</cbc:EndDate>
 		</cac:InvoicePeriod>
 		<cac:AllowanceCharge>
 			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 			<cbc:AllowanceChargeReason>Kampanj</cbc:AllowanceChargeReason>
-			<cbc:Amount currencyID="GSD">80</cbc:Amount>
+			<cbc:Amount currencyID="SGD">80</cbc:Amount>
 		</cac:AllowanceCharge>
 		<cac:Item>
 			<cbc:Name>Avtalsbutiken</cbc:Name>
@@ -205,7 +205,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">50</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">50</cbc:PriceAmount>
 			<cbc:BaseQuantity>2</cbc:BaseQuantity>
 		</cac:Price>
 	</cac:InvoiceLine>
@@ -213,7 +213,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cac:InvoiceLine>
 		<cbc:ID>4</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">400</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">400</cbc:LineExtensionAmount>
 		<cac:InvoicePeriod>
 			<cbc:StartDate>2017-10-15</cbc:StartDate>
 			<cbc:EndDate>2017-10-15</cbc:EndDate>
@@ -230,14 +230,14 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">400</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">400</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
 	<cac:InvoiceLine>
 		<cbc:ID>5</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="MON">2</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">100</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">100</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Description>Musiktjänst: Månadens låtar, december 2017</cbc:Description>
 			<cbc:Name>Prenumeration</cbc:Name>
@@ -250,7 +250,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">50</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">50</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 

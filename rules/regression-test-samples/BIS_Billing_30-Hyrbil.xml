@@ -19,7 +19,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
 	<cbc:Note>HYRESINFORMATION: ReservationsID: 200712011234; Voucher nr: 2007-03381.  
 MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasing av personbil som i de flesta fall innebär att avdrag endast medges med halva momsen på leasingavgiften - avdragsgill moms enligt denna faktura blir då 65,88 kr.</cbc:Note>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>AnPer, AKT:520343 ORG:40121</cbc:AccountingCost>
 	<cbc:BuyerReference>AnPer</cbc:BuyerReference>
 
@@ -134,10 +134,10 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">115.75</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">115.75</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">463</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">115.75</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">463</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">115.75</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -148,17 +148,17 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">463</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">463</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">578.75</cbc:TaxInclusiveAmount>
-		<cbc:PayableRoundingAmount currencyID="GSD">0.25</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="GSD">579</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">463</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">463</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">578.75</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SGD">0.25</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SGD">579</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Note>Mätarställning in: 22.554; Mätarställning ut: 22.672; Körd sträcka: 118 km</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="DAY">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">299</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">299</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Description>Bilkategori D, obegränsad körsträcka dag 1.</cbc:Description>
 			<cbc:Name>Hyrestid i dagar</cbc:Name>
@@ -174,13 +174,13 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">299</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">299</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>2</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">0</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">0</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Description>Återlämning Arlanda</cbc:Description>
 			<cbc:Name>Annan återlämningsort</cbc:Name>
@@ -196,13 +196,13 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">0</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">0</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>3</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">70</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">70</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Självriskreducering cdr</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -217,13 +217,13 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">70</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">70</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>4</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">30</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">30</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Bilstöldsförsäkring tp</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -238,13 +238,13 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">30</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">30</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>5</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="LTR">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">64</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">64</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Drivmedel</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -259,7 +259,7 @@ MOMSINFORMATION: Mervärdesskattelagen innehåller ett avdragsförbud vid leasin
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">64</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">64</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

@@ -15,7 +15,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<cbc:IssueDate>2008-02-08</cbc:IssueDate>
 	<cbc:DueDate>2008-03-07</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>BES, 87392</cbc:AccountingCost>
 
 	<cac:OrderReference>
@@ -132,7 +132,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<cac:AllowanceCharge>
 		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Frakt</cbc:AllowanceChargeReason>
-		<cbc:Amount currencyID="GSD">150</cbc:Amount>
+		<cbc:Amount currencyID="SGD">150</cbc:Amount>
 		<cac:TaxCategory>
 			<cbc:ID>SR</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
@@ -143,12 +143,12 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	</cac:AllowanceCharge>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">1821.5</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">1821.5</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">1050</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">1050</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<cac:TaxCategory>
-				<cbc:ID>E</cbc:ID>
+				<cbc:ID>ES33</cbc:ID>
 				<cbc:Percent>0</cbc:Percent>
 				<cbc:TaxExemptionReason>Undantag enl ML X kap, Y §</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
@@ -157,8 +157,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			</cac:TaxCategory>
 		</cac:TaxSubtotal>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">7286</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">1821.5</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">7286</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">1821.5</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
@@ -170,18 +170,18 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">8186</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">8336</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">10157.5</cbc:TaxInclusiveAmount>
-		<cbc:ChargeTotalAmount currencyID="GSD">150</cbc:ChargeTotalAmount>
-		<cbc:PayableRoundingAmount currencyID="GSD">0.5</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="GSD">10158</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">8186</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">8336</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">10157.5</cbc:TaxInclusiveAmount>
+		<cbc:ChargeTotalAmount currencyID="SGD">150</cbc:ChargeTotalAmount>
+		<cbc:PayableRoundingAmount currencyID="SGD">0.5</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SGD">10158</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Note>Kvantitetsenhet "EA"=styck. Godmärke: "Kansliet, rum 308"</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">6688</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">6688</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>UIT Desktop m/59, 2-160 GB</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -203,18 +203,18 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			</cac:AdditionalItemProperty>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">6688</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">6688</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>2</cbc:ID>
 		<cbc:Note> Avser rad 1. Kvantitetsenhet "ANN"=år.</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="ANN">3</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">1050</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">1050</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Underhållsförsäkring</cbc:Name>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>E</cbc:ID>
+				<cbc:ID>ES33</cbc:ID>
 				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -222,14 +222,14 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">350</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">350</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 	<cac:InvoiceLine>
 		<cbc:ID>3</cbc:ID>
 		<cbc:Note>Kvantitetsenhet "EA"=styck.</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="EA" >1</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">448</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">448</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Killer antivirusprogram</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -244,7 +244,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">448</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">448</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

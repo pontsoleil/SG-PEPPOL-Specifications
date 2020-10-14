@@ -18,7 +18,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cbc:IssueDate>2008-06-12</cbc:IssueDate>
 	<cbc:DueDate>2008-07-12</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:DocumentCurrencyCode>GSD</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>SGD</cbc:DocumentCurrencyCode>
 	<cbc:AccountingCost>PePe</cbc:AccountingCost>
 	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
 
@@ -90,10 +90,10 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="GSD">28250</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="GSD">0</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="SGD">28250</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
 			<cac:TaxCategory>
 				<cbc:ID>O</cbc:ID>
@@ -106,17 +106,17 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:TaxTotal>
 
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="GSD">28250</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="GSD">28250</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="GSD">28250</cbc:TaxInclusiveAmount>
-		<cbc:PayableAmount currencyID="GSD">28250</cbc:PayableAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">28250</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SGD">28250</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SGD">28250</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="SGD">28250</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Note>Åsens Storgård (Öppen avd) 080516-080525</cbc:Note>
 		<cbc:InvoicedQuantity unitCode="DAY">10</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="GSD">28250</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="SGD">28250</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Vård enligt avtal</cbc:Name>
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
@@ -128,7 +128,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="GSD">2825</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="SGD">2825</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 
