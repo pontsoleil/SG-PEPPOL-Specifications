@@ -90,7 +90,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:TaxableAmount currencyID="SGD">2416.16</cbc:TaxableAmount>
 			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<cac:TaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cbc:TaxExemptionReason>ML ej tillämplig</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -121,7 +121,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:Name>Räntekostnad</cbc:Name>
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>
@@ -146,7 +146,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:Name>Räntekostnad</cbc:Name>
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>
@@ -171,7 +171,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:Name>Räntekostnad</cbc:Name>
 			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of GST: -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>

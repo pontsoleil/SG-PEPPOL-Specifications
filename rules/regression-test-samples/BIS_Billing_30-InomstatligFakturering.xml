@@ -96,7 +96,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
 			<cac:TaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cbc:TaxExemptionReason>Inomstatlig fakturering, ML är inte tillämplig</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -121,7 +121,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:Name>Vård enligt avtal</cbc:Name>
 			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
 				</cac:TaxScheme>

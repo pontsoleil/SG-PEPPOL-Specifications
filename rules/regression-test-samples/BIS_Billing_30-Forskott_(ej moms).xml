@@ -78,7 +78,7 @@
  			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount>
 			<!-- Out of scope of GST: -->
 			<cac:TaxCategory>
-				<cbc:ID>O</cbc:ID>
+				<cbc:ID>OS</cbc:ID>
 				<cbc:TaxExemptionReason>Finansiell transaktion</cbc:TaxExemptionReason>
  				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>

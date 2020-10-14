@@ -124,7 +124,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cbc:TaxableAmount currencyID="SGD">140000</cbc:TaxableAmount> 
 			<cbc:TaxAmount currencyID="SGD">0</cbc:TaxAmount> 
 			<cac:TaxCategory>
-  				<cbc:ID>SRCA-C</cbc:ID> 
+  				
 				<cbc:Percent>0</cbc:Percent> 
 				<cbc:TaxExemptionReason>Omvänd betalningsskyldighet</cbc:TaxExemptionReason> 
 				<cac:TaxScheme>
@@ -149,7 +149,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cac:Item>
 			<cbc:Name>Säkerhetsdörr NP7.4</cbc:Name>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>AE</cbc:ID>
+				<cbc:ID>SRCA-C</cbc:ID> 
 				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
@@ -167,7 +167,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 		<cac:Item>
 			<cbc:Name>Montering</cbc:Name>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>AE</cbc:ID>
+				<cbc:ID>SRCA-C</cbc:ID> 
 				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
