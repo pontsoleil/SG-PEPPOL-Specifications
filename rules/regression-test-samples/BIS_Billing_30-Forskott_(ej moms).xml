@@ -106,7 +106,7 @@
 			<cbc:Name>Förskott för produktionsmaterialkostnad</cbc:Name> 
 			<!-- Outside scope of GST, but ClassifiedTaxCategory is required: -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID>O</cbc:ID> 
+				<cbc:ID>OS</cbc:ID> 
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID> 
 				</cac:TaxScheme>

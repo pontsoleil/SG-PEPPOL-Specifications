@@ -130,7 +130,7 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 		<cbc:Note>Quantity Unit: "EA"=Styck.Fyra ronder/natt mellan kl 2200-0500 under tiden 070812-070821 pga kopparstölder.
 		Adress: Västskolan, XSTAD.
                 Pris enl ök.</cbc:Note>
-		<cbc:InvoicedQuantity unitCode="EA" unitCodeListID="UNECERec20">40</cbc:InvoicedQuantity>
+		<cbc:InvoicedQuantity unitCode="EA">40</cbc:InvoicedQuantity>
 		<cbc:LineExtensionAmount currencyID="SGD">25000</cbc:LineExtensionAmount>
 		<!-- Invoiced objectt (line):  -->
 		<cac:DocumentReference>
@@ -140,7 +140,7 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 		<cac:Item>
 			<cbc:Name>ROND</cbc:Name>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305">SR</cbc:ID>
+				<cbc:ID>SR</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>GST</cbc:ID>
