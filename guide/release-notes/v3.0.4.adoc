@@ -1,4 +1,4 @@
-= Version 3.1.0
+= Version 3.0.4
 [horizontal]
 Release date:: 2020-06-23
 

@@ -4,12 +4,12 @@ Release date:: 2020-10-01
 
 == Changes to BIS document
 
-* Documentation moved from differencial to full documentation.
-* Documentation changed to browsable html format.
+* BIS Documentation now complete (previous version only described the differences compared to Peppol BIS Billing.
+* Documentation changed to browsable html format aligned with other Peppol BIS 
 
 == Changes to validation artefacts
 
 * Reintroduced decimal check on Payable Amount - [BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.
 * Added EAS EndpointID code list rule BR-CL-25 and aligned with Peppol-rules
 * Aligned EAS and ICD codelists with latest Peppol/EN16931 schematrons
-* Separation of Singapore specific rules into separate file
+* New structure of the schematron rules. One file for those rules from EN16931 which are relevant for the SG BIS. One file for the additional "Peppol rules". One file for all rules which are unique for SG BIS Billing.
