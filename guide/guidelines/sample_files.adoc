@@ -1,0 +1,31 @@
+= Sample files
+[horizontal]
+
+
+== Sample files
+
+The following sample files can be used for guidance. 
+ 
+* Standard invoice
+	-GST invoice (all invoice with 380 are tax invoice except for NG type)
+	-GST invoice with zero rated
+	-Non-GST invoice
+* Standard credit note
+* Invoice with allowance and charges at document level
+* Invoice with allowance and charges at line level
+* Invoice with prepayment amount
+* Invoice with different GST code
+	-GST invoice with SRCA-C
+	-GST invoice with SCRA-S
+* GST invoice with foreign currency
+* Invoice with different payment mode
+	-Invoice with paynow payment
+	-Invoice with giro payment
+	-Invoice with bank account
+* Invoice with factoring and financing
+* Invoice with late payment charges
+* Invoice with AGD compliance
+* Invoice for services
+* Invoice with multiple decimal point
+
+The files can be downloaded from the main specification page as a zip-file.
