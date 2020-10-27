@@ -5,10 +5,10 @@ script:
 - sh build.sh
 deploy:
   provider: s3
-  access_key_id: AKIA2RF3X5WMYTQBARGI
+  access_key_id: AKIARALJXCFBKHO2JNEE
   secret_access_key:
     secure: Llvk1RdreAa12irbN2G48Qc/KAVfREsPITnB0Y0Zu9Aai3bVAJza3s15fr57YU/OawbA5kUXp3hYsiueIA2cmDJcZA9gxc7fow2Ymen4jw/3V8BSy5g9Z8w+VOeUqZ6zAtolUlyyW2fh4+pJsnOvwdc1IkMlFwxJ9EPnhn1WDQgXBW3wyJUJT4zk4o5Ro6E4UGgXGztE64dWWqZR5O68EuBv30QMoontOUaOakAc4SZiWC3i13yOZ12bJ1V26NchMTqBf2dqvkIXQgrKw6Gstxeq8QPknNuE+CH1qXf/eSKhtXnlSpZXnyxxMKvpek2dB9tGvGHXLUifRgKph4C0Kbrl04SNSfEcvWUtB5hGBm6CBe+R7JfnPuyioQN0BjJSuUyhsiITbx4K0xOxzS3/HErG4aoB2i/x8MVun5Bxrrid34tJSUIEl720y3vwtGEvSKrNBpssTcKF7VvgiUIGh+aiZAJAQ9Vn3CFWSwEBDKk4FaIXnvVKABbiqFPhXKnnwQD40Zl32TG2iGM+RqEl01ntEJTjfHPQvlDi40KmIZqf4BSKlI4r71ODAIbLiAeqIpdoQ8ovZoaSA/qOYuZmyk43zAIWjTe0e5EwFZEPacntJ/QWs7Zk2jDiXM457oc3rNVVueJgqJWK3nzbKuhEb258UeDZ5m3Ct67KgApVItU=
-  bucket: sg-bis-billing-3
+  bucket: sg-peppolguide
   local-dir: target/site
   acl: public_read
   on:
