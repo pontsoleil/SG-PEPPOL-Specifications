@@ -4,7 +4,7 @@ Release date:: 2020-06-23
 
 == Changes to BIS document
 
-* Added section for Singapore payment means. 
+* Added support for Singapore payment means (PayNow, Giro and Card). 
 
 == Changes to validation artefacts
 

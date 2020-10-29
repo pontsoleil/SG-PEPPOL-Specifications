@@ -13,6 +13,6 @@ Updated date:: 2020-09-15
 
 include::invoice_automation.adoc[]
 
-include::sample-files.adoc[]
+include::sample_files.adoc[]
 
 :leveloffset: -1

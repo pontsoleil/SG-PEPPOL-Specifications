@@ -2,7 +2,4 @@
 [[examples]]
 = Example files
 
-The example files are published on GitHub. 
-
-* {link-examples}
-
+The example files are published on the main page of this specification.
