@@ -55,5 +55,14 @@
         <Name>Supplies from Non GST registered company</Name>
         <Description>Supplies from a company which is not registered for GST</Description>
     </Code>
-
+    <Code>
+        <Id>SROVR</Id>
+        <Name>Overseas Vendor Registration, digital services</Name>
+        <Description>Overseas vendor registration regime for Business-to-Consumer (“B2C”) supplies of imported digital services</Description>
+    </Code>
+    <Code>
+        <Id>SRRC</Id>
+        <Name>Reverse Charge</Name>
+        <Description>Reverse charge regime for Business-to-Business (“B2B”) supplies of imported services</Description>
+    </Code>    
 </CodeList>
