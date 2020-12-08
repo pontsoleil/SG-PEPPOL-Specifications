@@ -9,6 +9,7 @@ deploy:
   bucket: www.peppolguide.sg
   local-dir: target/site
   acl: public_read
+  region: ap-south-1
   on:
     repo: SG-PEPPOL/SG-PEPPOL-Specifications
     branch: feature/PEPPOLSync
