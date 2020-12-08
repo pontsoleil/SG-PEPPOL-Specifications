@@ -6,7 +6,7 @@ script:
 deploy:
   provider: s3
   access_key_id: AKIARALJXCFBKHO2JNEE
-  bucket: www.peppolguide.sg.s3-website-ap-southeast-1.amazonaws.com
+  bucket: sg-peppolguide
   local-dir: target/site
   acl: public_read
   on:
