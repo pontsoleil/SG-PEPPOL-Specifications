@@ -1,15 +1,18 @@
 = Version 3.0.5
 [horizontal]
-Release date:: 2020-10-01
+Release date:: 2021-01-11
 
 == Changes to BIS document
 
 * BIS Documentation now complete (previous version only described the differences compared to Peppol BIS Billing.
-* Documentation changed to browsable html format aligned with other Peppol BIS 
+* Documentation changed to browsable html format aligned with other Peppol BIS
+* GST category codes SROVR (Overseas Vendor Registration, digital services) and SRRC (Reverse Charge) added to code tables.
 
 == Changes to validation artefacts
 
 * Reintroduced decimal check on Payable Amount - [BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.
 * Added EAS EndpointID code list rule BR-CL-25 and aligned with Peppol-rules
 * Aligned EAS and ICD codelists with latest Peppol/EN16931 schematrons
+* Rules for GST updated to allow for GST category codes SROVR and SRRC.
 * New structure of the schematron rules. One file for those rules from EN16931 which are relevant for the SG BIS. One file for the additional "Peppol rules". One file for all rules which are unique for SG BIS Billing.
+* Validation rules aligned with OpenPeppol BIS Billing 3.0 2020 Fall release.
