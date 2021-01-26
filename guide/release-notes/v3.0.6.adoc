@@ -1,0 +1,9 @@
+= Version 3.0.6
+[horizontal]
+Release date:: 2021-01-27
+
+== Changes to BIS document
+
+== Changes to validation artefacts
+
+* Three rules (BR-CO-10, BR-CO-11 and BR-CO-12) incorrectly fired when using amount with more than 2 decimals. The rules are now adjusted and renamed to BR-CO-10-SG,BR-CO-10-SG and BR-CO-12-SG) and moved from SG-Subset-CEN-EN16931-UBL.sch to SG-Billing3-UBL.sch
