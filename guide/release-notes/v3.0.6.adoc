@@ -1,6 +1,6 @@
 = Version 3.0.6
 [horizontal]
-Release date:: 2021-01-27
+Release date:: 2021-02-02
 
 == Changes to BIS document
 
